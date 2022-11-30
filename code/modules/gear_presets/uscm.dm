@@ -818,13 +818,13 @@
 	assignment = JOB_MARINE_RAIDER_SL
 	rank = JOB_MARINE_RAIDER_SL
 	role_comm_title = "TL."
-	paygrade = "MO1"
+	paygrade = "ME7"
 	skills = /datum/skills/commando/deathsquad/leader
 
 /datum/equipment_preset/uscm/marsoc/sl/load_rank(mob/living/carbon/human/H)
 	if(H.client)
 		if(get_job_playtime(H.client, rank) > JOB_PLAYTIME_TIER_2)
-			return "MO2"
+			return "ME8"
 	return paygrade
 
 //Codenamed Team Leader
@@ -836,18 +836,20 @@
 	H.change_real_name(H, "[pick(nato_phonetic_alphabet)]")
 	H.age = rand(20,30)
 /datum/equipment_preset/uscm/marsoc/sl/covert/load_rank(mob/living/carbon/human/H)
-	return "O"
+	return ""
 //Officer
 /datum/equipment_preset/uscm/marsoc/cmd
 	name = "Marine Raider Officer"
 	assignment = JOB_MARINE_RAIDER_CMD
 	rank = JOB_MARINE_RAIDER_CMD
 	role_comm_title = "CMD."
-	paygrade = "MO3"
+	paygrade = "MO2"
 	skills = /datum/skills/commando/deathsquad/officer
 
 /datum/equipment_preset/uscm/marsoc/cmd/load_rank(mob/living/carbon/human/H)
 	if(H.client)
-		if(get_job_playtime(H.client, rank) > JOB_PLAYTIME_TIER_3)
+		if(get_job_playtime(H.client, rank) >= JOB_PLAYTIME_TIER_3)
 			return "MO4"
+		else if(get_job_playtime(H.client, rank) >= JOB_PLAYTIME_TIER_1)
+			return "MO3"
 	return paygrade
