@@ -508,6 +508,12 @@
 	icon_state = "wy_headset"
 	initial_keys = list(/obj/item/device/encryptionkey/mcom/cl)
 
+/obj/item/device/radio/headset/almayer/report
+	name = "combat reporter radio headset"
+	desc = "Used by USCM Combat Reporters. Channels are as follows: :v - marine command, :a - alpha squad, :b - bravo squad, :c - charlie squad, :d - delta squad."
+	icon_state = "wy_headset"
+	initial_keys = list(/obj/item/device/encryptionkey/report)
+
 /obj/item/device/radio/headset/almayer/rep
 	name = "representative radio headset"
 	desc = "This headset was the worst invention made, constant chatter comes from it."

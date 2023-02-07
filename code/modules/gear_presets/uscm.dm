@@ -770,6 +770,56 @@
 	name = "USCM Cryo Squad Radio Telephone Operator (Equipped)"
 	auto_squad_name = SQUAD_MARINE_CRYO
 
+
+//*****************************************************************************************************/
+/datum/equipment_preset/uscm/reporter
+	name = "USCM Combat Reporter (CR)"
+	flags = EQUIPMENT_PRESET_START_OF_ROUND|EQUIPMENT_PRESET_MARINE
+
+	access = list(
+		ACCESS_MARINE_PREP,
+		ACCESS_MARINE_MAINT,
+		ACCESS_MARINE_BRIDGE,
+		ACCESS_MARINE_ALPHA,
+		ACCESS_MARINE_BRAVO,
+		ACCESS_MARINE_CHARLIE,
+		ACCESS_MARINE_DELTA,
+	)
+	assignment = JOB_COMBAT_REPORTER
+	rank = JOB_COMBAT_REPORTER
+	paygrade = "ME3"
+	role_comm_title = "CR"
+	skills = /datum/skills/pfc/crafty
+
+	minimap_icon = "private"
+
+	utility_under = list(/obj/item/clothing/under/marine)
+
+/datum/equipment_preset/uscm/reporter/load_status(mob/living/carbon/human/H)
+	H.nutrition = rand(NUTRITION_NORMAL)
+
+/datum/equipment_preset/uscm/reporter/load_gear(mob/living/carbon/human/H)
+	var/backItem = /obj/item/storage/backpack/marine/satchel
+	if (H.client && H.client.prefs && (H.client.prefs.backbag == 1))
+		backItem = /obj/item/storage/backpack/marine
+
+	H.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/report(H), WEAR_L_EAR)
+	H.equip_to_slot_or_del(new /obj/item/clothing/under/marine(H), WEAR_BODY)
+	H.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/webbing(H), WEAR_JACKET)
+	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/knife(H), WEAR_FEET)
+	H.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine(H), WEAR_HANDS)
+	H.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/full(H), WEAR_WAIST)
+	H.equip_to_slot_or_del(new backItem(H), WEAR_BACK)
+	H.equip_to_slot_or_del(new /obj/item/storage/firstaid/regular(H), WEAR_IN_BACK)
+	H.equip_to_slot_or_del(new /obj/item/storage/pouch/general/large(H), WEAR_R_STORE)
+	H.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full(H), WEAR_L_STORE)
+
+/datum/equipment_preset/uscm/reporter/load_rank(mob/living/carbon/human/H)
+	if(H.client)
+		if(get_job_playtime(H.client, rank) < JOB_PLAYTIME_TIER_1)
+			return "ME2"
+	return paygrade
+
 //############ Marine Raiders #############
 //Operator
 /datum/equipment_preset/uscm/marsoc
@@ -784,6 +834,9 @@
 	paygrade = "ME6"
 
 	minimap_icon = "private"
+
+/datum/equipment_preset/uscm/marsoc/load_status(mob/living/carbon/human/H)
+	H.nutrition = rand(NUTRITION_NORMAL)
 
 /datum/equipment_preset/uscm/marsoc/New()
 	. = ..()

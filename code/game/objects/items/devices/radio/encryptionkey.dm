@@ -133,6 +133,11 @@
 /obj/item/device/encryptionkey/mcom/ai //AI only.
 	channels = list(RADIO_CHANNEL_COMMAND = TRUE, RADIO_CHANNEL_MP = TRUE, SQUAD_MARINE_1 = TRUE, SQUAD_MARINE_2 = TRUE, SQUAD_MARINE_3 = TRUE, SQUAD_MARINE_4 = TRUE, SQUAD_MARINE_5 = TRUE, SQUAD_MARINE_CRYO = FALSE, RADIO_CHANNEL_ENGI = TRUE, RADIO_CHANNEL_MEDSCI = TRUE, RADIO_CHANNEL_REQ = TRUE, RADIO_CHANNEL_JTAC = TRUE, RADIO_CHANNEL_INTEL = TRUE)
 
+/obj/item/device/encryptionkey/report
+	name = "\improper Combat Reporter Radio Encryption Key"
+	icon_state = "cap_key"
+	channels = list(RADIO_CHANNEL_COMMAND = TRUE, SQUAD_MARINE_1 = TRUE, SQUAD_MARINE_2 = TRUE, SQUAD_MARINE_3 = TRUE, SQUAD_MARINE_4 = TRUE, SQUAD_MARINE_5 = TRUE, SQUAD_MARINE_CRYO = FALSE)
+
 /obj/item/device/encryptionkey/jtac
 	name = "\improper JTAC Radio Encryption Key"
 	icon_state = "jtac_key"
