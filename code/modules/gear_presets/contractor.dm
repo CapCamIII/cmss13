@@ -60,7 +60,7 @@
 	access = get_all_accesses() + get_all_centcom_access()
 
 
-/datum/equipment_preset/dust_raider/load_name(mob/living/carbon/human/H)
+/datum/equipment_preset/contractor/load_name(mob/living/carbon/human/H)
 	H.gender = pick(60;MALE,40;FEMALE)
 	var/datum/preferences/A = new()
 	A.randomize_appearance(H)
@@ -482,6 +482,8 @@
 	H.equip_to_slot_or_del(new /obj/item/tool/weldingtool/hugetank, WEAR_IN_R_STORE)
 
 //*****************************************************************************************************/
+//COVERT CONTRACTORS
+//*****************************************************************************************************/
 
 /datum/equipment_preset/contractor/covert/standard
 	name = "Military Contractor (Covert Standard)"
@@ -883,3 +885,93 @@
 	H.equip_to_slot_or_del(new /obj/item/stack/cable_coil, WEAR_IN_R_STORE)
 	H.equip_to_slot_or_del(new /obj/item/device/multitool, WEAR_IN_R_STORE)
 	H.equip_to_slot_or_del(new /obj/item/tool/weldingtool/hugetank, WEAR_IN_R_STORE)
+
+
+//*****************************************************************************************************/
+//SURVIVOR CONTRACTORS
+//*****************************************************************************************************/
+
+
+
+/datum/equipment_preset/survivor/contractor
+	name = "Contractor Survivor"
+	faction = FACTION_CONTRACTOR
+	rank = JOB_CONTRACTOR
+	idtype = /obj/item/card/id/data
+	faction = FACTION_CONTRACTOR
+	faction_group = FACTION_LIST_ERT
+	languages = list(LANGUAGE_ENGLISH, LANGUAGE_SPANISH, LANGUAGE_RUSSIAN)
+	var/human_versus_human = FALSE
+	var/headset_type = /obj/item/device/radio/headset/distress/contractor
+
+
+/datum/equipment_preset/survivor/contractor/load_name(mob/living/carbon/human/H)
+	H.gender = pick(60;MALE,40;FEMALE)
+	var/datum/preferences/A = new()
+	A.randomize_appearance(H)
+	var/random_name
+	random_name = capitalize(pick(H.gender == MALE ? first_names_male : first_names_female)) + " " + capitalize(pick(last_names))
+	H.change_real_name(H, random_name)
+	H.name = H.real_name
+	H.age = rand(22,45)
+
+	var/static/list/colors = list("BLACK" = list(15, 15, 25), "BROWN" = list(102, 51, 0), "AUBURN" = list(139, 62, 19))
+	var/static/list/hair_colors = colors.Copy() + list("BLONDE" = list(197, 164, 30), "CARROT" = list(174, 69, 42))
+	var/hair_color = pick(hair_colors)
+	H.r_hair = hair_colors[hair_color][1]
+	H.g_hair = hair_colors[hair_color][2]
+	H.b_hair = hair_colors[hair_color][3]
+	H.r_facial = hair_colors[hair_color][1]
+	H.g_facial = hair_colors[hair_color][2]
+	H.b_facial = hair_colors[hair_color][3]
+	var/eye_color = pick(colors)
+	H.r_eyes = colors[eye_color][1]
+	H.g_eyes = colors[eye_color][2]
+	H.b_eyes = colors[eye_color][3]
+	idtype = /obj/item/card/id/data
+	if(H.gender == MALE)
+		H.h_style = pick("Crewcut", "Shaved Head", "Buzzcut", "Undercut", "Side Undercut", "Pvt. Joker", "Marine Fade", "Low Fade", "Medium Fade", "High Fade", "No Fade", "Coffee House Cut", "Flat Top",)
+		H.f_style = pick("5 O'clock Shadow", "Shaved", "Full Beard", "3 O'clock Moustache", "5 O'clock Shadow", "5 O'clock Moustache", "7 O'clock Shadow", "7 O'clock Moustache",)
+	else
+		H.h_style = pick("Ponytail 1", "Ponytail 2", "Ponytail 3", "Ponytail 4", "Pvt. Redding", "Pvt. Clarison", "Cpl. Dietrich", "Pvt. Vasquez", "Marine Bun", "Marine Bun 2", "Marine Flat Top",)
+	H.change_real_name(H, random_name)
+	H.age = rand(20,45)
+	H.r_hair = rand(15,35)
+	H.g_hair = rand(15,35)
+	H.b_hair = rand(25,45)
+
+/datum/equipment_preset/contractor/load_id(mob/living/carbon/human/H, client/mob_client)
+	if(human_versus_human)
+		var/obj/item/clothing/under/uniform = H.w_uniform
+		if(istype(uniform))
+			uniform.has_sensor = UNIFORM_HAS_SENSORS
+			uniform.sensor_faction = FACTION_CONTRACTOR
+	return ..()
+
+/datum/equipment_preset/survivor/contractor/covert/standard
+	name = "Contractor Survivor (Covert Standard)"
+	paygrade = "VAI"
+	role_comm_title = "Merc"
+	flags = EQUIPMENT_PRESET_EXTRA
+
+	assignment = "VAISO Mercenary"
+	rank = JOB_CONTRACTOR_COVST
+	skills = /datum/skills/contractor
+	faction = FACTION_CONTRACTOR
+
+/datum/equipment_preset/contractor/covert/load_gear(mob/living/carbon/human/H)
+
+	H.equip_to_slot_or_del(new headset_type, WEAR_L_EAR)
+	H.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/ua_civvies, WEAR_BODY)
+	H.equip_to_slot_or_del(new /obj/item/clothing/accessory/holobadge/cord, WEAR_ACCESSORY)
+	H.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/m1911/socom/almost_empty, WEAR_WAIST)
+	H.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine, WEAR_HANDS)
+	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/veteran/pmc/knife, WEAR_FEET)
+	H.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/sechud/tactical, WEAR_EYES)
+	H.equip_to_slot_or_del(new /obj/item/clothing/mask/balaclava, WEAR_FACE)
+	H.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full, WEAR_L_STORE)
+	H.equip_to_slot_or_del(new /obj/item/storage/backpack/lightpack, WEAR_BACK)
+	H.equip_to_slot_or_del(new /obj/item/storage/box/packet/smoke, WEAR_IN_BACK)
+	H.equip_to_slot_or_del(new /obj/item/storage/box/MRE,WEAR_IN_BACK)
+	H.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical, WEAR_IN_BACK)
+	H.equip_to_slot_or_del(new /obj/item/storage/box/attachments(H), WEAR_IN_BACK)
