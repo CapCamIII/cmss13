@@ -1141,15 +1141,15 @@
 	shell_speed = AMMO_SPEED_TIER_6
 
 /datum/ammo/bullet/rifle/m4ra/impact/on_hit_mob(mob/M, obj/item/projectile/P)
-	knockback(M, P, 32) // Can knockback basically at max range
+	knockback(M, P, 10) // Can knockback basically at max range
 
 /datum/ammo/bullet/rifle/m4ra/impact/knockback_effects(mob/living/living_mob, obj/item/projectile/fired_projectile)
 	if(iscarbonsizexeno(living_mob))
 		var/mob/living/carbon/xenomorph/target = living_mob
 		to_chat(target, SPAN_XENODANGER("You are shaken and slowed by the sudden impact!"))
 		target.apply_effect(0.5, WEAKEN)
-		target.apply_effect(2, SUPERSLOW)
-		target.apply_effect(5, SLOW)
+		target.apply_effect(1, SUPERSLOW)
+		target.apply_effect(3, SLOW)
 	else
 		if(!isyautja(living_mob)) //Not predators.
 			living_mob.apply_effect(1, SUPERSLOW)

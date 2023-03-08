@@ -67,7 +67,7 @@
 	desc = "A magazine of A19 high velocity rounds for use in the M4RA custom battle rifle. The M4RA custom battle rifle is the only gun that can chamber these rounds."
 	icon_state = "a19"
 	default_ammo = /datum/ammo/bullet/rifle/m4ra
-	max_rounds = 18
+	max_rounds = 20
 	gun_type = /obj/item/weapon/gun/rifle/m4ra_custom
 
 /obj/item/ammo_magazine/rifle/m4ra/custom/incendiary
@@ -75,7 +75,7 @@
 	desc = "A magazine of A19 high velocity incendiary rounds for use in the M4RA battle rifle. The M4RA battle rifle is the only gun that can chamber these rounds."
 	icon_state = "a19_incendiary"
 	default_ammo = /datum/ammo/bullet/rifle/m4ra/incendiary
-	max_rounds = 18
+	max_rounds = 15
 	gun_type = /obj/item/weapon/gun/rifle/m4ra_custom
 
 /obj/item/ammo_magazine/rifle/m4ra/custom/impact
@@ -83,7 +83,7 @@
 	desc = "A magazine of A19 high velocity impact rounds for use in the M4RA battle rifle. The M4RA battle rifle is the only gun that can chamber these rounds."
 	icon_state = "a19_impact"
 	default_ammo = /datum/ammo/bullet/rifle/m4ra/impact
-	max_rounds = 18
+	max_rounds = 15
 	gun_type = /obj/item/weapon/gun/rifle/m4ra_custom
 
 
