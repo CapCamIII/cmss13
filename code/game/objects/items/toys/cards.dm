@@ -21,6 +21,7 @@
 	icon = 'icons/obj/items/playing_cards.dmi'
 	icon_state = "deck"
 	w_class = SIZE_TINY
+	flags_obj = OBJ_IS_HELMET_GARB
 	flags_item = NOTABLEMERGE
 
 	var/base_icon = "deck"
@@ -262,6 +263,7 @@
 	icon = 'icons/obj/items/playing_cards.dmi'
 	icon_state = "empty"
 	w_class = SIZE_TINY
+	flags_obj = OBJ_IS_HELMET_GARB
 	flags_item = NOTABLEMERGE
 
 	var/concealed = FALSE

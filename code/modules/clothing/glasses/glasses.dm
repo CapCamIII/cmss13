@@ -190,6 +190,7 @@
 	desc = "They cut the sun and keep things fun. Why would you ever wear these indoors, or on a night operation. Are you trying to get yourself hurt?"
 	icon_state = "hipster_glasses"
 	item_state = "hipster_glasses"
+	eye_protection = EYE_PROTECTION_FLAVOR
 	flags_equip_slot = SLOT_EYES|SLOT_FACE
 
 /obj/item/clothing/glasses/threedglasses
@@ -546,6 +547,7 @@
 	item_state = "sunglasses"
 	darkness_view = -1
 	flags_equip_slot = SLOT_EYES|SLOT_FACE
+	flags_obj = OBJ_NO_HELMET_BAND|OBJ_IS_HELMET_GARB
 	eye_protection = EYE_PROTECTION_FLAVOR
 
 /obj/item/clothing/glasses/sunglasses/blindfold

@@ -451,6 +451,7 @@
 /obj/item/prop/helmetgarb/helmet_nvg/cosmetic //for "custom loadout", purely cosmetic
 	name = "old M2 night vision goggles"
 	desc = "This pair has been gutted of all electronics and therefore not working. But hey, they make you feel tacticool, and that's all that matters, right?"
+	flags_obj = OBJ_IS_HELMET_GARB
 	shape = NVG_SHAPE_COSMETIC
 	garbage = TRUE
 
