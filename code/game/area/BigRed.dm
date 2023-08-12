@@ -18,6 +18,7 @@
 /area/bigred/ground/garage_workshop
 	name = "\improper Garage Workshop"
 	icon_state = "green"
+	is_resin_allowed = FALSE
 	ceiling = CEILING_METAL
 
 /area/bigred/ground/ship
@@ -666,11 +667,13 @@
 /area/bigredv2/outside/lz1_north_cas
 	name = "\improper Northern Caves Entrance"
 	icon_state = "garden"
+	is_resin_allowed = FALSE
 	ceiling = CEILING_UNDERGROUND_ALLOW_CAS
 
 /area/bigredv2/outside/lz1_telecomm_cas
 	name = "\improper Virology Caves Entrance"
 	icon_state = "garden"
+	is_resin_allowed = FALSE
 	ceiling = CEILING_UNDERGROUND_ALLOW_CAS
 
 /area/bigredv2/outside/lz2_west_cas
