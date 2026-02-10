@@ -188,6 +188,33 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 	path = /obj/item/clothing/glasses/sunglasses/big/new_bimex/bronze
 	fluff_cost = 4
 
+// Bimex ripoff shades - cheap but colorful
+
+/datum/gear/eyewear/bimax_shades
+	display_name = "BiMax personal shades"
+	path = /obj/item/clothing/glasses/sunglasses/big/fake
+	fluff_cost = 2
+
+/datum/gear/eyewear/bimax_shades/red
+	display_name = "BiMax personal shades, red"
+	path = /obj/item/clothing/glasses/sunglasses/big/fake/red
+
+/datum/gear/eyewear/bimax_shades/orange
+	display_name = "BiMax personal shades, orange"
+	path = /obj/item/clothing/glasses/sunglasses/big/fake/orange
+
+/datum/gear/eyewear/bimax_shades/yellow
+	display_name = "BiMax personal shades, yellow"
+	path = /obj/item/clothing/glasses/sunglasses/big/fake/yellow
+
+/datum/gear/eyewear/bimax_shades/green
+	display_name = "BiMax personal shades, green"
+	path = /obj/item/clothing/glasses/sunglasses/big/fake/green
+
+/datum/gear/eyewear/bimax_shades/blue
+	display_name = "BiMax personal shades, blue"
+	path = /obj/item/clothing/glasses/sunglasses/big/fake/blue
+
 /datum/gear/eyewear/prescription_sunglasses
 	display_name = "Prescription sunglasses"
 	path = /obj/item/clothing/glasses/sunglasses/prescription
@@ -1204,6 +1231,37 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 	fluff_cost = 1 //The cadmium poisoning pays for the discounted cost longterm
 	allowed_origins = USCM_ORIGINS
 
+// civilian shoes, technically contraband for marines so more expensive, civilians can get them discounted in the civilian only section.
+
+/datum/gear/misc/shoes
+	display_name = "black shoes"
+	path = /obj/item/clothing/shoes/black
+	fluff_cost = 3
+
+/datum/gear/misc/shoes/brown
+	display_name = "brown shoes"
+	path = /obj/item/clothing/shoes/brown
+
+/datum/gear/misc/shoes/blue
+	display_name = "blue shoes"
+	path = /obj/item/clothing/shoes/blue
+
+/datum/gear/misc/shoes/green
+	display_name = "green shoes"
+	path = /obj/item/clothing/shoes/green
+
+/datum/gear/misc/shoes/yellow
+	display_name = "yellow shoes"
+	path = /obj/item/clothing/shoes/yellow
+
+/datum/gear/misc/shoes/purple
+	display_name = "purple shoes"
+	path = /obj/item/clothing/shoes/purple
+
+/datum/gear/misc/shoes/red
+	display_name = "red shoes"
+	path = /obj/item/clothing/shoes/red
+
 /datum/gear/misc/dogtags
 	display_name = "Attachable Dogtags"
 	path = /obj/item/clothing/accessory/dogtags
@@ -1302,32 +1360,6 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 /datum/gear/civilian/headwear/cowboy_hat/light
 	display_name = "cowboy hat, light-brown"
 	path = /obj/item/clothing/head/cowboy/light
-
-// Cheap Civilian shades - colorful!
-
-/datum/gear/civilian/eyewear/bimax_shades
-	display_name = "BiMax personal shades"
-	path = /obj/item/clothing/glasses/sunglasses/big/fake
-
-/datum/gear/civilian/eyewear/bimax_shades/red
-	display_name = "BiMax personal shades, red"
-	path = /obj/item/clothing/glasses/sunglasses/big/fake/red
-
-/datum/gear/civilian/eyewear/bimax_shades/orange
-	display_name = "BiMax personal shades, orange"
-	path = /obj/item/clothing/glasses/sunglasses/big/fake/orange
-
-/datum/gear/civilian/eyewear/bimax_shades/yellow
-	display_name = "BiMax personal shades, yellow"
-	path = /obj/item/clothing/glasses/sunglasses/big/fake/yellow
-
-/datum/gear/civilian/eyewear/bimax_shades/green
-	display_name = "BiMax personal shades, green"
-	path = /obj/item/clothing/glasses/sunglasses/big/fake/green
-
-/datum/gear/civilian/eyewear/bimax_shades/blue
-	display_name = "BiMax personal shades, blue"
-	path = /obj/item/clothing/glasses/sunglasses/big/fake/blue
 
 // Hippie Shades
 
