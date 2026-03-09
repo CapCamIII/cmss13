@@ -275,10 +275,11 @@
 	accuracy_var_low = PROJECTILE_VARIANCE_TIER_8
 	accuracy_var_high = PROJECTILE_VARIANCE_TIER_6
 	accurate_range = 14
-	damage = 35
+	damage = 50
 	penetration= ARMOR_PENETRATION_TIER_6
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_2
 
 /datum/ammo/bullet/pkp/setup_faction_clash_values()
 	. = ..()
 	accurate_range = 14
+	damage = 40

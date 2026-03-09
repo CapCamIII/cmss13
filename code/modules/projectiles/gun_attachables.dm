@@ -4118,6 +4118,12 @@ Defined in conflicts.dm of the #defines folder.
 	icon_state = "qjy72_bipod"
 	attach_icon = "qjy72_bipod"
 
+/obj/item/attachable/bipod/pkp/New()
+	..()
+
+	wield_delay_mod = WIELD_DELAY_FAST
+	heavy_bipod = TRUE
+
 /obj/item/attachable/bipod/vulture
 	name = "heavy bipod"
 	desc = "A set of rugged telescopic poles to keep a weapon stabilized during firing."

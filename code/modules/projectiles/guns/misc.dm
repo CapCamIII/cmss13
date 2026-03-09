@@ -188,13 +188,15 @@
 	)
 	fire_sound = 'sound/weapons/gun_mg.ogg'
 	cocked_sound = 'sound/weapons/gun_m60_cocked.ogg'
+	reload_sound = 'sound/weapons/handling/gun_sg_reload.ogg'
+	unload_sound = 'sound/weapons/handling/gun_sg_unload.ogg'
 	current_mag = /obj/item/ammo_magazine/pkp
 
 	pixel_x = -10
 	hud_offset = -10
 
 	w_class = SIZE_LARGE
-	force = 40 //the image of a upp machinegunner beating someone to death with a gpmg makes me laugh
+	force = MELEE_FORCE_TIER_10 //the image of a upp machinegunner beating someone to death with a gpmg makes me laugh
 	start_semiauto = FALSE
 	start_automatic = TRUE
 	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_CAN_POINTBLANK|GUN_AUTO_EJECTOR|GUN_SPECIALIST|GUN_AMMO_COUNTER
@@ -232,14 +234,14 @@
 
 /obj/item/weapon/gun/pkp/set_gun_config_values()
 	..()
-	fire_delay = FIRE_DELAY_TIER_10
+	fire_delay = FIRE_DELAY_TIER_11 //reduced by the bipod to reasonable levels.
 	burst_amount = BURST_AMOUNT_TIER_6
-	burst_delay = FIRE_DELAY_TIER_9
+	burst_delay = FIRE_DELAY_TIER_11
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
 	accuracy_mult_unwielded = BASE_ACCURACY_MULT
 	fa_max_scatter = SCATTER_AMOUNT_TIER_8
 	scatter = SCATTER_AMOUNT_TIER_10
-	burst_scatter_mult = SCATTER_AMOUNT_TIER_8
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_10
 	scatter_unwielded = SCATTER_AMOUNT_TIER_10
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil = RECOIL_AMOUNT_TIER_5
