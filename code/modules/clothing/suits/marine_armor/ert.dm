@@ -1022,3 +1022,68 @@
 	armor_bio = CLOTHING_ARMOR_GIGAHIGHPLUS
 	armor_rad = CLOTHING_ARMOR_GIGAHIGHPLUS
 	armor_internaldamage = CLOTHING_ARMOR_HIGHPLUS
+
+//======================//=Contractors=\\==============================\\
+//===============================================================\\
+
+/obj/item/clothing/suit/storage/marine/veteran/contractor
+	name = "\improper CC-76 pattern armor"
+	desc = "A modern version of the classic Cuirasse de Combat of French origin, this one is a licensed copy produced by MAKENAMELATER, intended to be sold on the private market. This one is in a factory urban-grey. The M3 Pattern Armor used by the USCM is based off the earlier CC-68 series, though modern series remain visually similar."
+	icon_state = "ua_riot"//temp
+	icon = 'icons/obj/items/clothing/suits/suits_by_faction/UA.dmi'
+	item_icons = list(
+		WEAR_JACKET = 'icons/mob/humans/onmob/clothing/suits/suits_by_faction/UA.dmi'
+	)
+	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS|BODY_FLAG_LEGS
+	flags_cold_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS|BODY_FLAG_LEGS
+	flags_heat_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS|BODY_FLAG_LEGS
+	storage_slots = 3
+	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_LOW
+	armor_energy = CLOTHING_ARMOR_VERYLOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bio = CLOTHING_ARMOR_MEDIUMLOW
+	armor_rad = CLOTHING_ARMOR_LOW
+	armor_internaldamage = CLOTHING_ARMOR_HIGH
+	movement_compensation = SLOWDOWN_ARMOR_LIGHT
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+	flags_atom = NO_NAME_OVERRIDE|NO_GAMEMODE_SKIN
+	uniform_restricted = null
+
+/obj/item/clothing/suit/storage/marine/veteran/contractor/variantone
+	icon_state = "ua_riot"
+	icon = 'icons/obj/items/clothing/suits/suits_by_faction/UA.dmi'
+
+/obj/item/clothing/suit/storage/marine/veteran/contractor/varianttwo
+	icon_state = "ua_riot"
+	icon = 'icons/obj/items/clothing/suits/suits_by_faction/UA.dmi'
+
+/obj/item/clothing/suit/storage/marine/veteran/contractor/leader
+	name = "\improper modified CC-76 pattern armor"
+	desc = "A modern version of the classic Cuirasse de Combat of French origin, this one is a licensed copy produced by MAKENAMELATER, intended to be sold on the private market. This one is in a factory urban-grey. The M3 Pattern Armor used by the USCM is based off the earlier CC-68 series, though modern series remain visually similar. This one has a higher powered light and some additional pouches strapped on."
+	storage_slots = 4
+	light_range = 7
+	icon_state = "ua_riot"
+	icon = 'icons/obj/items/clothing/suits/suits_by_faction/UA.dmi'
+
+/obj/item/clothing/suit/storage/marine/veteran/contractor/synth
+
+	name = "stripped CC-76 pattern armor"
+	desc = "A modern version of the classic Cuirasse de Combat of French origin, this one is a licensed copy produced by MAKENAMELATER, intended to be sold on the private market. This one is in a factory urban-grey. The M3 Pattern Armor used by the USCM is based off the earlier CC-68 series, though modern series remain visually similar. This one has had the armor panels stripped out and a higher powered light attached, probably for a synthetic."
+	icon_state = "ua_riot"
+	icon = 'icons/obj/items/clothing/suits/suits_by_faction/UA.dmi'
+	time_to_unequip = 0.5 SECONDS
+	time_to_equip = 1 SECONDS
+	armor_melee = CLOTHING_ARMOR_NONE
+	armor_bullet = CLOTHING_ARMOR_NONE
+	armor_laser = CLOTHING_ARMOR_NONE
+	armor_energy = CLOTHING_ARMOR_NONE
+	armor_bomb = CLOTHING_ARMOR_NONE
+	armor_bio = CLOTHING_ARMOR_NONE
+	armor_rad = CLOTHING_ARMOR_NONE
+	armor_internaldamage = CLOTHING_ARMOR_NONE
+	storage_slots = 4
+	light_range = 7
+	slowdown = SLOWDOWN_ARMOR_SUPER_LIGHT
+	flags_marine_armor = parent_type::flags_marine_armor|SYNTH_ALLOWED

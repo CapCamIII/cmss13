@@ -131,8 +131,26 @@
 
 
 /obj/item/weapon/gun/rifle/m41a/tactical
+	icon = 'icons/obj/items/weapons/guns/guns_by_map/desert/guns_obj.dmi'
+	item_icons = list(
+		WEAR_L_HAND = 'icons/obj/items/weapons/guns/guns_by_map/desert/guns_lefthand.dmi',
+		WEAR_R_HAND = 'icons/obj/items/weapons/guns/guns_by_map/desert/guns_righthand.dmi',
+		WEAR_BACK = 'icons/obj/items/weapons/guns/guns_by_map/desert/back.dmi',
+		WEAR_J_STORE = 'icons/obj/items/weapons/guns/guns_by_map/desert/suit_slot.dmi'
+	)
 	current_mag = /obj/item/ammo_magazine/rifle/ap
-	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/suppressor, /obj/item/attachable/angledgrip, /obj/item/attachable/stock/rifle/collapsible)
+	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/angledgrip, /obj/item/attachable/suppressor, /obj/item/attachable/stock/rifle/collapsible)
+
+/obj/item/weapon/gun/rifle/m41a/contractor
+	icon = 'icons/obj/items/weapons/guns/guns_by_map/desert/guns_obj.dmi'
+	item_icons = list(
+		WEAR_L_HAND = 'icons/obj/items/weapons/guns/guns_by_map/desert/guns_lefthand.dmi',
+		WEAR_R_HAND = 'icons/obj/items/weapons/guns/guns_by_map/desert/guns_righthand.dmi',
+		WEAR_BACK = 'icons/obj/items/weapons/guns/guns_by_map/desert/back.dmi',
+		WEAR_J_STORE = 'icons/obj/items/weapons/guns/guns_by_map/desert/suit_slot.dmi'
+	)
+	current_mag = /obj/item/ammo_magazine/rifle/ap
+	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/attached_gun/grenade/preloaded, /obj/item/attachable/stock/rifle/collapsible)
 
 /obj/item/weapon/gun/rifle/m41a/army
 	starting_attachment_types = list(/obj/item/attachable/reddot, /obj/item/attachable/attached_gun/grenade, /obj/item/attachable/stock/rifle/collapsible)
@@ -498,8 +516,12 @@
 /obj/item/weapon/gun/rifle/m41aMK1/ap //for making it start with ap loaded
 	current_mag = /obj/item/ammo_magazine/rifle/m41aMK1/ap
 
-/obj/item/weapon/gun/rifle/m41aMK1/tactical
-	starting_attachment_types = list(/obj/item/attachable/attached_gun/grenade/mk1, /obj/item/attachable/suppressor, /obj/item/attachable/magnetic_harness, /obj/item/attachable/stock/rifle/collapsible)
+/obj/item/weapon/gun/rifle/m41aMK1/contractor
+	starting_attachment_types = list(/obj/item/attachable/attached_gun/grenade/mk1/preloaded, /obj/item/attachable/magnetic_harness, /obj/item/attachable/stock/rifle/collapsible)
+	current_mag = /obj/item/ammo_magazine/rifle/m41aMK1/ap
+
+obj/item/weapon/gun/rifle/m41aMK1/tactical
+	starting_attachment_types = list(/obj/item/attachable/attached_gun/grenade/mk1/preloaded, /obj/item/attachable/suppressor, /obj/item/attachable/magnetic_harness, /obj/item/attachable/stock/rifle/collapsible)
 	current_mag = /obj/item/ammo_magazine/rifle/m41aMK1/ap
 
 /obj/item/weapon/gun/rifle/m41aMK1/anchorpoint
@@ -509,7 +531,7 @@
 
 /obj/item/weapon/gun/rifle/m41aMK1/anchorpoint/gl
 	desc = "A classic M41 MK1 Pulse Rifle painted in a fresh coat of the classic Humbrol 170 camouflage. This one appears to be used by the Colonial Marine contingent aboard Anchorpoint Station, and is equipped with an underbarrel grenade launcher. Uses 10x24mm caseless ammunition."
-	starting_attachment_types = list(/obj/item/attachable/stock/rifle/collapsible, /obj/item/attachable/attached_gun/grenade/mk1)
+	starting_attachment_types = list(/obj/item/attachable/stock/rifle/collapsible, /obj/item/attachable/attached_gun/grenade/mk1/preloaded)
 
 //----------------------------------------------
 //Special gun for the CO to replace the smartgun
@@ -827,6 +849,9 @@
 	desc = "A cheap, reliable assault rifle chambered in 7.62x39mm. Commonly found in the hands of criminals or mercenaries, or in the hands of the UPP or CLF. This one has been equipped with an after-market ammo-counter."
 	starting_attachment_types = list(/obj/item/attachable/angledgrip, /obj/item/attachable/suppressor, /obj/item/attachable/magnetic_harness)
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK
+
+/obj/item/weapon/gun/rifle/mar40/tactical/contractor
+	starting_attachment_types = list(/obj/item/attachable/angledgrip, /obj/item/attachable/magnetic_harness)
 
 /obj/item/weapon/gun/rifle/mar40/carbine
 	name = "\improper MAR-30 battle carbine"
@@ -1498,10 +1523,14 @@
 
 /obj/item/weapon/gun/rifle/lmg/tactical
 	current_mag = /obj/item/ammo_magazine/rifle/lmg/ap
-	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/suppressor, /obj/item/attachable/angledgrip)
+	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/angledgrip)
 /obj/item/weapon/gun/rifle/lmg/tactical/set_gun_config_values()
 	..()
 	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2//equal to m41a dmg
+
+/obj/item/weapon/gun/rifle/lmg/tactical/suppressed
+	current_mag = /obj/item/ammo_magazine/rifle/lmg/ap
+	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/suppressor, /obj/item/attachable/angledgrip)
 
 /obj/item/weapon/gun/rifle/lmg/army
 	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/angledgrip)
@@ -2175,14 +2204,15 @@
 
 /obj/item/weapon/gun/rifle/l42a/abr40/tactical
 	name = "\improper ABR-40 tactical rifle"
-	desc = "The civilian version of the L42A battle rifle that is often wielded by Marines. Almost identical and even cross-compatible with L42 magazines, just don't take the stock off. This rifle seems to have unique tacticool blue-black furniture alongside some miscellaneous aftermarket modding."
-	desc_lore = "The ABR-40 was created after the striking popularity of the L42 battle rifle as a hunting rifle for civilians, and naturally fell into the hands of many underfunded paramilitary groups and insurrections in turn, due to its smooth and simple handling and cross-compatibility with L42A magazines."
+	desc = "The civilian version of the L42A battle rifle that was rejected by the USCM. Almost identical and even cross-compatible with L42 magazines, just don't take the stock off. This rifle seems to have unique tacticool blue-black furniture alongside some aftermarket modding, including a burst-fire cycler, wow!"
+	desc_lore = "The ABR-40 was created as a civilian version of the L42 rifle, to capitalize on the soon-to-come striking popularity of the L42 battle rifle; when the L42 project fell through, the ABR-40 was left to pick up the slack as a mass-produced civilian hunting rifle. It's cheap cost, accuracy, and reliable action made it a perfect fit for many underfunded paramilitary groups and insurrections in turn."
 	icon_state = "abr40_tac"
 	item_state = "abr40_tac"
 	current_mag = /obj/item/ammo_magazine/rifle/l42a/ap
 	attachable_allowed = list(
 		//Barrel,
 		/obj/item/attachable/suppressor,
+		/obj/item/attachable/extended_barrel,
 		/obj/item/attachable/bayonet,
 		/obj/item/attachable/bayonet/upp,
 		/obj/item/attachable/bayonet/co2,
@@ -2202,26 +2232,27 @@
 		//Stock,
 		/obj/item/attachable/stock/carbine/wood,
 		/obj/item/attachable/stock/carbine/wood/tactical,
+		/obj/item/attachable/scope/variable_zoom,
 	)
-	starting_attachment_types = list(/obj/item/attachable/stock/carbine/wood/tactical, /obj/item/attachable/suppressor)
+	starting_attachment_types = list(/obj/item/attachable/stock/carbine/wood/tactical, /obj/item/attachable/extended_barrel)
 	random_under_chance = 100
 	random_spawn_under = list(/obj/item/attachable/flashlight/grip)
 
 /obj/item/weapon/gun/rifle/l42a/abr40/tactical/handle_starting_attachment()
 	..()
-	var/obj/item/attachable/magnetic_harness/integrated = new(src)
+	var/obj/item/attachable/scope/variable_zoom/integrated = new(src)
 	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
-	integrated.hidden = TRUE
 	integrated.Attach(src)
 	update_attachable(integrated.slot)
 
 /obj/item/weapon/gun/rifle/l42a/abr40/tactical/set_gun_config_values()
 	..()
-	set_fire_delay(FIRE_DELAY_TIER_10)
-	set_burst_amount(0)
+	set_fire_delay(FIRE_DELAY_TIER_SMG) //scope greatly diminishes actual fire-rate to normal levels
+	burst_amount = BURST_AMOUNT_TIER_2
+	burst_delay = FIRE_DELAY_TIER_11
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_5
 	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_4
-	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_7
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_9
 	recoil_unwielded = RECOIL_AMOUNT_TIER_4
 	damage_falloff_mult = 0
 	scatter = SCATTER_AMOUNT_TIER_8

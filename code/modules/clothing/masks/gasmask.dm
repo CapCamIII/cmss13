@@ -87,8 +87,8 @@
 	icon_state = "officer_mask"
 
 /obj/item/clothing/mask/gas/swat
-	name = "\improper SWAT mask"
-	desc = "A close-fitting tactical mask that can be connected to an air supply."
+	name = "\improper MCP Riot mask"
+	desc = "The MCP riot mask, of Canadian origin, is the former standard gas-mask of the CCAF and a common sight on the frontier. Widely produced, stocks still frequently show up in the hands of rebels, mercenaries and police forces."
 	icon_state = "swat"
 	siemens_coefficient = 0.7
 	flags_armor_protection = BODY_FLAG_FACE|BODY_FLAG_EYES
@@ -148,8 +148,9 @@
 //= CLF =\\
 
 /obj/item/clothing/mask/gas/riot
-	name = "riot mask"
-	desc = "A mask of colonial riot control department, with red laser shield lenses for eye protection due a somewhat often use of RXF-M5 EVA by colonial rioters. Riot gear is also often seen in hands of CLF terrorists, due to large surplus of it being captured in colonial rebellions."
+
+	name = "MCA riot mask"
+	desc = "The MCA riot mask, of Canadian origin, is the current standard issue gas-mask of the CCAF, as well as one of the most common police-issue gas-masks used throughout the Frontier. The mask's striking red eyes, caused by the mask's state of the art laser lenses, serve as a symbol of unrest in the frontier, with large-scale use by police and miltary forces and captured stockpiles in the hands of rebels and guerrillas like that of the CLF."
 	icon_state = "carbon_mask"
 	item_state = "balaclava"
 	icon = 'icons/obj/items/clothing/masks/masks_by_faction/CLF.dmi'
@@ -161,3 +162,6 @@
 	vision_impair = VISION_IMPAIR_NONE
 	eye_protection = EYE_PROTECTION_FLAVOR
 	flags_inv_hide = HIDEEARS|HIDEFACE
+
+/obj/item/clothing/mask/gas/riot/ert
+	eye_protection = EYE_PROTECTION_WELDING //meant for VAIRS, they have night visions that reduce eye-protection by one, this allows them to still have flash protection despite that

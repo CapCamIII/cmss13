@@ -565,6 +565,10 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 	display_name = "Night vision goggles, broken"
 	path = /obj/item/prop/helmetgarb/helmet_nvg/cosmetic
 
+/datum/gear/helmet_garb/broken_nvgs/larp
+	display_name = "M1 Multispectrum Visor"
+	path = /obj/item/prop/helmetgarb/helmet_nvg/cosmetic/visor
+
 /datum/gear/helmet_garb/prescription_bottle
 	display_name = "Prescription bottle"
 	path = /obj/item/prop/helmetgarb/prescription_bottle

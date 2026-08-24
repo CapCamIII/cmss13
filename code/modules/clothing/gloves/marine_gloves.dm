@@ -157,6 +157,13 @@
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
 	adopts_squad_color = FALSE
 
+/obj/item/clothing/gloves/marine/veteran/fingerless
+	name = "fingerless armored gloves"
+	desc = "Non-standard kevlon fiber gloves, with the fingers cut off. They're still heavily armored, but not so insulating anymore."
+	icon_state = "marine_fingerless"
+	item_state = "marine_fingerless"
+	siemens_coefficient = 0.6
+
 /obj/item/clothing/gloves/marine/veteran/upp
 	icon_state = "brown"
 	item_state = "brown"

@@ -330,6 +330,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	/obj/item/prop/helmetgarb/helmet_nvg = PREFIX_HELMET_GARB_OVERRIDE, // helmet_
 	/obj/item/prop/helmetgarb/helmet_nvg/cosmetic = PREFIX_HELMET_GARB_OVERRIDE, // helmet_
 	/obj/item/prop/helmetgarb/helmet_nvg/marsoc = PREFIX_HELMET_GARB_OVERRIDE, // helmet_
+	/obj/item/prop/helmetgarb/helmet_nvg/cosmetic/visor = NO_GARB_OVERRIDE,
 	/obj/item/prop/helmetgarb/helmet_gasmask = NO_GARB_OVERRIDE,
 	/obj/item/prop/helmetgarb/flair_initech = NO_GARB_OVERRIDE,
 	/obj/item/prop/helmetgarb/flair_io = NO_GARB_OVERRIDE,
@@ -1531,6 +1532,23 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	flags_atom = NO_GAMEMODE_SKIN|NO_NAME_OVERRIDE
 	built_in_visors = list(new /obj/item/device/helmet_visor/night_vision/marine_raider, new /obj/item/device/helmet_visor/security)
 	start_down_visor_type = /obj/item/device/helmet_visor/night_vision/marine_raider
+
+/obj/item/clothing/head/helmet/marine/civilian
+	name = "\improper M10 pattern helmet"
+	desc = "This is an M10 pattern helmet with most of the electronics, such as the helmet-camera and IR-visor, removed for sale on the civilian market. It's unpainted, with the original grey finish. Still perfectly effective as a brain bucket, even without the fancy electronics."
+	icon_state = "helmet"
+	icon = 'icons/obj/items/clothing/hats/hats_by_map/urban.dmi'
+	item_icons = list(
+		WEAR_HEAD = 'icons/mob/humans/onmob/clothing/head/hats_by_map/urban.dmi',
+		WEAR_L_HAND = 'icons/mob/humans/onmob/inhands/items_by_map/urban_lefthand.dmi',
+		WEAR_R_HAND = 'icons/mob/humans/onmob/inhands/items_by_map/urban_righthand.dmi'
+	)
+	item_state_slots = list(
+		WEAR_L_HAND = "helmet",
+		WEAR_R_HAND = "helmet"
+	)
+	flags_atom = NO_GAMEMODE_SKIN|NO_NAME_OVERRIDE
+	built_in_visors = list()
 
 //FIORINA / UA RIOT CONTROL HELMET//
 

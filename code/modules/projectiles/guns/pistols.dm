@@ -177,14 +177,30 @@
 /obj/item/weapon/gun/pistol/m1911/socom/equipped
 	starting_attachment_types = list(/obj/item/attachable/suppressor/sleek, /obj/item/attachable/lasersight, /obj/item/attachable/reflex)
 
+
+/obj/item/weapon/gun/pistol/m1911/socom/burst
+	name = "\improper M48A5 service pistol"
+	desc = "A timeless classic since the first World War, the M1911A1 has limited use with the USCM, and is often used as a sidearm by non-governmental bodies due to its reliability. This is an experimental version, equipped with burst-fire capability. Chambered in .45 ACP."
+	desc_lore = "The M48A5 is Armat's offering for the current '82 field trials, in competition with Weyland-Yutani's VP78 system. Whilst the M48A5 is favored by Recon and Raider units, the VP78 is expected to be chosen by procurement as the new sidearm of the USCMC over the M48."
+	starting_attachment_types = list(/obj/item/attachable/suppressor/sleek, /obj/item/attachable/reflex)
+	current_mag = /obj/item/ammo_magazine/pistol/m1911/extended
+
+/obj/item/weapon/gun/pistol/m1911/socom/burst/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/burstfire_assembly/BREACHER = new(src)
+	BREACHER.flags_attach_features &= ~ATTACH_REMOVABLE
+	BREACHER.hidden = FALSE
+	BREACHER.Attach(src)
+	update_attachable(BREACHER.slot)
+
 /obj/item/weapon/gun/pistol/m1911/fluff
 	name = "\improper M48A4 service pistol"
-	desc = "A timeless classic since the first World War, the M1911A1 has limited use with the USCM, and is also often privately bought and used as a sidearm if a standard pistol is not issued out. This is a modernized version with an ammo counter and a polymer grip, designated M48A4. Chambered in .45 ACP. This one looks a bit worn and old."
+	desc = "A timeless classic since the first World War, the M1911A1 has limited use with the USCM, and is also often privately bought and used as a sidearm if a standard pistol is not issued out. This is a modernized version with an ammo counter and a polymer grip, designated M48A4. Chambered in .45 ACP. This one looks a bit worn, you doubt it'll be as effective."
 	icon_state = "m4a345_s"
 	item_state = "m4a3"
 	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK|GUN_ONE_HAND_WIELDED|GUN_AMMO_COUNTER
 
-/obj/item/weapon/gun/pistol/m1911/fluff/set_gun_config_values() //does not have the damage boost that normal m1911 has
+/obj/item/weapon/gun/pistol/m1911/fluff/set_gun_config_values() //has less of a damage boost than the normal m1911
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_11)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
@@ -192,7 +208,7 @@
 	scatter = SCATTER_AMOUNT_TIER_8
 	burst_scatter_mult = SCATTER_AMOUNT_TIER_6
 	scatter_unwielded = SCATTER_AMOUNT_TIER_6
-	damage_mult = BASE_BULLET_DAMAGE_MULT
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
 
 /obj/item/weapon/gun/pistol/m1911/custom
 	name = "\improper M1911C service pistol"

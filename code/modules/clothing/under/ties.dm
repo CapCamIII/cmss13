@@ -768,6 +768,11 @@
 	desc = "A sleek corporate patch bearing the logo of the Hyperdyne Corporation—one of the most powerful conglomerates. Known for synthetic production, AI research, and deep-space logistics. Wearing this patch implies loyalty to profit over people."
 	icon_state = "hyperdynepatch"
 
+/obj/item/clothing/accessory/patch/contractor_patch
+	name = "Vanguard's Arrow International patch"
+	desc = "A triangular, fire-resistant patch with a gold border. The design features a shield with three arrows overlayed."
+	icon_state = "hyperdynepatch"//temp
+
 // Misc
 
 /obj/item/clothing/accessory/dogtags
@@ -1085,6 +1090,18 @@
 	new /obj/item/tool/weldingtool(src)
 	new /obj/item/tool/crowbar(src)
 	new /obj/item/tool/wirecutters(src)
+	new /obj/item/stack/cable_coil(src)
+	new /obj/item/device/multitool(src)
+
+/obj/item/clothing/accessory/storage/tool_webbing/advanced
+	hold = /obj/item/storage/internal/accessory/tool_webbing/advanced
+
+/obj/item/storage/internal/accessory/tool_webbing/advanced/fill_preset_inventory()
+	new /obj/item/tool/screwdriver/tactical(src)
+	new /obj/item/tool/wrench(src)
+	new /obj/item/tool/weldingtool/screen/hugetank(src)
+	new /obj/item/tool/crowbar/tactical(src)
+	new /obj/item/tool/wirecutters/tactical(src)
 	new /obj/item/stack/cable_coil(src)
 	new /obj/item/device/multitool(src)
 

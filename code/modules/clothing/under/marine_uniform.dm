@@ -1450,6 +1450,57 @@
 	icon_state = "mercenary_engineer_uniform"
 	worn_state = "mercenary_engineer_uniform"
 
+////// Contractors /////////
+
+/obj/item/clothing/under/marine/veteran/contractor
+	name = "\improper contractor fatigues"
+	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice green color."
+	icon_state = "upp_uniform"//temp
+	worn_state = "upp_uniform"
+	icon = 'icons/obj/items/clothing/uniforms/uniforms_by_faction/UPP.dmi'
+	item_icons = list(
+		WEAR_BODY = 'icons/mob/humans/onmob/clothing/uniforms/uniforms_by_faction/UPP.dmi',
+	)
+	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
+	has_sensor = UNIFORM_HAS_SENSORS
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
+	undershirt = TRUE
+
+/obj/item/clothing/under/marine/veteran/contractor/jeans
+	name = "\improper contractor fatigues"
+	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice green color, and have had the pants swapped out for some jeans."
+	icon_state = "upp_uniform"
+	worn_state = "upp_uniform"
+
+/obj/item/clothing/under/marine/veteran/contractor/pants
+	name = "\improper contractor fatigues"
+	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice green color, and have had the pants swapped out for some grey trousers."
+	icon_state = "upp_uniform"
+	worn_state = "upp_uniform"
+
+/obj/item/clothing/under/marine/veteran/contractor/tan
+	name = "\improper contractor fatigues"
+	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice tan color."
+	icon_state = "upp_uniform"
+	worn_state = "upp_uniform"
+
+/obj/item/clothing/under/marine/veteran/contractor/tan/pants
+	name = "\improper contractor fatigues"
+	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice tan color, and have had the pants swapped out for some grey trousers."
+	icon_state = "upp_uniform"
+	worn_state = "upp_uniform"
+
+/obj/item/clothing/under/marine/veteran/contractor/tan/jeans
+	name = "\improper contractor fatigues"
+	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice tan color, and have had the pants swapped out for some jeans."
+	icon_state = "upp_uniform"
+	worn_state = "upp_uniform"
+
+/obj/item/clothing/under/marine/veteran/contractor/flannel
+	name = "\improper flannel shirt"
+	desc = "A nice flannel shirt paired with some jeans, very snazzy."
+	icon_state = "upp_uniform"
+	worn_state = "upp_uniform"
 
 ////// Civilians /////////
 

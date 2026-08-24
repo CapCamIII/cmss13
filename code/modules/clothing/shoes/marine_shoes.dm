@@ -243,6 +243,19 @@
 /obj/item/clothing/shoes/marine/cmb/knife
 	spawn_item_type = /obj/item/attachable/bayonet
 
+/obj/item/clothing/shoes/marine/merc
+	name = "rugged boots"
+	desc = "Generic military inspired boots typically used by mercenary types. They'll serve their purpose."
+
+/obj/item/clothing/shoes/marine/merc/knife
+	spawn_item_type = /obj/item/attachable/bayonet
+
+/obj/item/clothing/shoes/marine/merc/knife/custom
+	spawn_item_type = /obj/item/attachable/bayonet/custom
+
+/obj/item/clothing/shoes/marine/merc/knife/upp
+	spawn_item_type = /obj/item/attachable/bayonet/upp
+
 /obj/item/clothing/shoes/marine/ress
 	name = "armored sandals"
 	icon_state = "sandals"

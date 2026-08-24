@@ -465,6 +465,16 @@
 	shape = NVG_SHAPE_COSMETIC
 	garbage = TRUE
 
+/obj/item/prop/helmetgarb/helmet_nvg/cosmetic/visor //for "custom loadout", purely cosmetic
+	name = "old M1 Multispectrum Visor"
+	desc = "A failed prototype for next generation HUD optics for the Colonial Marines that was surpased by the current issue integrated IR optic, this flip down visor offers a full visor suite with multi-spectrum capabilities. A really cool piece until you realize you are one headbang away from losing night capability, they're also too bulky to fit on anything but a standard M10 Helmet."
+	icon_state = "larpnvg"
+	shape = NVG_SHAPE_COSMETIC
+	garbage = TRUE
+	active_powered_icon_state = "larpnvg_down_powered"
+	active_icon_state = "larpnvg_down"
+	inactive_icon_state = "larpnvg"
+
 /obj/item/prop/helmetgarb/helmet_nvg/cosmetic/break_nvg(mob/living/carbon/human/user, list/slashdata, mob/living/carbon/xenomorph/Xeno)
 	return
 

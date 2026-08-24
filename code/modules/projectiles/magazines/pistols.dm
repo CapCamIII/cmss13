@@ -65,6 +65,17 @@
 	ammo_band_icon = "+m4a345_band"
 	ammo_band_icon_empty = "+m4a345_band_e"
 
+obj/item/ammo_magazine/pistol/m1911/extended
+	name = "\improper M1911 extended magazine (.45)"
+	desc = "An extended magazine for the legendary M1911 pistol. Holds fourteen standard rounds."
+	default_ammo = /datum/ammo/bullet/pistol/heavy
+	caliber = ".45"
+	icon_state = "m4a345_extended"//rename later
+	max_rounds = 14
+	gun_type = /obj/item/weapon/gun/pistol/m1911
+	ammo_band_icon = "+m4a345_band"
+	ammo_band_icon_empty = "+m4a345_band_e"
+
 /obj/item/ammo_magazine/pistol/m1911/highimpact
 	name = "\improper M1911 high-impact magazine (.45)"
 	desc = "A magazine for the legendary M1911 pistol. Holds eight concussive rounds that can briefly knock people down."

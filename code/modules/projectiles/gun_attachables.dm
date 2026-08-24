@@ -3284,6 +3284,13 @@ Defined in conflicts.dm of the #defines folder.
 	cocked = FALSE // we have fired so uncock the gun
 	loaded_grenades.Cut(1,2)
 
+/obj/item/attachable/attached_gun/grenade/preloaded
+
+/obj/item/attachable/attached_gun/grenade/preloaded/New()
+	. = ..()
+	current_rounds = 3
+	loaded_grenades = list(new/obj/item/explosive/grenade/high_explosive(src), new/obj/item/explosive/grenade/high_explosive(src), new/obj/item/explosive/grenade/high_explosive(src))
+
 //For the Mk1
 /obj/item/attachable/attached_gun/grenade/mk1
 	name = "\improper MK1 underslung grenade launcher"
@@ -3294,6 +3301,13 @@ Defined in conflicts.dm of the #defines folder.
 	max_rounds = 5
 	max_range = 10
 	attachment_firing_delay = 30
+
+/obj/item/attachable/attached_gun/grenade/mk1/preloaded
+
+/obj/item/attachable/attached_gun/grenade/mk1/preloaded/New()
+	. = ..()
+	current_rounds = 5
+	loaded_grenades = list(new/obj/item/explosive/grenade/high_explosive(src), new/obj/item/explosive/grenade/high_explosive(src), new/obj/item/explosive/grenade/high_explosive(src), new/obj/item/explosive/grenade/high_explosive(src), new/obj/item/explosive/grenade/high_explosive(src))
 
 /obj/item/attachable/attached_gun/grenade/m203 //M16 GL, only DD have it.
 	name = "\improper M203 Grenade Launcher"

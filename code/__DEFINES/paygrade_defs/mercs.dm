@@ -26,20 +26,14 @@
 #define PAY_SHORT_EFL_TL "EFL-TL"
 
 // VANGUARD'S ARROW INC
-/// VAI-S, Standard
-#define PAY_SHORT_VAI_S "VAI-S"
+/// VAI-TROOPER, base rank
+#define PAY_SHORT_VAI_TROOPER "Trooper"
 
-/// VAI-M, Medic
-#define PAY_SHORT_VAI_M "VAI-M"
-
-/// VAI-E, Engineer
-#define PAY_SHORT_VAI_E "VAI-E"
-
-/// VAI-G, Machinegunner
-#define PAY_SHORT_VAI_G "VAI-G"
+/// VAI-SND, 2iC
+#define PAY_SHORT_VAI_SND "Adjutant"
 
 /// VAI-SN, Synthetic
-#define PAY_SHORT_VAI_SN "VAI-SN"
+#define PAY_SHORT_VAI_SN "Synthetic"
 
 /// VAI-L, Team Leader
-#define PAY_SHORT_VAI_L "VAI-L"
+#define PAY_SHORT_VAI_L "Captain"
