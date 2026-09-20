@@ -1455,11 +1455,11 @@
 /obj/item/clothing/under/marine/veteran/contractor
 	name = "\improper contractor fatigues"
 	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice green color."
-	icon_state = "upp_uniform"//temp
-	worn_state = "upp_uniform"
-	icon = 'icons/obj/items/clothing/uniforms/uniforms_by_faction/UPP.dmi'
+	icon_state = "vaipo_uniform_od1"//temp
+	worn_state = "vaipo_uniform_od1"
+	icon = 'icons/obj/items/clothing/uniforms/misc_ert_colony.dmi'
 	item_icons = list(
-		WEAR_BODY = 'icons/mob/humans/onmob/clothing/uniforms/uniforms_by_faction/UPP.dmi',
+		WEAR_BODY = 'icons/mob/humans/onmob/clothing/uniforms/misc_ert_colony.dmi',
 	)
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
 	has_sensor = UNIFORM_HAS_SENSORS
@@ -1469,38 +1469,71 @@
 /obj/item/clothing/under/marine/veteran/contractor/jeans
 	name = "\improper contractor fatigues"
 	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice green color, and have had the pants swapped out for some jeans."
-	icon_state = "upp_uniform"
-	worn_state = "upp_uniform"
+	icon_state = "vaipo_uniform_od2"
+	worn_state = "vaipo_uniform_od2"
 
 /obj/item/clothing/under/marine/veteran/contractor/pants
 	name = "\improper contractor fatigues"
 	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice green color, and have had the pants swapped out for some grey trousers."
-	icon_state = "upp_uniform"
-	worn_state = "upp_uniform"
+	icon_state = "vaipo_uniform_od3"
+	worn_state = "vaipo_uniform_od3"
 
 /obj/item/clothing/under/marine/veteran/contractor/tan
 	name = "\improper contractor fatigues"
 	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice tan color."
-	icon_state = "upp_uniform"
-	worn_state = "upp_uniform"
+	icon_state = "vaipo_uniform_tan1"
+	worn_state = "vaipo_uniform_tan1"
 
 /obj/item/clothing/under/marine/veteran/contractor/tan/pants
 	name = "\improper contractor fatigues"
 	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice tan color, and have had the pants swapped out for some grey trousers."
-	icon_state = "upp_uniform"
-	worn_state = "upp_uniform"
+	icon_state = "vaipo_uniform_tan2"
+	worn_state = "vaipo_uniform_tan2"
 
 /obj/item/clothing/under/marine/veteran/contractor/tan/jeans
 	name = "\improper contractor fatigues"
 	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice tan color, and have had the pants swapped out for some jeans."
-	icon_state = "upp_uniform"
-	worn_state = "upp_uniform"
+	icon_state = "vaipo_uniform_tan3"
+	worn_state = "vaipo_uniform_tan4"
 
-/obj/item/clothing/under/marine/veteran/contractor/flannel
-	name = "\improper flannel shirt"
-	desc = "A nice flannel shirt paired with some jeans, very snazzy."
-	icon_state = "upp_uniform"
-	worn_state = "upp_uniform"
+/obj/item/clothing/under/marine/veteran/contractor/grey
+	name = "\improper contractor fatigues"
+	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice grey color."
+	icon_state = "vaipo_uniform_grey1"
+	worn_state = "vaipo_uniform_grey1"
+
+/obj/item/clothing/under/marine/veteran/contractor/grey/pants
+	name = "\improper contractor fatigues"
+	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice grey color, and have had the pants swapped out for some grey trousers."
+	icon_state = "vaipo_uniform_grey2"
+	worn_state = "vaipo_uniform_grey2"
+
+/obj/item/clothing/under/marine/veteran/contractor/grey/jeans
+	name = "\improper contractor fatigues"
+	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice grey color, and have had the pants swapped out for some jeans."
+	icon_state = "vaipo_uniform_grey3"
+	worn_state = "vaipo_uniform_grey3"
+
+
+/obj/item/clothing/under/marine/veteran/contractor/blue
+	name = "\improper contractor fatigues"
+	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice navy blue color."
+	icon_state = "vaipo_uniform_blue1"
+	worn_state = "vaipo_uniform_blue1"
+
+/obj/item/clothing/under/marine/veteran/contractor/blue/pants
+	name = "\improper contractor fatigues"
+	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice navy blue, and have had the pants swapped out for some grey trousers."
+	icon_state = "vaipo_uniform_blue2"
+	worn_state = "vaipo_uniform_blue2"
+
+/obj/item/clothing/under/marine/veteran/contractor/smock
+	name = "\improper chemical smock"
+	desc = "A set of some basic contractor fatigues with a nuclear-biological-chemical protective smock thrown over the top."
+	icon_state = "vairs_uniform"
+	worn_state = "vairs_uniform"
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
+	hood_state = /obj/item/clothing/head/vairs_hood
 
 ////// Civilians /////////
 

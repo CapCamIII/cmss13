@@ -1260,6 +1260,15 @@ GLOBAL_LIST_INIT(allowed_hat_items, list(
 	)
 	item_state = "owlf_hood"
 
+/obj/item/clothing/head/vairs_hood
+	name = "\improper chemical smock hood"
+	desc = "It's the hood of the attached chemical smock, it can be tied down to fit tightly around a gas-mask for a proper chemical seal."
+	icon = 'icons/obj/items/clothing/hats/misc_ert_colony.dmi'
+	icon_state = "vairs_hood"
+	item_icons = list(
+		WEAR_HEAD = 'icons/mob/humans/onmob/clothing/head/misc_ert_colony.dmi'
+	)
+	item_state = "vairs_hood"
 
 //=ROYAL MARINES=\\
 

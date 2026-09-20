@@ -1027,19 +1027,19 @@
 //===============================================================\\
 
 /obj/item/clothing/suit/storage/marine/veteran/contractor
-	name = "\improper CC-76 pattern armor"
-	desc = "A modern version of the classic Cuirasse de Combat of French origin, this one is a licensed copy produced by MAKENAMELATER, intended to be sold on the private market. This one is in a factory urban-grey. The M3 Pattern Armor used by the USCM is based off the earlier CC-68 series, though modern series remain visually similar."
-	icon_state = "ua_riot"//temp
-	icon = 'icons/obj/items/clothing/suits/suits_by_faction/UA.dmi'
+	name = "\improper M3 pattern contractor armor"
+	desc = "A set of well-worn M3 pattern armor, some spots have been uparmored, others stripped down, and there's a multitude of pouches strapped on. Some of the CBRN and acidic protection's been stripped off, but some extra armor panels make up for it in bullet and melee resistance."
+	icon_state = "vaipo_1"//temp
+	icon = 'icons/obj/items/clothing/suits/misc_ert.dmi'
 	item_icons = list(
-		WEAR_JACKET = 'icons/mob/humans/onmob/clothing/suits/suits_by_faction/UA.dmi'
+		WEAR_JACKET = 'icons/mob/humans/onmob/clothing/suits/misc_ert.dmi'
 	)
 	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS|BODY_FLAG_LEGS
 	flags_cold_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS|BODY_FLAG_LEGS
 	flags_heat_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS|BODY_FLAG_LEGS
 	storage_slots = 3
-	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
-	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_melee = CLOTHING_ARMOR_MEDIUM
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_laser = CLOTHING_ARMOR_LOW
 	armor_energy = CLOTHING_ARMOR_VERYLOW
 	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
@@ -1047,25 +1047,26 @@
 	armor_rad = CLOTHING_ARMOR_LOW
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
 	movement_compensation = SLOWDOWN_ARMOR_LIGHT
-	slowdown = SLOWDOWN_ARMOR_LIGHT
+	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	flags_atom = NO_NAME_OVERRIDE|NO_GAMEMODE_SKIN
 	uniform_restricted = null
 
 /obj/item/clothing/suit/storage/marine/veteran/contractor/variantone
-	icon_state = "ua_riot"
-	icon = 'icons/obj/items/clothing/suits/suits_by_faction/UA.dmi'
+	icon_state = "vaipo_2"//temp
+
 
 /obj/item/clothing/suit/storage/marine/veteran/contractor/varianttwo
-	icon_state = "ua_riot"
-	icon = 'icons/obj/items/clothing/suits/suits_by_faction/UA.dmi'
+	icon_state = "vaipo_2"//temp
+
 
 /obj/item/clothing/suit/storage/marine/veteran/contractor/leader
-	name = "\improper modified CC-76 pattern armor"
-	desc = "A modern version of the classic Cuirasse de Combat of French origin, this one is a licensed copy produced by MAKENAMELATER, intended to be sold on the private market. This one is in a factory urban-grey. The M3 Pattern Armor used by the USCM is based off the earlier CC-68 series, though modern series remain visually similar. This one has a higher powered light and some additional pouches strapped on."
+	name = "\improper modified M3 pattern contractor armor"
+	desc = "A set of well-worn M3 pattern armor, some spots have been uparmored, others stripped down, and there's a multitude of pouches strapped on. Some of the CBRN and acidic protection's been stripped off, but some extra armor panels make up for it in bullet and melee resistance. Someone's strapped on even more pouches and replaced the standard TNR shoulder lamp with something higher powered."
 	storage_slots = 4
 	light_range = 7
-	icon_state = "ua_riot"
-	icon = 'icons/obj/items/clothing/suits/suits_by_faction/UA.dmi'
+	icon_state = "vaipo_leader"
+	light_color = LIGHT_COLOR_XENON
+	lamp_light_color = LIGHT_COLOR_XENON
 
 /obj/item/clothing/suit/storage/marine/veteran/contractor/synth
 

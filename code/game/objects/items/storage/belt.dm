@@ -320,8 +320,7 @@
 	new /obj/item/storage/pill_bottle/peridaxon(src)
 	new /obj/item/stack/medical/splint/nano(src)
 	new /obj/item/device/healthanalyzer(src)
-	new /obj/item/storage/pill_bottle/imidazoline(src)
-	new /obj/item/storage/pill_bottle/alkysine(src)
+	new /obj/item/storage/pill_bottle/imialky(src)
 
 /obj/item/storage/belt/medical/lifesaver/full/dutch/black
 	icon = 'icons/obj/items/clothing/belts/belts_by_map/snow.dmi'

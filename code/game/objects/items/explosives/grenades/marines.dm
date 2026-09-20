@@ -701,6 +701,29 @@
 	name = "\improper CN20-X canister grenade"
 	nerve_gas_type = /datum/effect_system/smoke_spread/cn20/xeno
 
+/obj/item/explosive/grenade/nerve_gas/impact
+	name = "\improper CN20 impact grenade"
+	desc = "A 40 milimeter grenade full of deadly nerve gas. It's meant to be fired out of an underslung launcher, and detonates on impact. You think you should probably wear a gas mask.'"
+	icon_state = "grenade_40mm_he"//temp
+	item_state = "grenade_phos"
+	det_time = 0 // Unused, because we don't use prime.
+	hand_throwable = FALSE
+	underslug_launchable = TRUE
+	nerve_gas_radius = 1
+
+/obj/item/explosive/grenade/nerve_gas/impact/prime()
+// We don't prime, we use launch_impact.
+
+/obj/item/explosive/grenade/nerve_gas/impact/launch_impact(atom/hit_atom)
+	..()
+	var/detonate = TRUE
+	if(isobj(hit_atom) && !rebounding)
+		detonate = FALSE
+	if(isturf(hit_atom) && hit_atom.density && !rebounding)
+		detonate = FALSE
+	if(active && detonate) // Active, and we reached our destination.
+		qdel(src)
+
 /*
 //================================================
 			Airburst Smoke Grenades

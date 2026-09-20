@@ -33,7 +33,7 @@
 
 /datum/spaceport/vanguard
 	name = "Irkala Station"
-	docking_message = "Attention, USCM vessel. We are launching umbilical cords and deploying a squad to investigate the nature of your distress in accordance with the Military Aid Act of 2177."
+	docking_message = "Attention, USCM vessel. We are launching umbilical cords and deploying a squad to investigate the nature of your distress in accordance with the Military Aid Act of 2162."
 	allies = list(
 		/datum/emergency_call/contractors,
 		/datum/emergency_call/contractors/covert,
@@ -47,14 +47,14 @@
 
 /datum/spaceport/royal_commandos
 	name = "Port Yamanashi"
-	docking_message = "Attention, USCM vessel. Initiate docking procedures immediately, we are deploying a squad to investigate the nature of your distress in accordance with the Military Aid Act of 2177." //i liked the idea of the almayer docking itself to a port
+	docking_message = "Attention, USCM vessel. Initiate docking procedures immediately, we are deploying a squad to investigate the nature of your distress in accordance with the Military Aid Act of 2162." //i liked the idea of the almayer docking itself to a port
 	allies = list(
 		/datum/emergency_call/royal_marines,
 	)
 
 /datum/spaceport/pmc
 	name = "Tenshoku Station"
-	docking_message = "Attention, USCM vessel. Initiate docking procedures immediately, we are deploying a squad to investigate the nature of your distress in accordance with the Military Aid Act of 2177."
+	docking_message = "Attention, USCM vessel. Initiate docking procedures immediately, we are deploying a squad to investigate the nature of your distress in accordance with the Military Aid Act of 2162."
 	allies = list(
 		/datum/emergency_call/pmc,
 	)

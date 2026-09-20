@@ -1158,37 +1158,39 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 /datum/equipment_preset/proc/spawn_contractor_uniform(mob/living/carbon/human/new_human)
 	var/uniformpath = pick(
 		/obj/item/clothing/under/marine/veteran/contractor,
-		/obj/item/clothing/under/marine/veteran/contractor, //more set is slightly more common
+		/obj/item/clothing/under/marine/veteran/contractor,
+		/obj/item/clothing/under/marine/veteran/contractor, //standard version is slightly more common
 		/obj/item/clothing/under/marine/veteran/contractor/jeans,
 		/obj/item/clothing/under/marine/veteran/contractor/pants,
 		/obj/item/clothing/under/marine/veteran/contractor/tan,
 		/obj/item/clothing/under/marine/veteran/contractor/tan,
+		/obj/item/clothing/under/marine/veteran/contractor/tan,
 		/obj/item/clothing/under/marine/veteran/contractor/tan/pants,
 		/obj/item/clothing/under/marine/veteran/contractor/tan/jeans,
+		/obj/item/clothing/under/marine/veteran/contractor/grey,
+		/obj/item/clothing/under/marine/veteran/contractor/grey,
+		/obj/item/clothing/under/marine/veteran/contractor/grey,
+		/obj/item/clothing/under/marine/veteran/contractor/grey/pants,
+		/obj/item/clothing/under/marine/veteran/contractor/grey/jeans,
+		/obj/item/clothing/under/marine/veteran/contractor/blue,
+		/obj/item/clothing/under/marine/veteran/contractor/blue,
+		/obj/item/clothing/under/marine/veteran/contractor/blue,
+		/obj/item/clothing/under/marine/veteran/contractor/blue/pants,
 		)
 	new_human.equip_to_slot_or_del(new uniformpath, WEAR_BODY)
-
-/datum/equipment_preset/proc/spawn_contractor_covert_uniform(mob/living/carbon/human/new_human) //sorry you don't get to look cool
-	var/uniformpath = pick(
-		/obj/item/clothing/under/marine/veteran/contractor,
-		/obj/item/clothing/under/marine/veteran/contractor/tan,
-		)
-	new_human.equip_to_slot_or_del(new uniformpath, WEAR_BODY)
-
 
 /datum/equipment_preset/proc/spawn_contractor_lead_uniform(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
-	var/uniformpath = pick(
-		/obj/item/clothing/under/marine/veteran/contractor/jeans,
+	var/uniformpath = pick( //to stand out a bit more, they're guranteed to get an alt variant of the uniform(jeans or pants)
 		/obj/item/clothing/under/marine/veteran/contractor/jeans,
 		/obj/item/clothing/under/marine/veteran/contractor/pants,
-		/obj/item/clothing/under/marine/veteran/contractor/pants,
-		/obj/item/clothing/under/marine/veteran/contractor/tan/pants,
 		/obj/item/clothing/under/marine/veteran/contractor/tan/pants,
 		/obj/item/clothing/under/marine/veteran/contractor/tan/jeans,
-		/obj/item/clothing/under/marine/veteran/contractor/tan/jeans,
-		/obj/item/clothing/under/marine/veteran/contractor/flannel, //flannel is strictly for Lead/Adjutant, and is a rare sight for them too
+		/obj/item/clothing/under/marine/veteran/contractor/grey/pants,
+		/obj/item/clothing/under/marine/veteran/contractor/grey/jeans,
+		/obj/item/clothing/under/marine/veteran/contractor/blue/pants,
+		/obj/item/clothing/under/marine/veteran/contractor/smock, //lucky VAIPO leaders can get the VAIRS smock
 		)
 	new_human.equip_to_slot_or_del(new uniformpath, WEAR_BODY)
 
@@ -1204,11 +1206,20 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 /datum/equipment_preset/proc/spawn_bimex_glasses(mob/living/carbon/human/new_human)//VAIPO are bimex patriots
 	var/glassespath = pick(
 		/obj/item/clothing/glasses/sunglasses/big,
+		/obj/item/clothing/glasses/sunglasses/big,
 		/obj/item/clothing/glasses/sunglasses/big/new_bimex,
+		/obj/item/clothing/glasses/sunglasses/big/new_bimex/black,
 		/obj/item/clothing/glasses/sunglasses/big/new_bimex/black,
 		/obj/item/clothing/glasses/sunglasses/big/new_bimex/bronze,
 		)
 	new_human.equip_to_slot_or_del(new glassespath, WEAR_EYES)
+
+/datum/equipment_preset/proc/spawn_vairs_headwear(mob/living/carbon/human/new_human)
+	var/random_vairs_headwear = rand(1, 10)
+	switch(random_vairs_headwear)
+		if(1 to 5) // 50% normal helmet
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+		if(6 to 10) //wear your cool hood
 
 
 /datum/equipment_preset/proc/spawn_contractor_headwear(mob/living/carbon/human/new_human)
@@ -1232,12 +1243,15 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 		if(26 to 35) // 10% goggles
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/mgoggles(new_human), WEAR_IN_HELMET)
-		if(36 to 45) // 10% larp nvgs
+		if(36 to 40) // 5% larp nvgs
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/prop/helmetgarb/helmet_nvg/cosmetic/visor(new_human), WEAR_IN_HELMET)
-		if(46 to 50) // 5% headband in helmet
+		if(41 to 45) // 5% headband, red
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/headband/red/static(new_human), WEAR_IN_HELMET)
+		if(46 to 50) // 5% headband, black
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/headband/intel(new_human), WEAR_IN_HELMET)
 		if(51 to 55) // 5% red beret
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/cm/red(new_human), WEAR_HEAD)
 		if(56 to 60) // 5% black beret
@@ -1259,11 +1273,10 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 		if(96 to 99) // 4% pilot helmet
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/pilot(new_human), WEAR_HEAD)
 		if(100) // 1%
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cowboy(new_human), WEAR_HEAD)
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/cigarette/cigar/classic(new_human), WEAR_FACE)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/headband/rambo(new_human), WEAR_HEAD)
 			new_human.set_species("Human Hero")
 
-/datum/equipment_preset/proc/spawn_contractor_synth_headwear(mob/living/carbon/human/new_human) //it would be pretty funny if a synth rolled being transformed into a hero, but alas
+/datum/equipment_preset/proc/spawn_contractor_synth_headwear(mob/living/carbon/human/new_human) //synths probably shouldn't be turned into humans
 	var/random_contractor_synth_headwear = rand(1,100)
 	switch(random_contractor_synth_headwear)
 		if(1 to 10) // 10% naked helmet
@@ -1276,7 +1289,7 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/spirit(new_human), WEAR_IN_HELMET)
 			new_human.equip_to_slot_or_del(new /obj/item/tool/lighter/zippo(new_human), WEAR_IN_HELMET)
-		if(21 to 25) // 5%
+		if(21 to 25) // 5% smoker of cigars
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/cigarette/cigar/havana(new_human), WEAR_IN_HELMET)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/cigarette/cigar/havana(new_human), WEAR_FACE)
@@ -1284,12 +1297,15 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 		if(26 to 35) // 10% goggles
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/mgoggles(new_human), WEAR_IN_HELMET)
-		if(36 to 45) // 10% larp nvgs
+		if(36 to 40) // 5% larp nvgs
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/prop/helmetgarb/helmet_nvg/cosmetic/visor(new_human), WEAR_IN_HELMET)
-		if(46 to 50) // 5% face-shield
+		if(41 to 45) // 5% headband, red
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/headband/red/static(new_human), WEAR_IN_HELMET)
+		if(46 to 50) // 5% headband, black
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/headband/intel(new_human), WEAR_IN_HELMET)
 		if(51 to 55) // 5% red beret
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/cm/red(new_human), WEAR_HEAD)
 		if(56 to 60) // 5% black beret
@@ -1308,11 +1324,8 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/boonie(new_human), WEAR_HEAD)
 		if(91 to 95) // 5% boonie but tan
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/boonie/tan(new_human), WEAR_HEAD)
-		if(96 to 99) // 4% pilot helmet
+		if(96 to 100) // 5% pilot helmet
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/pilot(new_human), WEAR_HEAD)
-		if(100) // 1%
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cowboy(new_human), WEAR_HEAD)
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/cigarette/cigar/classic(new_human), WEAR_FACE)
 
 /datum/equipment_preset/proc/spawn_contractor_guard_uniform(mob/living/carbon/human/new_human)
 	var/formalpath = pick(

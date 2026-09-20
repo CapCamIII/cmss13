@@ -14,7 +14,7 @@
 
 /datum/emergency_call/contractors/New()
 	..()
-	arrival_message = "[MAIN_SHIP_NAME], this is USCSS Inheritor with Vanguard's Arrow International, Primary Operations; we are responding to your distress call and boarding in accordance with the Military Aid Act of 2177, authentication code Lima-18153."
+	arrival_message = "[MAIN_SHIP_NAME], this is USCSS Inheritor with Vanguard's Arrow International, Primary Operations; we are responding to your distress call and boarding in accordance with the Military Aid Act of 2162, authentication code Lima-18153."
 	objectives = "Ensure the survival of the [MAIN_SHIP_NAME], eliminate any hostiles, and assist the crew in any way possible."
 
 
@@ -62,22 +62,26 @@
 
 /datum/emergency_call/contractors/print_backstory(mob/living/carbon/human/M)
 	if(ishuman_strict(M))
-		to_chat(M, SPAN_BOLD("You were born [pick(60;"in the United States", 20;"on Earth", 20;"on a colony")] to a [pick(75;"average", 15;"poor", 10;"well-established")] family."))
+		to_chat(M, SPAN_BOLD("You were born [pick(50;"in the United Americas", 25;"on Earth", 25;"on a colony")] to a [pick(35;"average", 60;"poor", 5;"well-established")] family."))
+		to_chat(M, SPAN_BOLD("Once you reached adulthood, you decided to join the United States Colonial Marine Corps serving in the [pick(80;"infantry", 20;"force recon")]."))
 		to_chat(M, SPAN_BOLD("Joining the USCM gave you a lot of combat experience and useful skills but changed you."))
-		to_chat(M, SPAN_BOLD("After getting out, you couldn't hold a job with the things you saw and did, deciding to put your skills to use you joined a Military Contractor firm."))
-		to_chat(M, SPAN_BOLD("You are a skilled mercenary, making better pay than in the Corps."))
+		to_chat(M, SPAN_BOLD("After getting out, you couldn't hold a job with the things you saw and did, and deciding to put your skills to use you joined a Military Contractor firm."))
+		to_chat(M, SPAN_BOLD("You are a skilled mercenary, though you prefer the term contractor, making better pay than you ever did in the Corps."))
 	else
 		to_chat(M, SPAN_BOLD("You were brought online in a civilian factory."))
 		to_chat(M, SPAN_BOLD("You were programmed with all of the medical and engineering knowledge a military fighting force support asset required."))
 		to_chat(M, SPAN_BOLD("You were soon after bought by Vanguard's Arrow International(VAI) to act as support personnel."))
 		to_chat(M, SPAN_BOLD("Some months after your purchase, you were assigned to the USCSS Inheritor, a VAI transport vessel."))
-	to_chat(M, SPAN_BOLD("You are [pick(80;"unaware", 15;"faintly aware", 5;"knowledgeable")] of the xenomorph threat."))
+	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("You are [pick(90;"unaware", 10;"faintly aware")] of the existance of xenomorphs.")))
 	to_chat(M, SPAN_BOLD("You are employed by Vanguard's Arrow International(VAI), as a member of VAI Primary Operations(VAIPO)"))
-	to_chat(M, SPAN_BOLD("You are stationed on-board the USCSS Inheritor, a part of VAIPO Task-Force Charlie."))
-	to_chat(M, SPAN_BOLD("Under the directive of the VAI executive board, you have been assist in riot control, military aid, and to assist USCMC forces wherever possible."))
+	to_chat(M, SPAN_BOLD("You are stationed on-board the USCSS Inheritor, a de-milled Conestoga class purchased second-hand off the Colonial Marshals."))
+	to_chat(M, SPAN_BOLD("Under the directive of the VAI executive board, you have been assist in riot control, corporate security for contracted companies, "))
 	to_chat(M, SPAN_BOLD("The USCSS Inheritor is staffed with crew of roughly sixty military contractors, and ten support personnel."))
-	to_chat(M, SPAN_BOLD("Assist the USCMC Force of the [MAIN_SHIP_NAME] however you can."))
 	to_chat(M, SPAN_BOLD("As a side-objective, VAI has been hired by an unknown benefactor to engage in corporate espionage and sabotage against Weyland-Yutani, do not get into a fight, but attempt to recover Wey-Yu secrets and plans if possible."))
+	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Your primary objective is to assist the USCMC Force of the [MAIN_SHIP_NAME] however you can.")))
+	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Your secondary objective is to retrieve any research samples you find.")))
+	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Do not start a firefight with W-Y forces on-board a USCM vessel.")))
+
 
 
 /datum/emergency_call/contractors/platoon
@@ -102,14 +106,34 @@
 
 /datum/emergency_call/contractors/covert/New()
 	..()
-	arrival_message = "[MAIN_SHIP_NAME], this is USCSS Samburan, with Vanguard's Arrow International, Research and Studies; we are boarding in accordance with the 2177 Military Aid Act; authorisation code X-Ray 19601."
+	arrival_message = "[MAIN_SHIP_NAME], this is USCSS Samburan, with Vanguard's Arrow International, Research and Studies Group; we are boarding in accordance with the 2162 Military Aid Act; authorisation code X-Ray 19601."
 	objectives = "Assist USCMC forces in whatever way is possible, sabotage Weyland-Yutani efforts."
 
 /datum/emergency_call/contractors/covert/proc/check_objective_info()
 	if(objective_info)
-		objectives = "Assist USCMC forces in whatever way is possible."
-	objectives += "Sabotage Weyland-Yutani efforts."
+		objectives = "Sabotage Weyland-Yutani efforts."
+	objectives += "Assist USCMC forces in whatever way is possible."
 	checked_objective = TRUE
+
+/datum/emergency_call/contractors/covert/print_backstory(mob/living/carbon/human/M)
+	if(ishuman_strict(M))
+		to_chat(M, SPAN_BOLD("You were born [pick(50;"in the United Americas", 25;"on Earth", 25;"on a colony")] to a [pick(50;"average", 45;"poor", 5;"well-established")] family."))
+		to_chat(M, SPAN_BOLD("Once you reached adulthood, you decided to join the United States Colonial Marine Corps serving in the [pick(50;"infantry", 45;"force recon", 5;"raiders")]."))
+		to_chat(M, SPAN_BOLD("Joining the USCM gave you a lot of combat experience and useful skills but changed you."))
+		to_chat(M, SPAN_BOLD("After getting out, you couldn't hold a job with the things you saw and did, and deciding to put your skills to use you joined a Military Contractor firm."))
+		to_chat(M, SPAN_BOLD("You are a skilled mercenary, making better pay than you ever did in the Corps."))
+	else
+		to_chat(M, SPAN_BOLD("You were brought online in a civilian factory."))
+		to_chat(M, SPAN_BOLD("You were programmed with all of the medical and engineering knowledge a military fighting force support asset required."))
+		to_chat(M, SPAN_BOLD("You were soon after bought by Vanguard's Arrow International(VAI) to act as support personnel."))
+		to_chat(M, SPAN_BOLD("Some months after your purchase, you were assigned to the USCSS Samburan, a refitted cargo-hauler serving as an infiltration ship."))
+	to_chat(M, SPAN_WARNING("You are aware of the existance of xenomorphs, and the threat they pose."))
+	to_chat(M, SPAN_BOLD("You are employed by Vanguard's Arrow International(VAI), as a member of the VAI Research and Studies group(VAIRS)"))
+	to_chat(M, SPAN_BOLD("You are stationed on-board the USCSS Samburan, a part of VAIRS' ongoing campaign of sabotage and espionage against Weyland-Yutani, on behalf of the Grant Corporation and other smaller companies."))
+	to_chat(M, SPAN_BOLD("The USCSS Samburan is staffed with crew of roughly thirty other contractors, and a support team of four."))
+	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Your primary objective is to secure any Weyland-Yutani secrets, research, or intelligence, as well as rescue any research personnel recovered from the surface of the planet below.")))
+	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Your secondary objective is to assist the USCMC Force of the [MAIN_SHIP_NAME] however you can.")))
+	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Do not start a firefight with W-Y forces on-board a USCM vessel.")))
 
 /datum/emergency_call/contractors/covert/create_member(datum/mind/M, turf/override_spawn_loc)
 	var/turf/spawn_loc = override_spawn_loc ? override_spawn_loc : get_spawn_point()
