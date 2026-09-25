@@ -1068,23 +1068,19 @@
 	light_color = LIGHT_COLOR_XENON
 	lamp_light_color = LIGHT_COLOR_XENON
 
-/obj/item/clothing/suit/storage/marine/veteran/contractor/synth
+/obj/item/clothing/suit/storage/marine/veteran/contractor/light
+	name = "\improper modified M3 pattern contractor armor"
+	desc = "A set of well-worn M3 pattern armor, much of the armor besides the main cuirass has been stripped off, it's more nimble and easier to move around in at the cost of protectiveness. There's a multitude of pouches strapped on."
+	icon_state = "vaipo_3"
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bullet = CLOTHING_ARMOR_MEDIUM
 
-	name = "stripped CC-76 pattern armor"
-	desc = "A modern version of the classic Cuirasse de Combat of French origin, this one is a licensed copy produced by MAKENAMELATER, intended to be sold on the private market. This one is in a factory urban-grey. The M3 Pattern Armor used by the USCM is based off the earlier CC-68 series, though modern series remain visually similar. This one has had the armor panels stripped out and a higher powered light attached, probably for a synthetic."
-	icon_state = "ua_riot"
-	icon = 'icons/obj/items/clothing/suits/suits_by_faction/UA.dmi'
-	time_to_unequip = 0.5 SECONDS
-	time_to_equip = 1 SECONDS
-	armor_melee = CLOTHING_ARMOR_NONE
-	armor_bullet = CLOTHING_ARMOR_NONE
-	armor_laser = CLOTHING_ARMOR_NONE
-	armor_energy = CLOTHING_ARMOR_NONE
-	armor_bomb = CLOTHING_ARMOR_NONE
-	armor_bio = CLOTHING_ARMOR_NONE
-	armor_rad = CLOTHING_ARMOR_NONE
-	armor_internaldamage = CLOTHING_ARMOR_NONE
-	storage_slots = 4
-	light_range = 7
-	slowdown = SLOWDOWN_ARMOR_SUPER_LIGHT
-	flags_marine_armor = parent_type::flags_marine_armor|SYNTH_ALLOWED
+/obj/item/clothing/suit/storage/marine/veteran/contractor/light/commander
+	name = "\improper modified M3 pattern contractor armor"
+	desc = "A set of well-worn M3 pattern armor, much of the armor besides the main cuirass has been stripped off, it's more nimble and easier to move around in at the cost of protectiveness. Someone's replaced the standard TNR shoulder lamp with something higher powered."
+	icon_state = "vaipo_commander"
+	storage_slots = 2
+	light_range = 8
+	light_color = LIGHT_COLOR_XENON
+	lamp_light_color = LIGHT_COLOR_XENON

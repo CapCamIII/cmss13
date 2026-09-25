@@ -1,7 +1,7 @@
 /datum/emergency_call/contractors
 	name = "Military Contractors (Squad) (Friendly)"
 	mob_max = 8
-	probability = 16
+	probability = 12
 
 	max_engineers =  1
 	max_medics = 1
@@ -81,6 +81,7 @@
 	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Your primary objective is to assist the USCMC Force of the [MAIN_SHIP_NAME] however you can.")))
 	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Your secondary objective is to retrieve any research samples you find.")))
 	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Do not start a firefight with W-Y forces on-board a USCM vessel.")))
+	to_chat(M, SPAN_WARNING("The team leader is in charge of the team, and the adjutant is the second in command."))
 
 
 
@@ -94,28 +95,47 @@
 	max_engineers = 2
 	max_synths = 2
 
-/datum/emergency_call/contractors/covert
-	name = "Military Contractors (Covert) (Friendly)"
-	mob_max = 7
-	probability = 4
+
+
+/datum/emergency_call/contractors_covert
+
+
+
+	name = "VAIRS Contractors (Random Alignment)"
+	mob_max = 8
+
+
+	var/max_synths = 1
+	var/synths = 0
+	var/max_seconds = 1
+	var/seconds = 0
+
+	probability = 8
 	max_medics = 1
 	max_engineers = 1
 	max_heavies = 1
 	max_synths = 1
 	var/checked_objective = FALSE
+	hostility = null // Random in New if null
 
-/datum/emergency_call/contractors/covert/New()
+
+/datum/emergency_call/contractors_covert/New()
 	..()
-	arrival_message = "[MAIN_SHIP_NAME], this is USCSS Samburan, with Vanguard's Arrow International, Research and Studies Group; we are boarding in accordance with the 2162 Military Aid Act; authorisation code X-Ray 19601."
-	objectives = "Assist USCMC forces in whatever way is possible, sabotage Weyland-Yutani efforts."
+	if(isnull(hostility))
+		hostility = pick(50;FALSE,50;TRUE)
+	arrival_message = "STr*&e teaM t*is i* th^ S*%b^r*n`, #*u are cLe*% for a*pr*%^h. Pr*mE a*l wE*p^ns and pR*epr# t% b%@rd."
+	if(hostility)
+		objectives = "Listen to your superior officers and take over the [MAIN_SHIP_NAME]. Secure xenobiological samples and capture any research personnel you can alive. Leave no witnesses."
+	else
+		objectives = "Sabotage Weyland-Yutani efforts, assist USCMC forces in whatever way possible."
 
-/datum/emergency_call/contractors/covert/proc/check_objective_info()
+/datum/emergency_call/contractors_covert/proc/check_objective_info()
 	if(objective_info)
 		objectives = "Sabotage Weyland-Yutani efforts."
 	objectives += "Assist USCMC forces in whatever way is possible."
 	checked_objective = TRUE
 
-/datum/emergency_call/contractors/covert/print_backstory(mob/living/carbon/human/M)
+/datum/emergency_call/contractors_covert/print_backstory(mob/living/carbon/human/M)
 	if(ishuman_strict(M))
 		to_chat(M, SPAN_BOLD("You were born [pick(50;"in the United Americas", 25;"on Earth", 25;"on a colony")] to a [pick(50;"average", 45;"poor", 5;"well-established")] family."))
 		to_chat(M, SPAN_BOLD("Once you reached adulthood, you decided to join the United States Colonial Marine Corps serving in the [pick(50;"infantry", 45;"force recon", 5;"raiders")]."))
@@ -131,11 +151,15 @@
 	to_chat(M, SPAN_BOLD("You are employed by Vanguard's Arrow International(VAI), as a member of the VAI Research and Studies group(VAIRS)"))
 	to_chat(M, SPAN_BOLD("You are stationed on-board the USCSS Samburan, a part of VAIRS' ongoing campaign of sabotage and espionage against Weyland-Yutani, on behalf of the Grant Corporation and other smaller companies."))
 	to_chat(M, SPAN_BOLD("The USCSS Samburan is staffed with crew of roughly thirty other contractors, and a support team of four."))
-	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Your primary objective is to secure any Weyland-Yutani secrets, research, or intelligence, as well as rescue any research personnel recovered from the surface of the planet below.")))
-	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Your secondary objective is to assist the USCMC Force of the [MAIN_SHIP_NAME] however you can.")))
-	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Do not start a firefight with W-Y forces on-board a USCM vessel.")))
+	if(hostility)
+		to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("The research personnel and samples onboard the [MAIN_SHIP_NAME] have long been a sought-after prize, with the vessel's stricken state providing an opportunity to risk direct action against the USCM, you have been sent in to secure the vessel, capture research personnel and samples, and afterwards destroy the vessel. Avoid identification at all costs, leave no witnesses.")))
+	else
+		to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Your primary objective is to secure any Weyland-Yutani secrets, research, or intelligence, as well as rescue any research personnel recovered from the surface of the planet below.")))
+		to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Your secondary objective is to assist the USCMC Force of the [MAIN_SHIP_NAME] however you can.")))
+	to_chat(M, SPAN_WARNING("The team leader is in charge of the team, and the adjutant is the second in command."))
+	to_chat(M, SPAN_WARNING(FONT_SIZE_HUGE("YOU ARE [hostility? "HOSTILE":"FRIENDLY"] to the USCM.")))
 
-/datum/emergency_call/contractors/covert/create_member(datum/mind/M, turf/override_spawn_loc)
+/datum/emergency_call/contractors_covert/create_member(datum/mind/M, turf/override_spawn_loc)
 	var/turf/spawn_loc = override_spawn_loc ? override_spawn_loc : get_spawn_point()
 
 	if(!istype(spawn_loc))
@@ -153,8 +177,12 @@
 		arm_equipment(H, /datum/equipment_preset/contractor/covert/leader, TRUE, TRUE)
 	else if(synths < max_synths && HAS_FLAG(H.client.prefs.toggles_ert, PLAY_SYNTH) && H.client.check_whitelist_status(WHITELIST_SYNTHETIC))
 		synths++
-		to_chat(H, SPAN_ROLE_HEADER("You are a Contractor Support Synthetic of Vanguard's Arrow International!"))
+		to_chat(H, SPAN_ROLE_HEADER("You are a Covert Contractor Support Synthetic of Vanguard's Arrow International!"))
 		arm_equipment(H, /datum/equipment_preset/synth/contractor/covert, TRUE, TRUE)
+	else if(seconds < max_seconds && HAS_FLAG(H.client.prefs.toggles_ert, PLAY_LEADER) && check_timelock(H.client, JOB_SQUAD_TEAM_LEADER, time_required_for_job))
+		seconds++
+		to_chat(H, SPAN_ROLE_HEADER("You are a Covert Contractor Adjutant of Vanguard's Arrow International!"))
+		arm_equipment(H, /datum/equipment_preset/contractor/duty/adjutant, TRUE, TRUE)
 	else if(medics < max_medics && HAS_FLAG(H.client.prefs.toggles_ert, PLAY_MEDIC) && check_timelock(H.client, JOB_SQUAD_MEDIC, time_required_for_job))
 		medics++
 		to_chat(H, SPAN_ROLE_HEADER("You are a Covert Contractor Medical Specialist of Vanguard's Arrow International!"))
@@ -175,3 +203,22 @@
 
 	addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(to_chat), H, SPAN_BOLD("Objectives:</b> [objectives]")), 1 SECONDS)
 
+/datum/emergency_call/contractors_covert/friendly //if admins want to specifically call in friendly ones
+	name = "VAIRS Contractors (Friendly)"
+	hostility = FALSE
+	probability = 0
+
+/datum/emergency_call/contractors_covert/friendly/New()
+	..()
+	arrival_message = "STr*&e teaM t*is i* th^ S*%b^r*n`, #*u are cLe*% for a*pr*%^h. Pr*mE a*l wE*p^ns and pR*epr# t% b%@rd."
+	objectives = "Sabotage Weyland-Yutani efforts, assist USCMC forces in whatever way possible."
+
+/datum/emergency_call/contractors_covert/hostile
+	name = "VAIRS Contractors (Hostile)"
+	hostility = TRUE
+	probability = 0
+
+/datum/emergency_call/contractors_covert/hostile/New()
+	..()
+	arrival_message = "STr*&e teaM t*is i* th^ S*%b^r*n`, #*u are cLe*% for a*pr*%^h. Pr*mE a*l wE*p^ns and pR*epr# t% b%@rd."
+	objectives = "Listen to your superior officers and take over the [MAIN_SHIP_NAME]. Secure xenobiological samples and capture any research personnel you can alive. Leave no witnesses."

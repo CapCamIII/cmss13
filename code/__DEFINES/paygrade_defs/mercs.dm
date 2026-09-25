@@ -37,3 +37,7 @@
 
 /// VAI-L, Team Leader
 #define PAY_SHORT_VAI_L "Captain"
+
+/// VAI-CMD, Admin-spawn leader
+#define PAY_SHORT_VAI_CMD "Commander"
+

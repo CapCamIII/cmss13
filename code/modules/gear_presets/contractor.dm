@@ -1,5 +1,5 @@
 /datum/equipment_preset/contractor
-	name = "Military Contractor"
+	name = "VAI Contractor"
 	faction = FACTION_CONTRACTOR
 	job_title = JOB_CONTRACTOR
 	idtype = /obj/item/card/id/data
@@ -55,7 +55,7 @@
 //=================//
 
 /datum/equipment_preset/contractor/duty/standard
-	name = "Military Contractor (Standard)"
+	name = "VAIPO Contractor (Standard)"
 	paygrades = list(PAY_SHORT_VAI_TROOPER = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Trop"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -167,7 +167,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/contractor/duty/heavy
-	name = "Military Contractor (Machinegunner)"
+	name = "VAIPO Contractor (Machinegunner)"
 	paygrades = list(PAY_SHORT_VAI_TROOPER = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "MG"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -217,7 +217,7 @@
 
 //*****************************************************************************************************/
 /datum/equipment_preset/contractor/duty/engi
-	name = "Military Contractor (Engineer)"
+	name = "VAIPO Contractor (Engineer)"
 	paygrades = list(PAY_SHORT_VAI_TROOPER = JOB_PLAYTIME_TIER_0)
 
 	role_comm_title = "Eng"
@@ -246,13 +246,7 @@
 	//storage items
 	new_human.equip_to_slot_or_del(new /obj/item/device/motiondetector/hacked/contractor, WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/ert, WEAR_L_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/explosive, WEAR_R_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/explosive/plastic/breaching_charge, WEAR_IN_R_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/explosive/plastic/breaching_charge, WEAR_IN_R_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/explosive/plastic/breaching_charge, WEAR_IN_R_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/explosive/plastic/breaching_charge, WEAR_IN_R_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/explosive/plastic/breaching_charge, WEAR_IN_R_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/explosive/plastic/breaching_charge, WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/explosive/breaching, WEAR_R_STORE)
 	//backpack and stuff in it
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/engineerpack/ert, WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range/designator, WEAR_IN_BACK)
@@ -265,7 +259,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/contractor/duty/medic
-	name = "Military Contractor (Medic)"
+	name = "VAIPO Contractor (Medic)"
 	paygrades = list(PAY_SHORT_VAI_TROOPER = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Med"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -306,8 +300,8 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/contractor/duty/leader
-	name = "Military Contractor (Leader)"
-	paygrades = list(PAY_SHORT_VAI_TROOPER = JOB_PLAYTIME_TIER_0)
+	name = "VAIPO Contractor (Leader)"
+	paygrades = list(PAY_SHORT_VAI_L = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "TL"
 	flags = EQUIPMENT_PRESET_EXTRA
 
@@ -329,7 +323,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/patch/contractor_patch, WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/veteran/contractor/leader, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/m41aMK1/contractor, WEAR_J_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/m1911/socom, WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/m1911/socom_burst, WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/merc/knife/custom, WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/sensor, WEAR_EYES)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/big, WEAR_FACE)
@@ -353,7 +347,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre/fsr, WEAR_IN_BACK)
 
 /datum/equipment_preset/contractor/duty/adjutant //basically a 2iC of the team, they've got no special gear but they're there for larp purposes
-	name = "Military Contractor (Adjutant)"
+	name = "VAIPO Contractor (Adjutant)"
 	paygrades = list(PAY_SHORT_VAI_SND = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Adj"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -368,6 +362,7 @@
 	spawn_contractor_gloves(new_human)
 	spawn_bimex_glasses(new_human)
 	spawn_contractor_headwear(new_human)
+	spawn_contractor_armor(new_human)
 	//clothes
 	new_human.equip_to_slot_or_del(new headset_type, WEAR_L_EAR)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/droppouch/black, WEAR_ACCESSORY)
@@ -375,16 +370,17 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/packet/high_explosive, WEAR_IN_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range/designator, WEAR_IN_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/patch/contractor_patch, WEAR_ACCESSORY)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/veteran/contractor/leader, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/m41aMK1/contractor, WEAR_J_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/m1911/socom, WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/merc/knife/custom, WEAR_FEET)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/autoinjector/full, WEAR_L_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/explosive/full, WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/ert, WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/magazine, WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1/ap, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1/ap, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1/ap, WEAR_IN_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1/ap, WEAR_IN_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1, WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1, WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1, WEAR_IN_R_STORE)
 	//backpack and stuff in it
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/lightpack, WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/explosive/plastic/breaching_charge, WEAR_IN_BACK)
@@ -400,7 +396,7 @@
 
 //*****************************************************************************************************/
 /datum/equipment_preset/synth/contractor/duty
-	name = "Military Contractor (Synthetic)"
+	name = "VAIPO Contractor (Synthetic)"
 	paygrades = list(PAY_SHORT_VAI_SN = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Syn"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -470,7 +466,7 @@
 	//body
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/surg_vest/equipped, WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/patch/contractor_patch, WEAR_ACCESSORY)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/veteran/contractor/synth, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/light/synvest/grey, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range/designator, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/telebaton, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/surgery/synthgraft, WEAR_IN_JACKET)
@@ -499,7 +495,7 @@
 //=================//
 
 /datum/equipment_preset/contractor/covert/standard
-	name = "Military Contractor (Covert Standard)"
+	name = "VAIRS Contractor (Standard)"
 	paygrades = list(PAY_SHORT_VAI_TROOPER = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Merc"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -520,7 +516,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/m1911/socom, WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/merc/knife/custom, WEAR_FEET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night, WEAR_EYES)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night/ghillie_goggles, WEAR_EYES)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/vairs, WEAR_FACE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/ert, WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/lightpack, WEAR_BACK)
@@ -582,7 +578,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/contractor/covert/heavy
-	name = "Military Contractor (Covert Machinegunner)"
+	name = "VAIRS Contractor (Machinegunner)"
 	paygrades = list(PAY_SHORT_VAI_TROOPER = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "MG"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -606,7 +602,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/lmg/tactical/suppressed, WEAR_J_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/m1911/socom, WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/vairs, WEAR_FACE)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night, WEAR_EYES)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night/ghillie_goggles, WEAR_EYES)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/merc/knife/custom, WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/ert, WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/explosive/breaching, WEAR_R_STORE)
@@ -624,7 +620,7 @@
 
 //*****************************************************************************************************/
 /datum/equipment_preset/contractor/covert/engi
-	name = "Military Contractor (Covert Engineer)"
+	name = "VAIRS Contractor (Engineer)"
 	paygrades = list(PAY_SHORT_VAI_TROOPER = JOB_PLAYTIME_TIER_0)
 
 	role_comm_title = "Eng"
@@ -646,7 +642,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/veteran, WEAR_HANDS)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/vairs, WEAR_FACE)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/merc/knife/custom, WEAR_FEET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night, WEAR_EYES)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night/ghillie_goggles, WEAR_EYES)
 	//storage items
 	new_human.equip_to_slot_or_del(new /obj/item/device/motiondetector/hacked/contractor, WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/ert, WEAR_L_STORE)
@@ -670,7 +666,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/contractor/covert/medic
-	name = "Military Contractor (Covert Medic)"
+	name = "VAIRS Contractor (Medic)"
 	paygrades = list(PAY_SHORT_VAI_TROOPER = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Med"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -692,7 +688,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/vairs, WEAR_FACE)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian, WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/merc/knife/custom, WEAR_FEET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night/medhud, WEAR_EYES)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night/ghillie_goggles/medhud, WEAR_EYES)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/mar40/carbine/tactical, WEAR_J_STORE)
 	//storage items
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/magazine/large, WEAR_L_STORE)
@@ -716,8 +712,8 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/contractor/covert/leader
-	name = "Military Contractor (Covert Leader)"
-	paygrades = list(PAY_SHORT_VAI_TROOPER = JOB_PLAYTIME_TIER_0)
+	name = "VAIRS Contractor (Leader)"
+	paygrades = list(PAY_SHORT_VAI_L = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "TL"
 	flags = EQUIPMENT_PRESET_EXTRA
 
@@ -731,21 +727,18 @@
 	new_human.equip_to_slot_or_del(new headset_type, WEAR_L_EAR)
 	spawn_contractor_gloves(new_human)
 	spawn_vairs_headwear(new_human)
-	spawn_contractor_armor(new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/veteran/contractor/smock, WEAR_BODY)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/black_vest, WEAR_ACCESSORY)
-	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive, WEAR_IN_ACCESSORY)
-	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive, WEAR_IN_ACCESSORY)
-	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive, WEAR_IN_ACCESSORY)
-	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive, WEAR_IN_ACCESSORY)
-	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive, WEAR_IN_ACCESSORY)
-	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range/designator, WEAR_IN_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/veteran/contractor/leader, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/droppouch/black, WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/packet/high_explosive, WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/packet/high_explosive, WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range/designator, WEAR_IN_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/m41aMK1/tactical, WEAR_J_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/m1911/socom_burst, WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/vairs, WEAR_FACE)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian, WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/merc/knife/custom, WEAR_FEET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night/medhud, WEAR_EYES)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night/ghillie_goggles/medhud, WEAR_EYES)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/autoinjector/full, WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/magazine/large, WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1/ap, WEAR_IN_R_STORE)
@@ -765,8 +758,58 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/attachments, WEAR_IN_BACK)
 
 //*****************************************************************************************************/
+
+/datum/equipment_preset/contractor/covert/adjutant //basically a 2iC of the team, they've got no special gear but they're there for larp purposes
+	name = "VAIRS Contractor (Adjutant)"
+	paygrades = list(PAY_SHORT_VAI_SND = JOB_PLAYTIME_TIER_0)
+	role_comm_title = "Adj"
+	flags = EQUIPMENT_PRESET_EXTRA
+
+	assignment = "VAIPO Team Adjutant"
+	job_title = JOB_CONTRACTOR_SECOND
+	skills = /datum/skills/contractor/adjutant
+	faction = FACTION_CONTRACTOR
+
+/datum/equipment_preset/contractor/covert/adjutant/load_gear(mob/living/carbon/human/new_human)
+	spawn_contractor_gloves(new_human)
+	spawn_vairs_headwear(new_human)
+	spawn_contractor_armor(new_human)
+	//clothes
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/veteran/contractor/smock, WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/droppouch/black, WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/packet/high_explosive, WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/packet/high_explosive, WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range/designator, WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/m41aMK1/tactical, WEAR_J_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/m1911/socom, WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/vairs, WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian, WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/merc/knife/custom, WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night/ghillie_goggles, WEAR_EYES)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/ert, WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/magazine/large, WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1/ap, WEAR_IN_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1/ap, WEAR_IN_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1/ap, WEAR_IN_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1, WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1, WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1, WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1, WEAR_IN_R_STORE)
+	//backpack and stuff in it
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/lightpack, WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/plastic/breaching_charge, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/plastic/breaching_charge, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/m15, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/m15, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/regular/response, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/packet/smoke, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/device/motiondetector/m717/hacked/contractor, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/attachments, WEAR_IN_BACK)
+
+//*****************************************************************************************************/
 /datum/equipment_preset/synth/contractor/covert
-	name = "Military Contractor (Covert Synthetic)"
+	name = "VAIRS Contractor (Synthetic)"
 	paygrades = list(PAY_SHORT_VAI_SN = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Syn"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -830,7 +873,7 @@
 	//body
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/veteran/contractor/smock, WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/surg_vest/equipped, WEAR_ACCESSORY)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/light/synvest, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/light/synvest/grey, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range/designator, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/telebaton, WEAR_IN_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/surgery/synthgraft, WEAR_IN_JACKET)
@@ -858,7 +901,7 @@
 //=================//
 
 /datum/equipment_preset/contractor/misc/bodyguard
-	name = "Military Contractor (Bodyguard)"
+	name = "VAIPS Contractor (Bodyguard)"
 	paygrades = list(PAY_SHORT_VAI_TROOPER = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Grd"
 	flags = EQUIPMENT_PRESET_EXTRA
@@ -870,10 +913,10 @@
 /datum/equipment_preset/contractor/misc/bodyguard/load_gear(mob/living/carbon/human/new_human)
 
 	spawn_contractor_guard_uniform(new_human)
-	spawn_contractor_armor(new_human)
 	spawn_contractor_gloves(new_human)
 	spawn_bimex_glasses(new_human)
 	new_human.equip_to_slot_or_del(new headset_type, WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/veteran/contractor/light, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/holster, WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/pistol/m1911/socom/burst, WEAR_IN_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/m1911/extended, WEAR_IN_ACCESSORY)
@@ -889,7 +932,102 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/medical/lifesaver/full/dutch, WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre/fsr, WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical, WEAR_IN_BACK)
-	new_human.equip_to_slot_or_del(new /obj/item/device/defibrillator, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/device/defibrillator/compact, WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/adv, WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range, WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/health, WEAR_IN_BACK)
+
+//*****************************************************************************************************/
+
+/datum/equipment_preset/contractor/duty/commander
+	name = "VAIPO Contractor (Commander)"
+	paygrades = list(PAY_SHORT_VAI_CMD = JOB_PLAYTIME_TIER_0)
+	role_comm_title = "CMD"
+	flags = EQUIPMENT_PRESET_EXTRA
+
+	assignment = "VAIPO Team Leader"
+	job_title = JOB_CONTRACTOR_TL
+	skills = /datum/skills/contractor/leader
+	faction = FACTION_CONTRACTOR
+
+/datum/equipment_preset/contractor/duty/commander/load_gear(mob/living/carbon/human/new_human)
+	//clothes
+	spawn_contractor_lead_uniform(new_human)
+	spawn_contractor_gloves(new_human)
+	spawn_contractor_headwear(new_human)
+	new_human.equip_to_slot_or_del(new headset_type, WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/droppouch/black, WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/packet/high_explosive, WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/packet/high_explosive, WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range/designator, WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/patch/contractor_patch, WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/veteran/contractor/light/commander, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/m41aMK1/contractor, WEAR_J_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/m1911/socom_burst, WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/merc/knife/custom, WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/sensor, WEAR_EYES)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/big, WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/autoinjector/full, WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/explosive/full, WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1/ap, WEAR_IN_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1/ap, WEAR_IN_JACKET)
+	//backpack and stuff in it
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/lightpack, WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/plastic/breaching_charge, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/plastic/breaching_charge, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/m15, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/m15, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/regular/response, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/packet/smoke, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/device/motiondetector/m717/hacked/contractor, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/attachments, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre/fsr, WEAR_IN_BACK)
+
+//*****************************************************************************************************/
+
+/datum/equipment_preset/contractor/covert/commander
+	name = "VAIRS Contractor (Commander)"
+	paygrades = list(PAY_SHORT_VAI_CMD = JOB_PLAYTIME_TIER_0)
+	role_comm_title = "CMD"
+	flags = EQUIPMENT_PRESET_EXTRA
+
+	assignment = "VAIRS Team Commander"
+	job_title = JOB_CONTRACTOR_COVTL
+	skills = /datum/skills/contractor/leader
+	faction = FACTION_CONTRACTOR
+
+/datum/equipment_preset/contractor/covert/commander/load_gear(mob/living/carbon/human/new_human)
+	//clothes
+	new_human.equip_to_slot_or_del(new headset_type, WEAR_L_EAR)
+	spawn_contractor_gloves(new_human)
+	spawn_vairs_headwear(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/veteran/contractor/smock, WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/veteran/contractor/leader, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/droppouch/black, WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/packet/high_explosive, WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/packet/high_explosive, WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range/designator, WEAR_IN_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/m41aMK1/tactical, WEAR_J_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/m1911/socom_burst, WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/vairs, WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian, WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/merc/knife/custom, WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night/ghillie_goggles/medhud, WEAR_EYES)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/autoinjector/full, WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/magazine/large, WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1/ap, WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1/ap, WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1/ap, WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/m41aMK1/ap, WEAR_IN_R_STORE)
+	//backpack and stuff in it
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/lightpack, WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/plastic/breaching_charge, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/plastic/breaching_charge, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/m15, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/m15, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/regular/response, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/packet/smoke, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/device/motiondetector/m717/hacked/contractor, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/attachments, WEAR_IN_BACK)

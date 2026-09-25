@@ -25,3 +25,10 @@
 	prefix = "Cpt."
 	pay_multiplier = 3.5
 	officer_grade = GRADE_OFFICER
+
+/datum/paygrade/contractors/commander
+	paygrade = PAY_SHORT_VAI_CMD
+	name = "Commander"
+	prefix = "Cmd."
+	pay_multiplier = 5
+	officer_grade = GRADE_OFFICER

@@ -53,6 +53,28 @@
 	fullscreen_vision = null
 	actions_types = list(/datum/action/item_action/toggle)
 
+
+/obj/item/clothing/glasses/night/ghillie_goggles
+	name = "\improper BiMex M3 day/night goggles"
+	desc = "A set of enhanced-vision goggles often issued to the marksman of USCM scout-sniper teams. Allows highlighted imaging of surroundings. Click it to toggle."
+	icon_state = "ghillie_goggles"
+	deactivated_state = "ghillie_goggles_0"
+	vision_flags = SEE_TURFS
+	toggleable = TRUE
+	fullscreen_vision = null
+	actions_types = list(/datum/action/item_action/toggle)
+
+/obj/item/clothing/glasses/night/ghillie_goggles/medhud
+	name = "\improper BiMex M4 day/night goggles"
+	desc = "A set of enhanced-vision goggles uncommonly issued to the marksman of USCM scout-sniper teams. Allows highlighted imaging of surroundings, and medical readouts on targets. Click it to toggle."
+	icon_state = "s_ghillie_goggles"
+	deactivated_state = "s_ghillie_goggles_0"
+	vision_flags = SEE_TURFS
+	toggleable = TRUE
+	fullscreen_vision = null
+	hud_type = MOB_HUD_MEDICAL_ADVANCED
+	actions_types = list(/datum/action/item_action/toggle)
+
 /obj/item/clothing/glasses/night/m42_night_goggles
 	name = "\improper M42 scout sight"
 	gender = NEUTER

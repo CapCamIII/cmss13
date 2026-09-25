@@ -1269,6 +1269,16 @@ GLOBAL_LIST_INIT(allowed_hat_items, list(
 		WEAR_HEAD = 'icons/mob/humans/onmob/clothing/head/misc_ert_colony.dmi'
 	)
 	item_state = "vairs_hood"
+	armor_melee = CLOTHING_ARMOR_LOW //basic armor so tryhards have less of a reason not to ditch their cool hood for a random helmet
+	armor_bullet = CLOTHING_ARMOR_LOW
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_energy = CLOTHING_ARMOR_MEDIUM
+	armor_bomb = CLOTHING_ARMOR_VERYLOW
+	armor_bio = CLOTHING_ARMOR_VERYHIGH
+	armor_rad = CLOTHING_ARMOR_VERYHIGH
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMLOW
+	flags_inventory = BLOCKSHARPOBJ
+
 
 //=ROYAL MARINES=\\
 
