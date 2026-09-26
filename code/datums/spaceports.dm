@@ -42,7 +42,7 @@
 	undocking_message = "Almayer, Irkala Control. There is nobody left answering us from the inside. We cannot let that ship take this station with it. We're releasing you now, sorry."
 	allies = list(
 		/datum/emergency_call/contractors,
-		/datum/emergency_call/contractors_covert/friendly,
+		/datum/emergency_call/contractors_covert,
 	)
 
 /datum/spaceport/vanguard/lancer
