@@ -23,13 +23,11 @@
 
 /datum/ammo/xeno/toxin
 	name = "neurotoxic spit"
-	icon_state = "sentinel_neurotoxin"
 	damage_falloff = 0
-	flags_ammo_behavior = AMMO_XENO|AMMO_IGNORE_RESIST|AMMO_SKIPS_ALIENS
+	flags_ammo_behavior = AMMO_XENO|AMMO_IGNORE_RESIST
 	spit_cost = 25
 	var/effect_power = XENO_NEURO_TIER_4
 	var/drain_power = 2
-	var/increment_amount = 5
 	var/datum/callback/neuro_callback
 
 	shell_speed = AMMO_SPEED_TIER_3
@@ -45,18 +43,16 @@
 		M.visible_message(SPAN_DANGER("[M] withstands the neurotoxin!"))
 		return //endurance 5 makes you immune to weak neurotoxin
 	if(ishuman(M))
-		var/mob/living/carbon/human/human = M
+		var/mob/living/carbon/human/H = M
 		if(drain_stims)
-			for(var/datum/reagent/generated/stim in human.reagents.reagent_list)
-				human.reagents.remove_reagent(stim.id, drain, TRUE)
-		if(human.chem_effect_flags & CHEM_EFFECT_RESIST_NEURO || human.species.flags & NO_NEURO)
-			human.visible_message(SPAN_DANGER("[M] shrugs off the neurotoxin!"))
+			for(var/datum/reagent/generated/stim in H.reagents.reagent_list)
+				H.reagents.remove_reagent(stim.id, drain, TRUE)
+		if(H.chem_effect_flags & CHEM_EFFECT_RESIST_NEURO || H.species.flags & NO_NEURO)
+			H.visible_message(SPAN_DANGER("[M] shrugs off the neurotoxin!"))
 			return //species like zombies or synths are immune to neurotoxin
 		if(drain_medchems)
-			for(var/datum/reagent/medical/med in human.reagents.reagent_list)
-				human.reagents.remove_reagent(med.id, drain, TRUE)
-	if(!apply_effect)
-		return
+			for(var/datum/reagent/medical/med in H.reagents.reagent_list)
+				H.reagents.remove_reagent(med.id, drain, TRUE)
 
 	if(!apply_effect)
 		return
@@ -75,8 +71,8 @@
 		var/no_clothes_neuro = FALSE
 
 		if(ishuman(M))
-			var/mob/living/carbon/human/human = M
-			if(!human.wear_suit || human.wear_suit.slowdown == 0)
+			var/mob/living/carbon/human/H = M
+			if(!H.wear_suit || H.wear_suit.slowdown == 0)
 				no_clothes_neuro = TRUE
 
 		if(no_clothes_neuro)
@@ -87,12 +83,12 @@
 
 /proc/apply_scatter_neuro(mob/living/M)
 	if(ishuman(M))
-		var/mob/living/carbon/human/human = M
+		var/mob/living/carbon/human/H = M
 		if(skillcheck(M, SKILL_ENDURANCE, SKILL_ENDURANCE_MAX))
 			M.visible_message(SPAN_DANGER("[M] withstands the neurotoxin!"))
 			return //endurance 5 makes you immune to weak neuro
-		if(human.chem_effect_flags & CHEM_EFFECT_RESIST_NEURO || human.species.flags & NO_NEURO)
-			human.visible_message(SPAN_DANGER("[M] shrugs off the neurotoxin!"))
+		if(H.chem_effect_flags & CHEM_EFFECT_RESIST_NEURO || H.species.flags & NO_NEURO)
+			H.visible_message(SPAN_DANGER("[M] shrugs off the neurotoxin!"))
 			return
 
 		M.KnockDown(0.7) // Completely arbitrary values from another time where stun timers incorrectly stacked. Kill as needed.
@@ -101,18 +97,10 @@
 
 /datum/ammo/xeno/toxin/on_hit_mob(mob/M,obj/projectile/P)
 	if(ishuman(M))
-		var/mob/living/carbon/human/human = M
-		if(human.status_flags & XENO_HOST)
-			neuro_callback.Invoke(human, effect_power, drain_power, TRUE, TRUE, TRUE)
+		var/mob/living/carbon/human/H = M
+		if(H.status_flags & XENO_HOST)
+			neuro_callback.Invoke(H, effect_power, drain_power, TRUE, TRUE, TRUE)
 			return
-		var/datum/effects/sentinel_neuro_stacks/sns = null
-		for (var/datum/effects/sentinel_neuro_stacks/sentinel_neuro_stacks in human.effects_list)
-			sns = sentinel_neuro_stacks
-			break
-
-		if (!sns)
-			sns = new /datum/effects/sentinel_neuro_stacks(human)
-		sns.increment_stack_count(increment_amount)
 
 	neuro_callback.Invoke(M, effect_power, drain_power, FALSE, TRUE, TRUE)
 
@@ -125,7 +113,6 @@
 
 /datum/ammo/xeno/toxin/queen
 	name = "neurotoxic spit"
-	icon_state = "neurotoxin"
 	spit_cost = 50
 	effect_power = 2
 	drain_power = 4
@@ -226,15 +213,15 @@
 	if (!ishuman(M))
 		return
 
-	var/mob/living/carbon/human/human = M
+	var/mob/living/carbon/human/H = M
 
 	var/datum/effects/prae_acid_stacks/PAS = null
-	for (var/datum/effects/prae_acid_stacks/prae_acid_stacks in human.effects_list)
+	for (var/datum/effects/prae_acid_stacks/prae_acid_stacks in H.effects_list)
 		PAS = prae_acid_stacks
 		break
 
 	if (PAS == null)
-		PAS = new /datum/effects/prae_acid_stacks(human)
+		PAS = new /datum/effects/prae_acid_stacks(H)
 	else
 		PAS.increment_stack_count()
 
@@ -296,7 +283,7 @@
 	icon_state = "neuro_glob"
 	ping = "ping_x"
 	debilitate = list(2,2,0,1,11,12,1,10) // Stun,knockdown,knockout,irradiate,stutter,eyeblur,drowsy,agony
-	flags_ammo_behavior = AMMO_SKIPS_ALIENS|AMMO_IGNORE_RESIST|AMMO_HITS_TARGET_TURF|AMMO_ACIDIC
+	flags_ammo_behavior = AMMO_SKIPS_ALIENS|AMMO_EXPLOSIVE|AMMO_IGNORE_RESIST|AMMO_HITS_TARGET_TURF|AMMO_ACIDIC
 	spit_cost = 200
 	pre_spit_warn = TRUE
 	spit_windup = 5 SECONDS

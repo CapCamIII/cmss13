@@ -166,7 +166,7 @@
 		if(T in old_turfs)
 			continue
 
-		if(!T.Enter(src, loc))
+		if(!T.Enter(src))
 			can_move = FALSE
 
 	// Crashed with something that stopped us

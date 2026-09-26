@@ -1413,7 +1413,7 @@
 
 	if(isxeno(mover))
 		var/mob/living/carbon/xenomorph/X = mover
-		if(X.hivenumber != hivenumber || HAS_TRAIT(X, TRAIT_LAUNCHED))
+		if(X.hivenumber != hivenumber || X.throwing)
 			return
 
 		if(X.pulling == src)
@@ -1481,17 +1481,13 @@
 		return
 
 	//Ineffective if someone is sitting on the wall
-	if(locate(/mob/living/carbon) in contents)
+	if(locate(/mob) in contents)
 		return ..()
 
 	if(!prob(chance_to_reflect))
 		if(proj_bullet.ammo.damage_type == BRUTE)
 			proj_bullet.damage *= brute_multiplier
 		return ..()
-
-	if(proj_bullet.damage_boosted)
-		proj_bullet.damage = proj_bullet.ammo.damage
-		proj_bullet.damage_boosted = 0
 
 	var/atom/target = proj_bullet.firer
 	if(!target)

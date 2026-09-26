@@ -82,8 +82,6 @@
 	density = FALSE
 	operating = DOOR_OPERATING_IDLE
 
-	SEND_SIGNAL(src, COMSIG_DOOR_OPEN)
-
 /obj/structure/machinery/door/window/close(forced = FALSE)
 	if(operating)
 		return FALSE
@@ -102,7 +100,6 @@
 		return
 
 	operating = DOOR_OPERATING_IDLE
-	SEND_SIGNAL(src, COMSIG_DOOR_CLOSE)
 
 /obj/structure/machinery/door/window/proc/take_damage(damage)
 	src.health = max(0, src.health - damage)

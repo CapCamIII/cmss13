@@ -1,5 +1,3 @@
-#define MARINE_TO_TOTAL_SPAWN_RATIO (1 - INITIAL_XENO_TO_MARINE_RATIO)
-
 /datum/job/marine/medic
 	title = JOB_SQUAD_MEDIC
 	total_positions = 16
@@ -11,7 +9,8 @@
 
 /datum/job/marine/medic/set_spawn_positions(count)
 	for(var/datum/squad/target_squad in GLOB.RoleAuthority.squads)
-		target_squad.roles_cap[title] = medic_slot_formula(count * MARINE_TO_TOTAL_SPAWN_RATIO)
+		if(target_squad)
+			target_squad.roles_cap[title] = medic_slot_formula(count)
 
 /datum/job/marine/medic/get_total_positions(latejoin=0)
 	var/slots = medic_slot_formula(get_total_marines())
@@ -23,18 +22,10 @@
 
 	if(latejoin)
 		for(var/datum/squad/target_squad in GLOB.RoleAuthority.squads)
-			target_squad.roles_cap[title] = slots
+			if(target_squad)
+				target_squad.roles_cap[title] = slots
 
 	return (slots*4)
-
-/datum/job/marine/medic/generate_entry_conditions(mob/living/carbon/human/current_human)
-	. = ..()
-	GLOB.marine_medics += current_human
-	RegisterSignal(current_human, COMSIG_PARENT_QDELETING, PROC_REF(cleanup_medic_role))
-
-/datum/job/marine/medic/proc/cleanup_medic_role(mob/current_human)
-	SIGNAL_HANDLER
-	GLOB.marine_medics -= current_human
 
 /datum/job/marine/medic/whiskey
 	title = JOB_WO_SQUAD_MEDIC
@@ -66,5 +57,3 @@ AddTimelock(/datum/job/marine/medic, list(
 /obj/effect/landmark/start/marine/medic/delta
 	icon_state = "medic_spawn_delta"
 	squad = SQUAD_MARINE_4
-
-#undef MARINE_TO_TOTAL_SPAWN_RATIO

@@ -72,11 +72,11 @@
 		user.put_in_active_hand(folding)
 	qdel(src)
 
-/obj/structure/barricade/deployable/initialize_pass_flags(datum/pass_flags_container/pass_flags)
+/obj/structure/barricade/deployable/initialize_pass_flags(datum/pass_flags_container/PF)
 	..()
-	if(pass_flags)
-		pass_flags.flags_can_pass_front &= ~PASS_FLAGS_UNWIRED
-		pass_flags.flags_can_pass_behind &= ~PASS_FLAGS_UNWIRED
+	if(PF)
+		PF.flags_can_pass_front &= ~PASS_OVER_THROW_MOB
+		PF.flags_can_pass_behind &= ~PASS_OVER_THROW_MOB
 
 
 // Cade in hands

@@ -49,9 +49,6 @@
 /// NO5, Colonel
 #define PAY_SHORT_NO5 "NO5"
 
-/// LACNO5, Commander
-#define PAY_SHORT_LACNO5 "LACNO5"
-
 /// NO6, Major
 #define PAY_SHORT_NO6 "NO6"
 

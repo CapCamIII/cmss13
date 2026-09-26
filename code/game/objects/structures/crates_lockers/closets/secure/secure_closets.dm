@@ -16,9 +16,9 @@
 	var/slotlocked = 0
 	var/slotlocktype = null
 
-/obj/structure/closet/secure_closet/can_open(mob/user)
-	if(locked)
-		return FALSE
+/obj/structure/closet/secure_closet/can_open()
+	if(src.locked)
+		return 0
 	return ..()
 
 /obj/structure/closet/secure_closet/close()

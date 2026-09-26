@@ -63,8 +63,6 @@ type Data = {
 
 type CustomKeybind = {
   keybinding?: string;
-  key?: string;
-  key_mods?: string;
   type?: string;
   contents?: string | string[];
   when_xeno?: boolean;
@@ -505,16 +503,12 @@ const CustomKeybinds = (props: {
                   return {
                     ...keybind,
                     keybinding: kb,
-                    key: keys[0],
-                    key_mods: mods,
                   };
                 }
 
                 return {
                   ...pending,
                   keybinding: kb,
-                  key: keys[0],
-                  key_mods: mods,
                 };
               });
             }}
@@ -637,8 +631,6 @@ const CustomKeybinds = (props: {
                 act('set_custom_keybinds', {
                   index: index + 1,
                   keybind: pendingKeybind.keybinding,
-                  key: pendingKeybind.key,
-                  key_mods: pendingKeybind.key_mods,
                   keybind_type: pendingKeybind.type?.toLowerCase(),
                   contents: pendingKeybind.contents,
                   when_xeno: pendingKeybind.when_xeno ?? false,

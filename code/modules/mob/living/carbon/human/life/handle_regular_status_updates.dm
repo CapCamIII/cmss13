@@ -17,9 +17,9 @@
 					fake_attack(src)
 				handle_hallucinations()
 				hallucination -= 2
-			if(3 to 20)
+			if(2 to 20)
 				hallucination -= 2
-			if(1 to 3)
+			if(0 to 2)
 				hallucination = 0
 				halloss = 0
 			if(-INFINITY to 0)

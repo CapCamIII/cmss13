@@ -113,7 +113,6 @@
 		return
 
 	operating = DOOR_OPERATING_IDLE
-	SEND_SIGNAL(src, COMSIG_DOOR_CLOSE)
 
 /obj/structure/machinery/door/poddoor/filler_object
 	name = ""

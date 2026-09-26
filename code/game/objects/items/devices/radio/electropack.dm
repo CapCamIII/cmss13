@@ -84,7 +84,9 @@
 
 		M.apply_effect(10, WEAKEN)
 
-	master?.receive_signal()
+	if(master && wires & 1)
+		master.receive_signal()
+	return
 
 /obj/item/device/radio/electropack/attack_self(mob/user as mob, flag1)
 	..()

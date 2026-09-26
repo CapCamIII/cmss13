@@ -39,10 +39,13 @@
 	if (PF)
 		PF.flags_can_pass_all = PASS_OVER|PASS_AROUND
 
-/obj/structure/closet/crate/can_close(mob/user)
-	if(locate(/mob/living) in get_turf(src)) //Can't close if someone is standing inside it. This is to prevent "crate traps" (let someone step in, close, open for 30 damage)
-		return FALSE
-	return TRUE
+/obj/structure/closet/crate/can_open()
+	return 1
+
+/obj/structure/closet/crate/can_close()
+	for(var/mob/living/L in get_turf(src)) //Can't close if someone is standing inside it. This is to prevent "crate traps" (let someone step in, close, open for 30 damage)
+		return 0
+	return 1
 
 /obj/structure/closet/crate/BlockedPassDirs(atom/movable/mover, target_dir)
 	for(var/obj/structure/S in get_turf(mover))
@@ -56,7 +59,7 @@
 /obj/structure/closet/crate/open(mob/user, force)
 	if(opened)
 		return FALSE
-	if(!force && !can_open(user))
+	if(!force && !can_open())
 		return FALSE
 
 	if(rigged && locate(/obj/item/device/radio/electropack) in src)

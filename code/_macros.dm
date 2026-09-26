@@ -87,10 +87,6 @@
 	LAZYINITLIST(lazy_list[key]); \
 	lazy_list[key] |= value;
 
-// Append a raw value to a list by extending the list and assigning it to the end of the list
-// Use this for appending lists to lists rather than appending the elements of the list
-#define APPEND_RAW(L, V) L[++L.len] = V
-
 // Insert an object A into a sorted list using cmp_proc (/code/_helpers/cmp.dm) for comparison.
 #define ADD_SORTED(list, A, cmp_proc) if(!length(list)) {list.Add(A)} else {list.Insert(FindElementIndex(A, list, cmp_proc), A)}
 
@@ -103,7 +99,7 @@
 
 #define FLAGS_EQUALS(flag, flags) (((flag) & (flags)) == (flags))
 
-#define IS_DIAGONAL_DIR(dir) (dir & (NORTH|SOUTH) && dir & (EAST|WEST))
+#define IS_DIAGONAL_DIR(dir) (dir & ~(NORTH|SOUTH))
 
 // Inverse direction, taking into account UP|DOWN if necessary.
 #define REVERSE_DIR(dir) ( (((dir) & 85) << 1) | (((dir) & 170) >> 1) )

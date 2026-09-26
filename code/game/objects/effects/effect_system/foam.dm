@@ -68,7 +68,7 @@
 		if(!T)
 			continue
 
-		if(!T.Enter(src, loc))
+		if(!T.Enter(src))
 			continue
 
 		var/obj/effect/particle_effect/foam/F = locate() in T

@@ -6,7 +6,6 @@
 
 /datum/ammo/bullet/shotgun
 	headshot_state = HEADSHOT_OVERLAY_HEAVY
-	handful_type = /obj/item/ammo_magazine/handful/shotgun
 
 /datum/ammo/bullet/shotgun/setup_faction_clash_values()
 	. = ..()
@@ -199,6 +198,7 @@
 /datum/ammo/bullet/shotgun/buckshot/incendiary
 	name = "incendiary buckshot shell"
 	handful_state = "incen_buckshot"
+	handful_type = /obj/item/ammo_magazine/handful/shotgun/buckshot/incendiary
 
 /datum/ammo/bullet/shotgun/buckshot/incendiary/set_bullet_traits()
 	. = ..()
@@ -248,8 +248,6 @@
 /*
 					8 GAUGE SHOTGUN AMMO
 */
-/datum/ammo/bullet/shotgun/heavy
-	handful_type = /obj/item/ammo_magazine/handful/shotgun/heavy
 
 /datum/ammo/bullet/shotgun/heavy/buckshot
 	name = "heavy buckshot shell"
@@ -389,8 +387,6 @@
 /*
 					16 GAUGE SHOTGUN AMMO
 */
-/datum/ammo/bullet/shotgun/light
-	handful_type = /obj/item/ammo_magazine/handful/shotgun/light/breaching
 
 /datum/ammo/bullet/shotgun/light/breaching
 	name = "light breaching shell"

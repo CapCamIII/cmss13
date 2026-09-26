@@ -458,14 +458,14 @@
 		to_chat(valkyrie, SPAN_WARNING("[targetXeno] is already dead!"))
 		return
 
-	if(valkyrie.action_busy)
+	if(!action_cooldown_check() || valkyrie.action_busy)
 		return
 
-	if(behavior.base_fury < retrieve_cost)
-		to_chat(valkyrie, SPAN_XENODANGER("We don't feel angry enough to do this!"))
+	if(!valkyrie.check_state())
 		return
 
-	XENO_ACTION_CHECK(valkyrie)
+	if(!check_plasma_owner())
+		return
 
 	// Build our turflist
 	var/list/turf/turflist = list()

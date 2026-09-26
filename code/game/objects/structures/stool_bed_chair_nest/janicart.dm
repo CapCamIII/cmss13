@@ -18,6 +18,7 @@
 
 /obj/structure/bed/chair/janicart/Initialize()
 	. = ..()
+	handle_rotation()
 	create_reagents(100)
 
 
