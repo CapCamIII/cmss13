@@ -171,6 +171,27 @@ GLOBAL_LIST_INIT(grenade_packets, list(
 	item_state = "agms_packet"
 	content_type = /obj/item/explosive/grenade/smokebomb/airburst
 
+/obj/item/storage/box/packet/nerve_gas
+	name = "\improper CN20 canister grenade packet"
+	desc = "It contains three CN20 canister grenades. Handle with care."
+	icon_state = "ccdp_packet"
+	item_state = "ccdp_packet"
+	content_type = /obj/item/explosive/grenade/nerve_gas
+
+/obj/item/storage/box/packet/nerve_gas/xeno
+	name = "\improper CN20-X canister grenade packet"
+	desc = "It contains three CN20-X canister grenades. Handle with care."
+	icon_state = "ccdp_packet"
+	item_state = "ccdp_packet"
+	content_type = /obj/item/explosive/grenade/nerve_gas/xeno
+
+/obj/item/storage/box/packet/nerve_gas/m40
+	name = "\improper CN20 M40 grenade packet"
+	desc = "It contains three CN20 M40 grenades. Handle with care."
+	icon_state = "cn20_packet"
+	item_state = "cn20_packet"
+	content_type = /obj/item/explosive/grenade/nerve_gas/m40
+
 /obj/item/storage/box/packet/rmc/he
 	name = "\improper R2175/A HEDP grenade packet"
 	desc = "It contains three R2175/A HEDP grenades. Handle with care."

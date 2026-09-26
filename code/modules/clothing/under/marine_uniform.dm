@@ -1463,8 +1463,15 @@
 	)
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
 	has_sensor = UNIFORM_HAS_SENSORS
-	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
-	undershirt = TRUE
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
+
+/obj/item/clothing/under/marine/veteran/contractor/Initialize(mapload)
+	. = ..()
+	var/sleeves = rand(1,2)
+	switch(sleeves)
+		if(1)
+			roll_suit_sleeves(FALSE)
+
 
 /obj/item/clothing/under/marine/veteran/contractor/jeans
 	name = "\improper contractor fatigues"
@@ -1494,7 +1501,7 @@
 	name = "\improper contractor fatigues"
 	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice tan color, and have had the pants swapped out for some jeans."
 	icon_state = "vaipo_uniform_tan3"
-	worn_state = "vaipo_uniform_tan4"
+	worn_state = "vaipo_uniform_tan3"
 
 /obj/item/clothing/under/marine/veteran/contractor/grey
 	name = "\improper contractor fatigues"
@@ -1526,14 +1533,6 @@
 	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice navy blue, and have had the pants swapped out for some grey trousers."
 	icon_state = "vaipo_uniform_blue2"
 	worn_state = "vaipo_uniform_blue2"
-
-/obj/item/clothing/under/marine/veteran/contractor/smock
-	name = "\improper chemical smock"
-	desc = "A set of some basic contractor fatigues with a nuclear-biological-chemical protective smock thrown over the top."
-	icon_state = "vairs_uniform"
-	worn_state = "vairs_uniform"
-	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
-	hood_state = /obj/item/clothing/head/vairs_hood
 
 ////// Civilians /////////
 

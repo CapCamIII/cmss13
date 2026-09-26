@@ -160,6 +160,7 @@
 		"Faction CLF HUD" = MOB_HUD_FACTION_CLF,
 		"Faction WO HUD" = MOB_HUD_FACTION_WO,
 		"Faction Hyperdyne HUD" = MOB_HUD_FACTION_HC,
+		"Faction VAI HUD" = MOB_HUD_FACTION_VAI,
 	)
 
 	var/hud_choice = tgui_input_list(usr, "Choose a HUD to toggle", "Toggle HUD prefs", hud_options)

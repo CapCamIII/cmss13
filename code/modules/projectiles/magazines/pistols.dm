@@ -65,7 +65,7 @@
 	ammo_band_icon = "+m4a345_band"
 	ammo_band_icon_empty = "+m4a345_band_e"
 
-obj/item/ammo_magazine/pistol/m1911/extended
+/obj/item/ammo_magazine/pistol/m1911/extended
 	name = "\improper M1911 extended magazine (.45)"
 	desc = "An extended magazine for the legendary M1911 pistol. Holds fourteen standard rounds."
 	default_ammo = /datum/ammo/bullet/pistol/heavy

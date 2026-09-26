@@ -844,6 +844,13 @@
 	can_hold = list(/obj/item/explosive/grenade/incendiary)
 	grenade_type = /obj/item/explosive/grenade/incendiary
 
+/obj/item/storage/box/nade_box/gas
+	name = "\improper M40 CCGD grenade box"
+	desc = "A secure box holding 25 M40 CCGD CN20 nerve gas grenades. Don't store near the flamer fuel."
+	type_icon = "cn20"
+	can_hold = list(/obj/item/explosive/grenade/nerve_gas/m40)
+	grenade_type = /obj/item/explosive/grenade/nerve_gas/m40
+
 /obj/item/storage/box/nade_box/airburst
 	name = "\improper M74 AGM-F grenade box"
 	desc = "A secure box holding 25 M74 AGM Fragmentation grenades. Explosive, don't store near the flamer fuel."

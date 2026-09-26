@@ -131,24 +131,26 @@
 
 
 /obj/item/weapon/gun/rifle/m41a/tactical
-	icon = 'icons/obj/items/weapons/guns/guns_by_map/desert/guns_obj.dmi'
+	icon = 'icons/obj/items/weapons/guns/guns_by_map/urban/guns_obj.dmi'
 	item_icons = list(
-		WEAR_L_HAND = 'icons/obj/items/weapons/guns/guns_by_map/desert/guns_lefthand.dmi',
-		WEAR_R_HAND = 'icons/obj/items/weapons/guns/guns_by_map/desert/guns_righthand.dmi',
-		WEAR_BACK = 'icons/obj/items/weapons/guns/guns_by_map/desert/back.dmi',
-		WEAR_J_STORE = 'icons/obj/items/weapons/guns/guns_by_map/desert/suit_slot.dmi'
+		WEAR_L_HAND = 'icons/obj/items/weapons/guns/guns_by_map/urban/guns_lefthand.dmi',
+		WEAR_R_HAND = 'icons/obj/items/weapons/guns/guns_by_map/urban/guns_righthand.dmi',
+		WEAR_BACK = 'icons/obj/items/weapons/guns/guns_by_map/urban/back.dmi',
+		WEAR_J_STORE = 'icons/obj/items/weapons/guns/guns_by_map/urban/suit_slot.dmi'
 	)
+	map_specific_decoration = FALSE
 	current_mag = /obj/item/ammo_magazine/rifle/ap
 	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/angledgrip, /obj/item/attachable/suppressor, /obj/item/attachable/stock/rifle/collapsible)
 
 /obj/item/weapon/gun/rifle/m41a/contractor
-	icon = 'icons/obj/items/weapons/guns/guns_by_map/desert/guns_obj.dmi'
+	icon = 'icons/obj/items/weapons/guns/guns_by_map/urban/guns_obj.dmi'
 	item_icons = list(
-		WEAR_L_HAND = 'icons/obj/items/weapons/guns/guns_by_map/desert/guns_lefthand.dmi',
-		WEAR_R_HAND = 'icons/obj/items/weapons/guns/guns_by_map/desert/guns_righthand.dmi',
-		WEAR_BACK = 'icons/obj/items/weapons/guns/guns_by_map/desert/back.dmi',
-		WEAR_J_STORE = 'icons/obj/items/weapons/guns/guns_by_map/desert/suit_slot.dmi'
+		WEAR_L_HAND = 'icons/obj/items/weapons/guns/guns_by_map/urban/guns_lefthand.dmi',
+		WEAR_R_HAND = 'icons/obj/items/weapons/guns/guns_by_map/urban/guns_righthand.dmi',
+		WEAR_BACK = 'icons/obj/items/weapons/guns/guns_by_map/urban/back.dmi',
+		WEAR_J_STORE = 'icons/obj/items/weapons/guns/guns_by_map/urban/suit_slot.dmi'
 	)
+	map_specific_decoration = FALSE
 	current_mag = /obj/item/ammo_magazine/rifle/ap
 	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/attached_gun/grenade/preloaded, /obj/item/attachable/stock/rifle/collapsible)
 
@@ -517,11 +519,17 @@
 	current_mag = /obj/item/ammo_magazine/rifle/m41aMK1/ap
 
 /obj/item/weapon/gun/rifle/m41aMK1/contractor
-	starting_attachment_types = list(/obj/item/attachable/attached_gun/grenade/mk1/preloaded, /obj/item/attachable/magnetic_harness, /obj/item/attachable/stock/rifle/collapsible)
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony/assault_rifles.dmi'
+	icon_state = "m41amk1_contractor"
+	item_state = "m41amk1_contractor"
+	starting_attachment_types = list(/obj/item/attachable/attached_gun/grenade/mk1/preloaded/contractor, /obj/item/attachable/magnetic_harness, /obj/item/attachable/stock/rifle/collapsible)
 	current_mag = /obj/item/ammo_magazine/rifle/m41aMK1/ap
 
-obj/item/weapon/gun/rifle/m41aMK1/tactical
-	starting_attachment_types = list(/obj/item/attachable/attached_gun/grenade/mk1/preloaded, /obj/item/attachable/suppressor, /obj/item/attachable/magnetic_harness, /obj/item/attachable/stock/rifle/collapsible)
+/obj/item/weapon/gun/rifle/m41aMK1/tactical
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony/assault_rifles.dmi'
+	icon_state = "m41amk1_contractor"
+	item_state = "m41amk1_contractor"
+	starting_attachment_types = list(/obj/item/attachable/attached_gun/grenade/mk1/preloaded/contractor, /obj/item/attachable/suppressor, /obj/item/attachable/magnetic_harness, /obj/item/attachable/stock/rifle/collapsible)
 	current_mag = /obj/item/ammo_magazine/rifle/m41aMK1/ap
 
 /obj/item/weapon/gun/rifle/m41aMK1/anchorpoint
@@ -1522,15 +1530,28 @@ obj/item/weapon/gun/rifle/m41aMK1/tactical
 
 
 /obj/item/weapon/gun/rifle/lmg/tactical
+	name = "\improper modified M41AE2 heavy pulse rifle"
+	desc = "A large squad support weapon capable of laying down sustained suppressing fire from a mounted position. While unstable and less accurate, it can be lugged and shot with two hands. Like it's smaller brothers, the M41A MK2 and M4RA, the M41AE2 is chambered in 10mm. This one is in a nice grey finish and has a modified barrel improving damage output."
+	icon = 'icons/obj/items/weapons/guns/guns_by_map/urban/guns_obj.dmi'
+	icon_state = "m41ae2"
+	item_state = "m41ae2"
+	map_specific_decoration = FALSE
+	item_icons = list(
+		WEAR_L_HAND = 'icons/obj/items/weapons/guns/guns_by_map/urban/guns_lefthand.dmi',
+		WEAR_R_HAND = 'icons/obj/items/weapons/guns/guns_by_map/urban/guns_righthand.dmi',
+		WEAR_BACK = 'icons/obj/items/weapons/guns/guns_by_map/urban/back.dmi',
+		WEAR_J_STORE = 'icons/obj/items/weapons/guns/guns_by_map/urban/suit_slot.dmi'
+	)
 	current_mag = /obj/item/ammo_magazine/rifle/lmg/ap
-	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/angledgrip)
+	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/stock/rifle/collapsible/m41ae2, /obj/item/attachable/angledgrip)
+
 /obj/item/weapon/gun/rifle/lmg/tactical/set_gun_config_values()
 	..()
 	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2//equal to m41a dmg
 
 /obj/item/weapon/gun/rifle/lmg/tactical/suppressed
 	current_mag = /obj/item/ammo_magazine/rifle/lmg/ap
-	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/suppressor, /obj/item/attachable/angledgrip)
+	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/suppressor, /obj/item/attachable/stock/rifle/collapsible/m41ae2, /obj/item/attachable/angledgrip)
 
 /obj/item/weapon/gun/rifle/lmg/army
 	starting_attachment_types = list(/obj/item/attachable/magnetic_harness, /obj/item/attachable/angledgrip)

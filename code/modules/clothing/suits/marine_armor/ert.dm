@@ -1050,23 +1050,26 @@
 	slowdown = SLOWDOWN_ARMOR_MEDIUM
 	flags_atom = NO_NAME_OVERRIDE|NO_GAMEMODE_SKIN
 	uniform_restricted = null
+	light_color = LIGHT_COLOR_XENON
+	lamp_light_color = LIGHT_COLOR_XENON
 
 /obj/item/clothing/suit/storage/marine/veteran/contractor/variantone
-	icon_state = "vaipo_2"//temp
+	icon_state = "vaipo_2"
 
 
 /obj/item/clothing/suit/storage/marine/veteran/contractor/varianttwo
-	icon_state = "vaipo_2"//temp
+	icon_state = "vaipo_3"
+
+/obj/item/clothing/suit/storage/marine/veteran/contractor/variantthree
+	icon_state = "vaipo_4"
 
 
 /obj/item/clothing/suit/storage/marine/veteran/contractor/leader
 	name = "\improper modified M3 pattern contractor armor"
 	desc = "A set of well-worn M3 pattern armor, some spots have been uparmored, others stripped down, and there's a multitude of pouches strapped on. Some of the CBRN and acidic protection's been stripped off, but some extra armor panels make up for it in bullet and melee resistance. Someone's strapped on even more pouches and replaced the standard TNR shoulder lamp with something higher powered."
 	storage_slots = 4
-	light_range = 7
+	light_range = 6
 	icon_state = "vaipo_leader"
-	light_color = LIGHT_COLOR_XENON
-	lamp_light_color = LIGHT_COLOR_XENON
 
 /obj/item/clothing/suit/storage/marine/veteran/contractor/light
 	name = "\improper modified M3 pattern contractor armor"
@@ -1081,6 +1084,4 @@
 	desc = "A set of well-worn M3 pattern armor, much of the armor besides the main cuirass has been stripped off, it's more nimble and easier to move around in at the cost of protectiveness. Someone's replaced the standard TNR shoulder lamp with something higher powered."
 	icon_state = "vaipo_commander"
 	storage_slots = 2
-	light_range = 8
-	light_color = LIGHT_COLOR_XENON
-	lamp_light_color = LIGHT_COLOR_XENON
+	light_range = 6

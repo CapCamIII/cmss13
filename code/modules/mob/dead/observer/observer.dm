@@ -443,6 +443,9 @@
 				if("Faction Hyperdyne HUD")
 					the_hud= GLOB.huds[MOB_HUD_FACTION_HC]
 					the_hud.add_hud_to(src, src)
+				if("Faction VAI HUD")
+					the_hud= GLOB.huds[MOB_HUD_FACTION_VAI]
+					the_hud.add_hud_to(src, src)
 
 	see_invisible = INVISIBILITY_OBSERVER
 

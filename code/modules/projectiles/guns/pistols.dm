@@ -181,9 +181,14 @@
 /obj/item/weapon/gun/pistol/m1911/socom/burst
 	name = "\improper M48A5 service pistol"
 	desc = "A timeless classic since the first World War, the M1911A1 has limited use with the USCM, and is often used as a sidearm by non-governmental bodies due to its reliability. This is an experimental version, equipped with burst-fire capability. Chambered in .45 ACP."
-	desc_lore = "The M48A5 is Armat's offering for the current '82 field trials, in competition with Weyland-Yutani's VP78 system. Whilst the M48A5 is favored by Recon and Raider units, the VP78 is expected to be chosen by procurement as the new sidearm of the USCMC over the M48."
+	desc_lore = "The M48A5 is one of Armat's offerings for the current Experimental Trooper trials alongside the SU-6 smartpistol. Whilst the M48A5 is favored by Recon and Raider units, ease of logistics and production have made Weyland-Yutani's offering to the competition, the VP78, the likely winner."
 	starting_attachment_types = list(/obj/item/attachable/suppressor/sleek, /obj/item/attachable/reflex)
 	current_mag = /obj/item/ammo_magazine/pistol/m1911/extended
+
+/obj/item/weapon/gun/pistol/m1911/socom/burst/set_gun_config_values() //rounds out to normal m1911 stats, this just counteracts the integrated BFA
+	..()
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_7
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_6
 
 /obj/item/weapon/gun/pistol/m1911/socom/burst/handle_starting_attachment()
 	..()

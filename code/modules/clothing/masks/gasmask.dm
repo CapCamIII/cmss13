@@ -86,13 +86,21 @@
 	desc = "An armored balaclava designed to conceal both the identity of the operator and act as an air-filter. This particular suit looks like it belongs to a high-ranking officer."
 	icon_state = "officer_mask"
 
-/obj/item/clothing/mask/gas/vairs
+/obj/item/clothing/mask/gas/contractor
 	name = "\improper BCPS-250 gas mask"
-	desc = "A fitted gas mask produced by Grant Corporation, it's meant to be used with attached gas filters, an integrated air supply, a rebreather system, or a back mounted filtration system."
-	icon_state = "vaipo_mask"
+	desc = "A fitted gas mask produced by Grant Corporation, it's meant to be used with attached gas filters, an integrated air supply, a rebreather system, or a back mounted filtration system. The polarised visor is capable of being used as welding protection."
+	desc_lore = "The Biological Chemical Protection System 250 is Grant Corp's newest line of biological and chemical safety suits. This mask specifically is the standard air filtration mask, designed for use with or without the rest of the set. \nThe mask itself is built for more than just use in a cleanroom, featuring a robust construction on par with military issue gas-masks, it's currently being considered for adoption as a military issue gas-mask by the Colonial Canadian Armed Forces and the defense forces of the Central Confederation of Africa."
+	icon_state = "owlf_mask"
+	item_state = "owlf_mask"
 	vision_impair = VISION_IMPAIR_NONE
-	eye_protection = EYE_PROTECTION_WELDING //The NVGs that VAIRS use reduce this to just flash protection
+	eye_protection = EYE_PROTECTION_WELDING
 	flags_inv_hide = HIDEEARS|HIDEFACE
+
+/obj/item/clothing/mask/gas/contractor/hood
+	name = "\improper BCPS-250 gas mask"
+	desc = "A fitted gas mask produced by Grant Corporation, it's meant to be used with attached gas filters, an integrated air supply, a rebreather system, or a back mounted filtration system. The polarised visor is capable of being used as welding protection. This one is combined with a hood for better chemical protection."
+	icon_state = "vaipo_mask"
+	flags_inv_hide = HIDEEARS|HIDEFACE|HIDEALLHAIR
 
 /obj/item/clothing/mask/gas/swat
 	name = "\improper SWAT mask"

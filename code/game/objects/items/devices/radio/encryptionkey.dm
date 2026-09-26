@@ -362,7 +362,7 @@
 /obj/item/device/encryptionkey/contractor
 	name = "\improper Vanguard's Arrow International Radio Encryption Key"
 	icon_state = "sl_key"
-	channels = list("Command" = TRUE, "Engi" = TRUE, "MedSci" = TRUE, "Req" = TRUE, "JTAC" = TRUE, "Intel" = TRUE, "Almayer" = TRUE)
+	channels = list("Command" = TRUE, "Almayer" = TRUE)
 
 /obj/item/device/encryptionkey/royal_marine
 	name = "\improper Royal Marine Radio Encryption Key"

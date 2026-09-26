@@ -1533,7 +1533,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	built_in_visors = list(new /obj/item/device/helmet_visor/night_vision/marine_raider, new /obj/item/device/helmet_visor/security)
 	start_down_visor_type = /obj/item/device/helmet_visor/night_vision/marine_raider
 
-/obj/item/clothing/head/helmet/marine/civilian
+/obj/item/clothing/head/helmet/marine/contractor
 	name = "\improper M10 pattern helmet"
 	desc = "This is an M10 pattern helmet with most of the electronics, such as the helmet-camera and IR-visor, removed for sale on the civilian market. It's unpainted, with the original grey finish. Still perfectly effective as a brain bucket, even without the fancy electronics."
 	icon_state = "helmet"
@@ -1549,6 +1549,17 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	)
 	flags_atom = NO_GAMEMODE_SKIN|NO_NAME_OVERRIDE
 	built_in_visors = list()
+
+/obj/item/clothing/head/helmet/marine/pilot/contractor
+	name = "\improper MK30 tactical helmet"
+	desc = "The MK30 tactical helmet has an eyepiece filter used to filter tactical data. It is required to fly the dropships manually and in safety. This one's in a sleek grey paintjob."
+	icon_state = "helmetp"
+	item_state = "helmetp"
+	icon = 'icons/obj/items/clothing/hats/hats_by_map/urban.dmi'
+	item_icons = list(
+		WEAR_HEAD = 'icons/mob/humans/onmob/clothing/head/hats_by_map/urban.dmi',
+	)
+	flags_atom = NO_GAMEMODE_SKIN|NO_NAME_OVERRIDE
 
 //FIORINA / UA RIOT CONTROL HELMET//
 

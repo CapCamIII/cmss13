@@ -250,9 +250,6 @@
 /obj/item/clothing/shoes/marine/merc/knife
 	spawn_item_type = /obj/item/attachable/bayonet
 
-/obj/item/clothing/shoes/marine/merc/knife/custom
-	spawn_item_type = /obj/item/attachable/bayonet/custom
-
 /obj/item/clothing/shoes/marine/merc/knife/upp
 	spawn_item_type = /obj/item/attachable/bayonet/upp
 

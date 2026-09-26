@@ -87,7 +87,6 @@
 	item_state = "latex"
 	adopts_squad_color = FALSE
 
-
 /obj/item/clothing/gloves/marine/officer
 	name = "officer gloves"
 	desc = "Shiny and impressive. They look expensive."
@@ -142,6 +141,17 @@
 	flags_item = MOB_LOCK_ON_EQUIP|NO_CRYO_STORE
 	adopts_squad_color = FALSE
 
+/obj/item/clothing/gloves/marine/combat//normal armored gloves you can spawn without being specifically USCM or insulated
+	name = "combat gloves"
+	desc = "Generic combat gloves, you can probably find something like these in most military surplus or outdoors stores. They work great for outdoor work too."
+	adopts_squad_color = FALSE
+
+/obj/item/clothing/gloves/marine/combat/fingerless
+	name = "fingerless combat gloves"
+	desc = "Generic combat gloves, you can probably find something like these in most military surplus or outdoors stores. They work great for outdoor work too."
+	icon_state = "marine_fingerless"
+	item_state = "marine_fingerless"
+
 /obj/item/clothing/gloves/marine/veteran
 	name = "armored gloves"
 	desc = "Non-standard kevlon fiber gloves. They're insulated and heavily armored."
@@ -156,13 +166,6 @@
 	armor_rad = CLOTHING_ARMOR_MEDIUM
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
 	adopts_squad_color = FALSE
-
-/obj/item/clothing/gloves/marine/veteran/fingerless
-	name = "fingerless armored gloves"
-	desc = "Non-standard kevlon fiber gloves, with the fingers cut off. They're still heavily armored, but not so insulating anymore."
-	icon_state = "marine_fingerless"
-	item_state = "marine_fingerless"
-	siemens_coefficient = 0.6
 
 /obj/item/clothing/gloves/marine/veteran/upp
 	icon_state = "brown"

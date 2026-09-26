@@ -1182,7 +1182,7 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 /datum/equipment_preset/proc/spawn_contractor_lead_uniform(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
-	var/uniformpath = pick( //to stand out a bit more, they're guranteed to get an alt variant of the uniform(jeans or pants)
+	var/uniformpath = pick( //to stand out a bit more, leaders are guranteed to get an alt variant of the uniform(jeans or pants)
 		/obj/item/clothing/under/marine/veteran/contractor/jeans,
 		/obj/item/clothing/under/marine/veteran/contractor/pants,
 		/obj/item/clothing/under/marine/veteran/contractor/tan/pants,
@@ -1190,9 +1190,16 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 		/obj/item/clothing/under/marine/veteran/contractor/grey/pants,
 		/obj/item/clothing/under/marine/veteran/contractor/grey/jeans,
 		/obj/item/clothing/under/marine/veteran/contractor/blue/pants,
-		/obj/item/clothing/under/marine/veteran/contractor/smock, //lucky VAIPO leaders can get the VAIRS smock
 		)
 	new_human.equip_to_slot_or_del(new uniformpath, WEAR_BODY)
+
+/datum/equipment_preset/proc/spawn_contractor_covert_uniform(mob/living/carbon/human/new_human)
+	var/vairspath = pick(
+		/obj/item/clothing/under/marine/veteran/contractor/blue,
+		/obj/item/clothing/under/marine/veteran/contractor/grey,
+		/obj/item/clothing/under/marine/veteran/contractor,
+		)
+	new_human.equip_to_slot_or_del(new vairspath, WEAR_BODY)
 
 
 /datum/equipment_preset/proc/spawn_contractor_armor(mob/living/carbon/human/new_human)
@@ -1200,6 +1207,7 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 		/obj/item/clothing/suit/storage/marine/veteran/contractor,
 		/obj/item/clothing/suit/storage/marine/veteran/contractor/variantone,
 		/obj/item/clothing/suit/storage/marine/veteran/contractor/varianttwo,
+		/obj/item/clothing/suit/storage/marine/veteran/contractor/variantthree,
 		)
 	new_human.equip_to_slot_or_del(new armorpath, WEAR_JACKET)
 
@@ -1217,43 +1225,45 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 /datum/equipment_preset/proc/spawn_vairs_headwear(mob/living/carbon/human/new_human)
 	var/random_vairs_headwear = rand(1, 10)
 	switch(random_vairs_headwear)
-		if(1 to 5) // 50% normal helmet
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
-		if(6 to 10) //wear your cool hood
+		if(1 to 9) // 90% normal helmet
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
+		if(10) //10% beret
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/contractor(new_human), WEAR_HEAD)
 
 
 /datum/equipment_preset/proc/spawn_contractor_headwear(mob/living/carbon/human/new_human)
-	var/random_contractor_headwear = rand(1,100)
+	var/random_contractor_headwear = rand(1,100) //55% chance for M10 helmet, 4% chance for pilot helmet, 46% chance for non-helmet headwear
 	switch(random_contractor_headwear)
 		if(1 to 10) // 10% naked helmet
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 		if(11 to 15) // 5% smoker of luckies
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/lucky_strikes(new_human), WEAR_IN_HELMET)
 			new_human.equip_to_slot_or_del(new /obj/item/tool/lighter/zippo(new_human), WEAR_IN_HELMET)
 		if(16 to 20) // 5% smoker of spirits
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/spirit(new_human), WEAR_IN_HELMET)
 			new_human.equip_to_slot_or_del(new /obj/item/tool/lighter/zippo(new_human), WEAR_IN_HELMET)
 		if(21 to 25) // 5% smoker of cigars
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/cigarette/cigar/havana(new_human), WEAR_IN_HELMET)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/cigarette/cigar/havana(new_human), WEAR_FACE)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/box/matches(new_human), WEAR_IN_HELMET)
 		if(26 to 35) // 10% goggles
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/mgoggles(new_human), WEAR_IN_HELMET)
 		if(36 to 40) // 5% larp nvgs
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/prop/helmetgarb/helmet_nvg/cosmetic/visor(new_human), WEAR_IN_HELMET)
 		if(41 to 45) // 5% headband, red
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/headband/red/static(new_human), WEAR_IN_HELMET)
 		if(46 to 50) // 5% headband, black
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/headband/intel(new_human), WEAR_IN_HELMET)
-		if(51 to 55) // 5% red beret
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/cm/red(new_human), WEAR_HEAD)
+		if(51 to 55) // 5% gas mask
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/contractor, WEAR_FACE)
 		if(56 to 60) // 5% black beret
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/civilian/black(new_human), WEAR_HEAD)
 		if(61 to 65) // 5% tan beret
@@ -1271,7 +1281,7 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 		if(91 to 95) // 5% boonie but tan
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/boonie/tan(new_human), WEAR_HEAD)
 		if(96 to 99) // 4% pilot helmet
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/pilot(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/pilot/contractor(new_human), WEAR_HEAD)
 		if(100) // 1%
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/headband/rambo(new_human), WEAR_HEAD)
 			new_human.set_species("Human Hero")
@@ -1280,38 +1290,39 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 	var/random_contractor_synth_headwear = rand(1,100)
 	switch(random_contractor_synth_headwear)
 		if(1 to 10) // 10% naked helmet
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 		if(11 to 15) // 5% smoker of luckies
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/lucky_strikes(new_human), WEAR_IN_HELMET)
 			new_human.equip_to_slot_or_del(new /obj/item/tool/lighter/zippo(new_human), WEAR_IN_HELMET)
 		if(16 to 20) // 5% smoker of spirits
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/spirit(new_human), WEAR_IN_HELMET)
 			new_human.equip_to_slot_or_del(new /obj/item/tool/lighter/zippo(new_human), WEAR_IN_HELMET)
 		if(21 to 25) // 5% smoker of cigars
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/cigarette/cigar/havana(new_human), WEAR_IN_HELMET)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/cigarette/cigar/havana(new_human), WEAR_FACE)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/box/matches(new_human), WEAR_IN_HELMET)
 		if(26 to 35) // 10% goggles
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/mgoggles(new_human), WEAR_IN_HELMET)
 		if(36 to 40) // 5% larp nvgs
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/prop/helmetgarb/helmet_nvg/cosmetic/visor(new_human), WEAR_IN_HELMET)
 		if(41 to 45) // 5% headband, red
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/headband/red/static(new_human), WEAR_IN_HELMET)
 		if(46 to 50) // 5% headband, black
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/civilian(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/headband/intel(new_human), WEAR_IN_HELMET)
-		if(51 to 55) // 5% red beret
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/cm/red(new_human), WEAR_HEAD)
+		if(51 to 55) // 5% gas mask
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/contractor, WEAR_FACE)
 		if(56 to 60) // 5% black beret
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/civilian/black(new_human), WEAR_HEAD)
-		if(61 to 65) // 5% tan beret
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/civilian(new_human), WEAR_HEAD)
+		if(61 to 65) // 5% brown beret
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/civilian/brown(new_human), WEAR_HEAD)
 		if(66 to 70) // 5% durag
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/durag,(new_human), WEAR_HEAD)
 		if(71 to 75) // 5% durag but black
@@ -1325,7 +1336,7 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 		if(91 to 95) // 5% boonie but tan
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/boonie/tan(new_human), WEAR_HEAD)
 		if(96 to 100) // 5% pilot helmet
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/pilot(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/pilot/contractor(new_human), WEAR_HEAD)
 
 /datum/equipment_preset/proc/spawn_contractor_guard_uniform(mob/living/carbon/human/new_human)
 	var/formalpath = pick(
@@ -1336,7 +1347,39 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 
 /datum/equipment_preset/proc/spawn_contractor_gloves(mob/living/carbon/human/new_human)
 	var/glovepath = pick(
-		/obj/item/clothing/gloves/marine/veteran,
-		/obj/item/clothing/gloves/marine/veteran/fingerless,
+		/obj/item/clothing/gloves/marine/combat,
+		/obj/item/clothing/gloves/marine/combat/fingerless,
 		)
 	new_human.equip_to_slot_or_del(new glovepath, WEAR_HANDS)
+
+/datum/equipment_preset/proc/spawn_contractor_lead_headwear(mob/living/carbon/human/new_human)
+	var/random_leadheadwear = rand(1,100)
+	switch(random_leadheadwear)
+		if(1 to 10) // 10% naked helmet
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
+		if(11 to 15) // 5% smoker of luckies
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/lucky_strikes(new_human), WEAR_IN_HELMET)
+			new_human.equip_to_slot_or_del(new /obj/item/tool/lighter/zippo(new_human), WEAR_IN_HELMET)
+		if(16 to 20) // 5% smoker of spirits
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/spirit(new_human), WEAR_IN_HELMET)
+			new_human.equip_to_slot_or_del(new /obj/item/tool/lighter/zippo(new_human), WEAR_IN_HELMET)
+		if(21 to 25) // 5% smoker of cigars
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/cigarette/cigar/havana(new_human), WEAR_IN_HELMET)
+			new_human.equip_to_slot_or_del(new /obj/item/storage/box/matches(new_human), WEAR_IN_HELMET)
+		if(26 to 35) // 10% goggles
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/mgoggles(new_human), WEAR_IN_HELMET)
+		if(41 to 45) // 5% headband, red
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/headband/red/static(new_human), WEAR_IN_HELMET)
+		if(46 to 50) // 5% headband, black
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/headband/intel(new_human), WEAR_IN_HELMET)
+		if(51 to 60) // 10% pilot helmet
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/pilot/contractor(new_human), WEAR_HEAD)
+		if(61 to 100) // 40% beret
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/contractor(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new random_leadheadwear, WEAR_HEAD)

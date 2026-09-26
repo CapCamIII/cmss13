@@ -236,6 +236,11 @@
 		WEAR_HEAD = 'icons/mob/humans/onmob/clothing/head/hats_by_map/snow.dmi'
 	)
 
+/obj/item/clothing/head/beret/contractor
+	name = "Black Beret"
+	desc = "A black beret adorned with a shield and arrow, the symbol of Vanguard's Arrow International, announcing to the world that the wearer is a true gun for hire."
+	icon_state = "centcomofficerberet"
+
 /obj/item/clothing/head/headband
 	name = "headband"
 	desc = "A rag typically worn by the less-orthodox weapons operators. While it offers no protection, it is certainly comfortable to wear compared to the standard helmet. Comes in two stylish colors."
@@ -1259,26 +1264,6 @@ GLOBAL_LIST_INIT(allowed_hat_items, list(
 		WEAR_HEAD = 'icons/mob/humans/onmob/clothing/head/misc_ert_colony.dmi'
 	)
 	item_state = "owlf_hood"
-
-/obj/item/clothing/head/vairs_hood
-	name = "\improper chemical smock hood"
-	desc = "It's the hood of the attached chemical smock, it can be tied down to fit tightly around a gas-mask for a proper chemical seal."
-	icon = 'icons/obj/items/clothing/hats/misc_ert_colony.dmi'
-	icon_state = "vairs_hood"
-	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/clothing/head/misc_ert_colony.dmi'
-	)
-	item_state = "vairs_hood"
-	armor_melee = CLOTHING_ARMOR_LOW //basic armor so tryhards have less of a reason not to ditch their cool hood for a random helmet
-	armor_bullet = CLOTHING_ARMOR_LOW
-	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
-	armor_energy = CLOTHING_ARMOR_MEDIUM
-	armor_bomb = CLOTHING_ARMOR_VERYLOW
-	armor_bio = CLOTHING_ARMOR_VERYHIGH
-	armor_rad = CLOTHING_ARMOR_VERYHIGH
-	armor_internaldamage = CLOTHING_ARMOR_MEDIUMLOW
-	flags_inventory = BLOCKSHARPOBJ
-
 
 //=ROYAL MARINES=\\
 

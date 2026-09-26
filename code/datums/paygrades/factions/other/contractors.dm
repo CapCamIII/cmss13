@@ -1,6 +1,6 @@
 /datum/paygrade/contractors
 	name = "Contractor Paygrade"
-	fprefix = "VAI"
+//	fprefix = "VAI"
 	pay_multiplier = 2.5
 
 /datum/paygrade/contractors/standard
@@ -23,12 +23,12 @@
 	paygrade = PAY_SHORT_VAI_L
 	name = "Captain"
 	prefix = "Cpt."
-	pay_multiplier = 3.5
+	pay_multiplier = 4
 	officer_grade = GRADE_OFFICER
 
 /datum/paygrade/contractors/commander
 	paygrade = PAY_SHORT_VAI_CMD
 	name = "Commander"
 	prefix = "Cmd."
-	pay_multiplier = 5
+	pay_multiplier = 6
 	officer_grade = GRADE_OFFICER

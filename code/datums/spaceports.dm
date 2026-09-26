@@ -36,7 +36,7 @@
 	docking_message = "Attention, USCM vessel. We are launching umbilical cords and deploying a squad to investigate the nature of your distress in accordance with the Military Aid Act of 2162."
 	allies = list(
 		/datum/emergency_call/contractors,
-		/datum/emergency_call/contractors/covert,
+		/datum/emergency_call/contractors_covert/friendly,
 	)
 
 /datum/spaceport/vanguard/lancer

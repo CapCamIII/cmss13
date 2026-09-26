@@ -1275,6 +1275,20 @@
 	else
 		return ..()
 
+/obj/item/storage/belt/grenade/contractor_gas/fill_preset_inventory()
+	new /obj/item/explosive/grenade/high_explosive(src)
+	new /obj/item/explosive/grenade/high_explosive(src)
+	new /obj/item/explosive/grenade/high_explosive(src)
+	new /obj/item/explosive/grenade/high_explosive(src)
+	new /obj/item/explosive/grenade/high_explosive(src)
+	new /obj/item/explosive/grenade/high_explosive(src)
+	new /obj/item/explosive/grenade/high_explosive(src)
+	new /obj/item/explosive/grenade/nerve_gas/m40(src)
+	new /obj/item/explosive/grenade/nerve_gas/m40(src)
+	new /obj/item/explosive/grenade/nerve_gas/m40(src)
+	new /obj/item/explosive/grenade/nerve_gas/m40(src)
+	new /obj/item/explosive/grenade/nerve_gas/m40(src)
+
 /obj/item/storage/belt/grenade/large
 	name="\improper M276 pattern M40 Grenade rig Mk. II"
 	desc="The M276 Mk. II is an upgraded version of the M276 grenade rig, with more storage capacity."
@@ -2607,15 +2621,15 @@
 	flags_atom = FPRINT|NO_GAMEMODE_SKIN // same sprite for all gamemodes
 
 /obj/item/storage/belt/gun/smartgunner/marsoc/full/fill_preset_inventory()
-	handle_item_insertion(new /obj/item/weapon/gun/pistol/m1911/socom/equipped())
-	new /obj/item/ammo_magazine/pistol/m1911(src)
+	handle_item_insertion(new /obj/item/weapon/gun/pistol/m1911/socom/burst())
+	new /obj/item/ammo_magazine/pistol/m1911/extended(src)
 	new /obj/item/ammo_magazine/smartgun/heap(src)
 	new /obj/item/ammo_magazine/smartgun/heap(src)
 	new /obj/item/ammo_magazine/smartgun/heap(src)
 
 /obj/item/storage/belt/gun/smartgunner/marsoc/full_low_threat/fill_preset_inventory()
-	handle_item_insertion(new /obj/item/weapon/gun/pistol/m1911/socom/equipped())
-	new /obj/item/ammo_magazine/pistol/m1911(src)
+	handle_item_insertion(new /obj/item/weapon/gun/pistol/m1911/socom/burst())
+	new /obj/item/ammo_magazine/pistol/m1911/extended(src)
 	new /obj/item/ammo_magazine/smartgun(src)
 	new /obj/item/ammo_magazine/smartgun(src)
 	new /obj/item/ammo_magazine/smartgun(src)
