@@ -98,13 +98,10 @@
 	))
 
 /datum/ammo/bullet/smg/le
-	name = "armor-shredding submachinegun bullet"
+	name = "impact-detonating submachinegun bullet"
 
-	scatter = SCATTER_AMOUNT_TIER_10
-	damage = 20
-	penetration = ARMOR_PENETRATION_TIER_4
-	shell_speed = AMMO_SPEED_TIER_3
-	damage_falloff = DAMAGE_FALLOFF_TIER_10
+	damage = 38
+	penetration = ARMOR_PENETRATION_TIER_3
 	pen_armor_punch = 4
 
 /datum/ammo/bullet/smg/rubber

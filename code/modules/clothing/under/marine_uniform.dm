@@ -1492,24 +1492,6 @@
 	icon_state = "vaipo_uniform_od3"
 	worn_state = "vaipo_uniform_od3"
 
-/obj/item/clothing/under/marine/veteran/contractor/tan
-	name = "\improper contractor fatigues"
-	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice tan color."
-	icon_state = "vaipo_uniform_tan1"
-	worn_state = "vaipo_uniform_tan1"
-
-/obj/item/clothing/under/marine/veteran/contractor/tan/pants
-	name = "\improper contractor fatigues"
-	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice tan color, and have had the pants swapped out for some grey trousers."
-	icon_state = "vaipo_uniform_tan2"
-	worn_state = "vaipo_uniform_tan2"
-
-/obj/item/clothing/under/marine/veteran/contractor/tan/jeans
-	name = "\improper contractor fatigues"
-	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice tan color, and have had the pants swapped out for some jeans."
-	icon_state = "vaipo_uniform_tan3"
-	worn_state = "vaipo_uniform_tan3"
-
 /obj/item/clothing/under/marine/veteran/contractor/grey
 	name = "\improper contractor fatigues"
 	desc = "A set of some basic contractor fatigues, they're rugged and built to last. These are in a nice grey color."

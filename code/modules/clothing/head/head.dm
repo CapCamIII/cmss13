@@ -743,6 +743,30 @@ GLOBAL_LIST_INIT(allowed_hat_items, list(
 	flags_atom = NO_GAMEMODE_SKIN|NO_NAME_OVERRIDE
 	flags_marine_hat = HAT_GARB_OVERLAY
 
+/obj/item/clothing/head/cmcap/urban
+	name = "patrol cap"
+	desc = "A military style cap in a sleek dark grey. While it only protects from the sun, it's much more comfortable than a helmet."
+	icon_state = "cap"
+	icon = 'icons/obj/items/clothing/hats/hats_by_map/urban.dmi'
+	item_icons = list(
+		WEAR_HEAD = 'icons/mob/humans/onmob/clothing/head/hats_by_map/urban.dmi',
+		WEAR_L_HAND = 'icons/mob/humans/onmob/inhands/items_by_map/urban_lefthand.dmi',
+		WEAR_R_HAND = 'icons/mob/humans/onmob/inhands/items_by_map/urban_righthand.dmi'
+	)
+	flags_atom = NO_GAMEMODE_SKIN
+
+/obj/item/clothing/head/cmcap/bridge/urban
+	name = "patrol cap"
+	desc = "A military style cap in a sleek dark grey. While it only protects from the sun, it's much more comfortable than a helmet. This one has a bulky headset attached."
+	icon_state = "cap_officer"
+	icon = 'icons/obj/items/clothing/hats/hats_by_map/urban.dmi'
+	item_icons = list(
+		WEAR_HEAD = 'icons/mob/humans/onmob/clothing/head/hats_by_map/urban.dmi',
+		WEAR_L_HAND = 'icons/mob/humans/onmob/inhands/items_by_map/urban_lefthand.dmi',
+		WEAR_R_HAND = 'icons/mob/humans/onmob/inhands/items_by_map/urban_righthand.dmi'
+	)
+	flags_atom = NO_GAMEMODE_SKIN
+
 /obj/item/clothing/head/cmo
 	name = "\improper Chief Medical Officer's Peaked Cap"
 	desc = "A peaked cap given to high-ranking civilian medical officers. Looks just a touch silly."

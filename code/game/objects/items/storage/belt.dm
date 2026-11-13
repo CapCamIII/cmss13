@@ -1879,6 +1879,11 @@
 	for(var/i = 1 to storage_slots - 1)
 		new /obj/item/ammo_magazine/smg/m39/ap(src)
 
+/obj/item/storage/belt/gun/m39/full/contractor/fill_preset_inventory()
+	handle_item_insertion(new /obj/item/weapon/gun/smg/m39/contractor(src))
+	for(var/i = 1 to storage_slots - 1)
+		new /obj/item/ammo_magazine/smg/m39/le(src)
+
 /obj/item/storage/belt/gun/combat_rig
 	name = "\improper M276 pattern combat sidearm rig"
 	desc = "The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol and rifle magazines."

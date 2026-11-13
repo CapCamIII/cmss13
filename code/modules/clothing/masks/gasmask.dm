@@ -96,12 +96,6 @@
 	eye_protection = EYE_PROTECTION_WELDING
 	flags_inv_hide = HIDEEARS|HIDEFACE
 
-/obj/item/clothing/mask/gas/contractor/hood
-	name = "\improper BCPS-250 gas mask"
-	desc = "A fitted gas mask produced by Grant Corporation, it's meant to be used with attached gas filters, an integrated air supply, a rebreather system, or a back mounted filtration system. The polarised visor is capable of being used as welding protection. This one is combined with a hood for better chemical protection."
-	icon_state = "vaipo_mask"
-	flags_inv_hide = HIDEEARS|HIDEFACE|HIDEALLHAIR
-
 /obj/item/clothing/mask/gas/swat
 	name = "\improper SWAT mask"
 	desc = "A close-fitting tactical mask that can be connected to an air supply."

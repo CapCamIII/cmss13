@@ -1,6 +1,5 @@
 /datum/paygrade/contractors
 	name = "Contractor Paygrade"
-//	fprefix = "VAI"
 	pay_multiplier = 2.5
 
 /datum/paygrade/contractors/standard

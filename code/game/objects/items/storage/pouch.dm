@@ -567,6 +567,10 @@
 	for(var/i = 1 to storage_slots)
 		new /obj/item/ammo_magazine/rifle/type71(src)
 
+/obj/item/storage/pouch/magazine/large/m39_le/fill_preset_inventory()
+	for(var/i = 1 to storage_slots)
+		new /obj/item/ammo_magazine/smg/m39/le(src)
+
 /obj/item/storage/pouch/magazine/large/wy
 	icon_state = "wy_ammo_mag"
 

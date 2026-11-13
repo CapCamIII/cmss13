@@ -135,6 +135,17 @@
 /obj/item/weapon/gun/smg/m39/army/heap
 	current_mag = /obj/item/ammo_magazine/smg/m39/heap
 
+/obj/item/weapon/gun/smg/m39/contractor
+	icon = 'icons/obj/items/weapons/guns/guns_by_map/urban/guns_obj.dmi'
+	item_icons = list(
+		WEAR_L_HAND = 'icons/obj/items/weapons/guns/guns_by_map/urban/guns_lefthand.dmi',
+		WEAR_R_HAND = 'icons/obj/items/weapons/guns/guns_by_map/urban/guns_righthand.dmi',
+		WEAR_BACK = 'icons/obj/items/weapons/guns/guns_by_map/urban/back.dmi',
+		WEAR_J_STORE = 'icons/obj/items/weapons/guns/guns_by_map/urban/suit_slot.dmi')
+	starting_attachment_types = list(/obj/item/attachable/stock/smg/collapsible, /obj/item/attachable/reflex, /obj/item/attachable/suppressor/sleek, /obj/item/attachable/lasersight)
+	current_mag = /obj/item/ammo_magazine/smg/m39/le
+	map_specific_decoration = FALSE
+
 //-------------------------------------------------------
 
 /obj/item/weapon/gun/smg/m39/elite

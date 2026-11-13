@@ -768,11 +768,6 @@
 	desc = "A sleek corporate patch bearing the logo of the Hyperdyne Corporation—one of the most powerful conglomerates. Known for synthetic production, AI research, and deep-space logistics. Wearing this patch implies loyalty to profit over people."
 	icon_state = "hyperdynepatch"
 
-/obj/item/clothing/accessory/patch/contractor_patch
-	name = "Vanguard's Arrow International patch"
-	desc = "A triangular, fire-resistant patch with a gold border. The design features a shield with three arrows overlayed."
-	icon_state = "hyperdynepatch"//temp
-
 // Misc
 
 /obj/item/clothing/accessory/dogtags
