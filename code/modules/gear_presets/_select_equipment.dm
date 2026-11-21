@@ -1375,6 +1375,17 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 		if(96 to 100) // 5% pilot helmet
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/pilot/contractor(new_human), WEAR_HEAD)
 
+/datum/equipment_preset/proc/spawn_contractor_guard_gear(mob/living/carbon/human/new_human)
+	var/random_guardgear = rand(1,2)
+	switch(random_guardgear)
+		if(1)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/under/liaison_suit/black(new_human), WEAR_BODY)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/jacket/marine/corporate/black(new_human), WEAR_IN_BACK)
+		if(2)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/under/liaison_suit/brown(new_human), WEAR_BODY)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/jacket/marine/corporate/brown(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new random_guardgear, WEAR_BODY)
+
 /datum/equipment_preset/proc/spawn_contractor_guard_uniform(mob/living/carbon/human/new_human)
 	var/formalpath = pick(
 		/obj/item/clothing/under/liaison_suit/black,

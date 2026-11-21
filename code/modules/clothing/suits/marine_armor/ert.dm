@@ -1093,6 +1093,7 @@
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
 	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	w_class = SIZE_MEDIUM
 
 /obj/item/clothing/suit/storage/marine/veteran/contractor/light/commander
 	name = "\improper modified M3 pattern contractor armor"
