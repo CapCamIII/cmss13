@@ -1061,13 +1061,14 @@
 /obj/item/clothing/suit/storage/marine/veteran/contractor/variantone
 	icon_state = "vaipo_2"
 
-
 /obj/item/clothing/suit/storage/marine/veteran/contractor/varianttwo
 	icon_state = "vaipo_3"
 
 /obj/item/clothing/suit/storage/marine/veteran/contractor/variantthree
 	icon_state = "vaipo_4"
 
+/obj/item/clothing/suit/storage/marine/veteran/contractor/variantfour
+	icon_state = "vaipo_5"
 
 /obj/item/clothing/suit/storage/marine/veteran/contractor/leader
 	name = "\improper modified M3 pattern contractor armor"
@@ -1075,6 +1076,15 @@
 	storage_slots = 4
 	light_range = 6
 	icon_state = "vaipo_leader"
+
+/obj/item/clothing/suit/storage/marine/veteran/contractor/smartgunner
+	name = "\improper contractor M56 Harness"
+	desc = "A heavy protective vest designed to be worn with the M56 Smartgun System. \nIt has specially designed straps and reinforcement to carry the Smartgun and accessories."
+	icon_state = "vaipo_smartgun"
+	storage_slots = 4
+	flags_inventory = BLOCKSHARPOBJ|SMARTGUN_HARNESS
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+	unacidable = TRUE
 
 /obj/item/clothing/suit/storage/marine/veteran/contractor/light
 	name = "\improper modified M3 pattern contractor armor"

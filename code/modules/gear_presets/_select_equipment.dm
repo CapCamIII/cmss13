@@ -1246,6 +1246,7 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 		/obj/item/clothing/suit/storage/marine/veteran/contractor/variantone,
 		/obj/item/clothing/suit/storage/marine/veteran/contractor/varianttwo,
 		/obj/item/clothing/suit/storage/marine/veteran/contractor/variantthree,
+		/obj/item/clothing/suit/storage/marine/veteran/contractor/variantfour,
 		)
 	new_human.equip_to_slot_or_del(new armorpath, WEAR_JACKET)
 
@@ -1354,22 +1355,23 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 		if(51 to 55) // 5% gas mask
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/contractor, WEAR_FACE)
-		if(56 to 60) // 5% black beret
+		if(56 to 60) // 5% rain cover
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/helmet/cover/raincover(new_human), WEAR_IN_HELMET)
+		if(61 to 65) // 5% netting
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/contractor(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/helmet/cover/netting/urban(new_human), WEAR_IN_HELMET)
+		if(66 to 70) // 5% black beret
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/civilian/black(new_human), WEAR_HEAD)
-		if(61 to 65) // 5% brown beret
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/civilian/brown(new_human), WEAR_HEAD)
-		if(66 to 70) // 5% durag
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/durag,(new_human), WEAR_HEAD)
-		if(71 to 75) // 5% durag but black
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/durag/black (new_human), WEAR_HEAD)
-		if(76 to 80) // 5% bandana
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmbandana(new_human), WEAR_HEAD)
-		if(81 to 85) // 5% bandana but tan
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmbandana/tan(new_human), WEAR_HEAD)
-		if(86 to 90) // 5% boonie
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/boonie(new_human), WEAR_HEAD)
-		if(91 to 95) // 5% boonie but tan
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/boonie/tan(new_human), WEAR_HEAD)
+		if(71 to 75) // 5% contractor beret
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/contractor(new_human), WEAR_HEAD)
+		if(76 to 85) // 10% patrol cap
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/urban(new_human), WEAR_HEAD)
+		if(86 to 90) // 5% patrol cap, goggles
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/urban(new_human), WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/mgoggles(new_human), WEAR_IN_HELMET)
+		if(91 to 95) // 5% patrol cap, radio
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/bridge/urban(new_human), WEAR_HEAD)
 		if(96 to 100) // 5% pilot helmet
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/pilot/contractor(new_human), WEAR_HEAD)
 
