@@ -1076,7 +1076,7 @@
 //  Solar devils SG, frontline mode only
 
 /obj/item/weapon/gun/smartgun/pve
-	desc = "The actual firearm in the 4-piece M56A2 Smartgun System. This is a variant used by the Solar Devils Batallion, utilizing a 'frontline only' IFF system that refuses to fire if a friendly would be hit."
+	desc = "The actual firearm in the 4-piece M56A2 Smartgun System. This variant uses a 'frontline only' IFF system that refuses to fire if a friendly would be hit, though the target prioritisation is greatly improved, increasing damage output."
 	actions_types = list(
 		/datum/action/item_action/smartgun/toggle_lethal_mode,
 		/datum/action/item_action/smartgun/toggle_ammo_type,

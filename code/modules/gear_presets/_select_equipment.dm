@@ -1375,6 +1375,16 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 		if(96 to 100) // 5% pilot helmet
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/pilot/contractor(new_human), WEAR_HEAD)
 
+/datum/equipment_preset/proc/spawn_contractor_smartgun_headwear(mob/living/carbon/human/new_human)
+	var/random_sg_headwear = rand(1, 4)
+	switch(random_sg_headwear)
+		if(1 to 2) // 50% patrol cap
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/urban(new_human), WEAR_HEAD)
+		if(3) // 25% radio patrol cap
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/bridge/urban(new_human), WEAR_HEAD)
+		if(4) // 25% beret
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/contractor(new_human), WEAR_HEAD)
+
 /datum/equipment_preset/proc/spawn_contractor_guard_gear(mob/living/carbon/human/new_human)
 	var/random_guardgear = rand(1,2)
 	switch(random_guardgear)

@@ -1186,7 +1186,8 @@
 	icon_state = "vaipo_smartgun"
 	storage_slots = 4
 	flags_inventory = BLOCKSHARPOBJ|SMARTGUN_HARNESS
-	slowdown = SLOWDOWN_ARMOR_LIGHT
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW //higher damage output but has to frontline and has a bit less armor
+	armor_bullet = CLOTHING_ARMOR_MEDIUM
 	unacidable = TRUE
 
 /obj/item/clothing/suit/storage/marine/veteran/contractor/light

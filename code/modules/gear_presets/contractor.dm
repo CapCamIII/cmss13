@@ -186,7 +186,6 @@
 	new_human.equip_to_slot_or_del(new headset_type, WEAR_L_EAR)
 	spawn_contractor_uniform(new_human)
 	spawn_contractor_gloves(new_human)
-	spawn_contractor_headwear(new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/merc/knife, WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/ert, WEAR_L_STORE)
 
@@ -195,6 +194,7 @@
 		if(1 to 3) // 60% HPR
 			spawn_contractor_armor(new_human)
 			spawn_bimex_glasses(new_human)
+			spawn_contractor_headwear(new_human)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/webbing, WEAR_ACCESSORY)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/m1911/socom, WEAR_WAIST)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/explosive/breaching, WEAR_R_STORE)
@@ -216,6 +216,7 @@
 			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/lmg/holo_target, WEAR_IN_JACKET)
 			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/lmg/ap, WEAR_IN_JACKET)
 		if(4 to 5) // 40% smartgun
+			spawn_contractor_smartgun_headwear(new_human)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/veteran/contractor/smartgunner, WEAR_JACKET)
 			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/smartgun/pve, WEAR_J_STORE)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night/m56_goggles, WEAR_EYES)
@@ -600,7 +601,6 @@
 	new_human.equip_to_slot_or_del(new headset_type, WEAR_L_EAR)
 	spawn_contractor_covert_uniform(new_human)
 	spawn_contractor_gloves(new_human)
-	spawn_vairs_headwear(new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/contractor, WEAR_FACE)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/merc/knife, WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/ert, WEAR_L_STORE)
@@ -609,6 +609,7 @@
 	switch(machinegun)
 		if(1 to 3) // 60% HPR
 			spawn_contractor_armor(new_human)
+			spawn_vairs_headwear(new_human)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night/ghillie_goggles, WEAR_EYES)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/webbing, WEAR_ACCESSORY)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/m1911/socom, WEAR_WAIST)
@@ -631,6 +632,7 @@
 			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/lmg, WEAR_IN_JACKET)
 			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/lmg, WEAR_IN_JACKET)
 		if(4 to 5) // 40% smartgun
+			spawn_contractor_smartgun_headwear(new_human)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/marine/veteran/contractor/smartgunner, WEAR_JACKET)
 			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/smartgun/pve, WEAR_J_STORE)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/night/m56_goggles, WEAR_EYES)

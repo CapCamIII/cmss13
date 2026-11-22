@@ -63,7 +63,7 @@
 /datum/emergency_call/contractors/print_backstory(mob/living/carbon/human/M)
 	if(ishuman_strict(M))
 		to_chat(M, SPAN_BOLD("You were born a citizen of the United Americas, raised in [pick(50;"one of the various member states on Earth", 25;"a well-to-do colony in or close to Sol", 25;"a shitty colony out in the frontier")] to a [pick(25;"average", 70;"poor", 5;"well-established")] family."))
-		to_chat(M, SPAN_BOLD("Once you reached adulthood, you ended up serving in the [pick(60;"United States Colonial Marine Corps", 10;"United States Army", 10;"United States Aerospace Force", 10;"Latin America Colonial Navy", 10;"United America Colonial Guard")], as a result of [pick(25;"your patriotism", 25;"a desire to better yourself", 25;"a sense of adventure", 25;"a judicial order as an alternative to prison")]."))
+		to_chat(M, SPAN_BOLD("Once you reached adulthood, you ended up serving in the [pick(60;"United States Colonial Marine Corps", 10;"United States Army", 10;"United States Aerospace Force", 10;"Latin America Colonial Navy", 10;"Canadian Colonial Armed Forces")], as a result of [pick(25;"your patriotism", 25;"a desire to better yourself", 25;"a sense of adventure", 25;"a judicial order as an alternative to prison")]."))
 		to_chat(M, SPAN_BOLD("Military service gave you combat experience and many useful skills but changed you."))
 		to_chat(M, SPAN_BOLD("After getting out, you decided to make the most of your new skillset, enlisting in a new career as a gun for hire."))
 		to_chat(M, SPAN_BOLD("You are a skilled mercenary, making better pay than you ever did back in the military."))
@@ -88,12 +88,13 @@
 /datum/emergency_call/contractors/platoon
 	name = "VAIPO Contractors (Platoon) (Friendly)"
 	mob_min = 7
-	mob_max = 28
+	mob_max = 30
 	probability = 0
 	max_medics = 3
 	max_heavies = 3
 	max_engineers = 2
 	max_synths = 2
+	max_seconds = 2
 
 
 
@@ -120,7 +121,7 @@
 
 /datum/emergency_call/contractors_covert/New()
 	..()
-	arrival_message = "STr*&e teaM t*is i* th^ S*%b^r*n`, #*u are cLe*% for a*pr*%^h. Pr*mE a*l wE*p^ns and pR*epr# t% b%@rd." //friendly ert jumpscare
+	arrival_message = "STr*&e teaM t*is i* th^ S*%b^r*n`, #*u are cLe*% for a*pr*%^h. Pr*mE a*l wE*p^ns and pR*p%r# t% b%@rd." //friendly ert jumpscare
 	objectives = "Sabotage Weyland-Yutani efforts, secure xenobiological samples, assist USCMC forces in whatever way possible."
 
 /datum/emergency_call/contractors_covert/proc/check_objective_info()
@@ -132,7 +133,7 @@
 /datum/emergency_call/contractors_covert/print_backstory(mob/living/carbon/human/M)
 	if(ishuman_strict(M))
 		to_chat(M, SPAN_BOLD("You were born a citizen of the United Americas, raised in [pick(50;"one of the various member states on Earth", 25;"a well-to-do colony in or close to Sol", 25;"a shitty colony out in the frontier")] to a [pick(25;"average", 70;"poor", 5;"well-established")] family."))
-		to_chat(M, SPAN_BOLD("Once you reached adulthood, you ended up serving in the [pick(60;"United States Colonial Marine Corps", 10;"United States Army", 10;"United States Aerospace Force", 10;"Latin America Colonial Navy", 10;"United America Colonial Guard")], as a result of [pick(25;"your patriotism", 25;"a desire to better yourself", 25;"a sense of adventure", 25;"a judicial order as an alternative to prison")]."))
+		to_chat(M, SPAN_BOLD("Once you reached adulthood, you ended up serving in the [pick(60;"United States Colonial Marine Corps", 10;"United States Army", 10;"United States Aerospace Force", 10;"Latin America Colonial Navy", 10;"Canadian Colonial Armed Forces")], as a result of [pick(25;"your patriotism", 25;"a desire to better yourself", 25;"a sense of adventure", 25;"a judicial order as an alternative to prison")]."))
 		to_chat(M, SPAN_BOLD("Military service gave you combat experience and many useful skills but changed you."))
 		to_chat(M, SPAN_BOLD("After getting out, you decided to make the most of your new skillset, enlisting in a new career as a gun for hire."))
 		to_chat(M, SPAN_BOLD("You are a skilled mercenary, making better pay than you ever did back in the military."))
