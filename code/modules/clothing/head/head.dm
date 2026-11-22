@@ -1298,6 +1298,7 @@ GLOBAL_LIST_INIT(allowed_hat_items, list(
 	)
 	item_state = "owlf_hood"
 
+
 //=ROYAL MARINES=\\
 
 /obj/item/clothing/head/beanie/royal_marine

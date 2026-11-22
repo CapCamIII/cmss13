@@ -2413,12 +2413,6 @@
 /obj/effect/landmark/structure_spawner/setup/survive/xeno_weed_node,
 /turf/open/floor/plating/kutjevo,
 /area/kutjevo/interior/colony_north)
-"ajC" = (
-/obj/effect/landmark/nightmare{
-	insert_tag = "cave_hold"
-	},
-/turf/closed/wall/kutjevo/rock,
-/area/kutjevo/interior/oob)
 "akH" = (
 /obj/item/weapon/gun/rifle/mar40/carbine,
 /turf/open/floor/kutjevo/multi_tiles,
@@ -46248,7 +46242,7 @@ dxF
 dxF
 dxF
 ahg
-ajC
+dxF
 dxF
 dxF
 dxF

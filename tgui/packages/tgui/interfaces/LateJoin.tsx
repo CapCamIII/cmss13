@@ -21,6 +21,8 @@ type RoleInformation = {
         readonly Open: number | null;
       }[]
     | null;
+  readonly Slots: number;
+  readonly Players: number;
   readonly Active: number;
 };
 

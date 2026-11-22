@@ -1316,13 +1316,6 @@
 "aeB" = (
 /obj/structure/blocker/forcefield/multitile_vehicles,
 /obj/structure/blocker/forcefield/multitile_vehicles,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/obj/structure/blocker/forcefield/multitile_vehicles,
 /obj/effect/landmark/structure_spawner/setup/survive/xeno_wall_hull,
 /turf/closed/wall/strata_outpost/reinforced,
 /area/lv522/atmos/way_in_command_centre)
@@ -1663,12 +1656,6 @@
 /area/lv522/atmos/east_reactor/south)
 "afM" = (
 /obj/structure/blocker/forcefield/multitile_vehicles,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/blocker/forcefield/multitile_vehicles,
 /obj/effect/landmark/structure_spawner/setup/survive/xeno_wall_hull,
 /turf/closed/wall/strata_outpost/reinforced,
 /area/lv522/atmos/east_reactor/south)
@@ -1764,12 +1751,6 @@
 /turf/open/floor/prison/floor_plate,
 /area/lv522/outdoors/nw_rockies)
 "agf" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
 /obj/structure/blocker/forcefield/multitile_vehicles,
 /obj/effect/landmark/structure_spawner/setup/survive/xeno_wall_hull,
 /turf/open/floor/corsat,

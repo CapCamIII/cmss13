@@ -190,12 +190,6 @@ SUBSYSTEM_DEF(hijack)
 		can_fire = FALSE
 		return
 
-	if(SSticker.current_state == GAME_STATE_FINISHED)
-		if(hijack_status == HIJACK_OBJECTIVES_DOCKED && SSticker.mode.round_finished == MODE_INFESTATION_X_MAJOR)
-			announce_station_undocking()
-		can_fire = FALSE
-		return
-
 	if(hijack_status < HIJACK_OBJECTIVES_STARTED)
 		// First fire
 		hijack_status = HIJACK_OBJECTIVES_STARTED

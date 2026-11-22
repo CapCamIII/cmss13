@@ -859,9 +859,6 @@
 	starting_attachment_types = list(/obj/item/attachable/angledgrip, /obj/item/attachable/suppressor, /obj/item/attachable/magnetic_harness)
 	flags_gun_features = GUN_AMMO_COUNTER|GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK|GUN_AUTO_EJECT_CASINGS
 
-/obj/item/weapon/gun/rifle/mar40/tactical/contractor
-	starting_attachment_types = list(/obj/item/attachable/angledgrip, /obj/item/attachable/magnetic_harness)
-
 /obj/item/weapon/gun/rifle/mar40/carbine
 	name = "\improper MAR-30 battle carbine"
 	desc = "A cheap, reliable carbine chambered in 7.62x39mm. Commonly found in the hands of criminals or mercenaries."
@@ -2295,7 +2292,7 @@
 
 /obj/item/weapon/gun/rifle/l42a/abr40/tactical
 	name = "\improper ABR-40 tactical rifle"
-	desc = "The civilian version of the L42A battle rifle that was rejected by the USCM. Almost identical and even cross-compatible with L42 magazines, just don't take the stock off. This rifle seems to have unique tacticool blue-black furniture alongside some aftermarket modding, including a burst-fire cycler, wow!"
+	desc = "The civilian version of the L42A battle rifle that was rejected by the USCM. Almost identical and even cross-compatible with L42 magazines, just don't take the stock off. This rifle seems to have unique tacticool blue-black furniture alongside some aftermarket modding, including a burst-fire cycler."
 	desc_lore = "The ABR-40 was created as a civilian version of the L42 rifle, to capitalize on the soon-to-come striking popularity of the L42 battle rifle; when the L42 project fell through, the ABR-40 was left to pick up the slack as a mass-produced civilian hunting rifle. It's cheap cost, accuracy, and reliable action made it a perfect fit for many underfunded paramilitary groups and insurrections in turn."
 	icon_state = "abr40_tac"
 	item_state = "abr40_tac"

@@ -251,12 +251,6 @@
 	if(savefile_version == 37) // Players currently on version 37 that previously converted to json on a version < 37 could have lost data
 		updated_from = savefile_version
 
-	if(savefile_version < 37)
-		var/toggles_insert
-		S["toggles_sound"] >> toggles_insert
-		toggles_insert |= (SOUND_ROUND_END)
-		S["toggles_sound"] << toggles_insert
-
 	if(updated_from)
 		if(!owner.performed_post_login)
 			RegisterSignal(owner, COMSIG_CLIENT_LOGGED_IN, PROC_REF(handle_logged_in))

@@ -241,6 +241,7 @@
 			else
 				channels += ch_name
 				channels[ch_name] = key.channels[ch_name]
+
 		for(var/tracking_option in key.tracking_options)
 			tracking_options[tracking_option] = key.tracking_options[tracking_option]
 		if(key.translate_apollo)

@@ -76,6 +76,7 @@
 	SIGNAL_HANDLER
 	handle_rotation()
 
+
 /obj/structure/bed/chair/initialize_pass_flags(datum/pass_flags_container/PF)
 	if(PF)
 		PF.flags_can_pass_all = PASS_AROUND|PASS_UNDER

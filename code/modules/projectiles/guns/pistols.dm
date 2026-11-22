@@ -205,7 +205,7 @@
 	item_state = "m4a3"
 	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK|GUN_ONE_HAND_WIELDED|GUN_AMMO_COUNTER
 
-/obj/item/weapon/gun/pistol/m1911/fluff/set_gun_config_values() //has less of a damage boost than the normal m1911
+/obj/item/weapon/gun/pistol/m1911/fluff/set_gun_config_values() //does not have the damage boost that normal m1911 has
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_11)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
@@ -213,7 +213,7 @@
 	scatter = SCATTER_AMOUNT_TIER_8
 	burst_scatter_mult = SCATTER_AMOUNT_TIER_6
 	scatter_unwielded = SCATTER_AMOUNT_TIER_6
-	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
+	damage_mult = BASE_BULLET_DAMAGE_MULT
 
 /obj/item/weapon/gun/pistol/m1911/custom
 	name = "\improper M1911C service pistol"

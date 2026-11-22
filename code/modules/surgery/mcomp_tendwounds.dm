@@ -92,7 +92,10 @@
 	preop_sound = 'sound/effects/gunrustle1.ogg'
 	success_sound = 'sound/handling/ointment_spreading.ogg'
 	failure_sound = 'sound/surgery/organ2.ogg'
+
+/datum/surgery_step/mtend_wounds/extra_checks(mob/living/user, mob/living/carbon/target, target_zone, obj/item/tool, datum/surgery/surgery, repeating, skipped)
 	var/obj/item/tool/surgery/healing_gun/gun = tool
+	if(!gun.loaded)
 		to_chat(user, SPAN_WARNING("You can't heal yourself without a capsule in the gun!"))
 		return FALSE
 	return TRUE

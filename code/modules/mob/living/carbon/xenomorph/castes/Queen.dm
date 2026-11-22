@@ -401,15 +401,6 @@
 	xeno_organ_flags = XENO_ORGAN_ROYAL|XENO_ORGAN_HARDENED|XENO_ORGAN_TACHYCARDIA|XENO_ORGAN_ACID|XENO_ORGAN_SUPPORT
 
 
-/obj/item/organ/xeno/queen
-	name = "queen heart"
-	icon_state = "heart_t3"
-	item_state = "heart_t3"
-	research_value = 8000
-
-	xeno_organ_flags = XENO_ORGAN_ROYAL|XENO_ORGAN_HARDENED|XENO_ORGAN_TACHYCARDIA|XENO_ORGAN_ACID|XENO_ORGAN_SUPPORT
-
-
 /mob/living/carbon/xenomorph/queen/set_resting(new_resting, silent, instant)
 	if(ovipositor && new_resting)
 		return

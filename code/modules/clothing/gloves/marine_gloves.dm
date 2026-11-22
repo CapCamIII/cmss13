@@ -87,6 +87,7 @@
 	item_state = "latex"
 	adopts_squad_color = FALSE
 
+
 /obj/item/clothing/gloves/marine/officer
 	name = "officer gloves"
 	desc = "Shiny and impressive. They look expensive."

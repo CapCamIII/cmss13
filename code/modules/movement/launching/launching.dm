@@ -175,7 +175,6 @@
 
 	var/turf/start_turf
 	var/turf/above = SSmapping.get_turf_above(loc)
-	var/turf/target_turf = get_turf(launching_data.target)
 	var/datum/turf_reservation/reservation = SSmapping.used_turfs[loc]
 	if(reservation && (reservation.is_below(loc, get_turf(launching_data.target))) || (launching_data.target.z > z) && istype(above, /turf/open_space))
 		start_turf = above
