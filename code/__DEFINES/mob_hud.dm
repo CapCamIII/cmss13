@@ -30,6 +30,7 @@
 #define NEW_PLAYER_HUD "30" //Makes it easy to see new players.
 #define SPYCAM_HUD "31" //Remote control spy cameras.
 #define XENO_HOSTILE_TAG_SPREAD "32" // dancer prae yellow 'tag'
+#define CAS_PROFILING_HUD "33" //Displays colored corners over a mob's turf to signify friend or foe
 
 //data HUD (medhud, sechud) defines
 #define MOB_HUD_SECURITY_BASIC 1
@@ -53,27 +54,28 @@
 #define MOB_HUD_FACTION_NSPA 19
 #define MOB_HUD_FACTION_PAP 20
 #define MOB_HUD_FACTION_WO 21
-#define MOB_HUD_FACTION_VAI 22
-#define MOB_HUD_HUNTER 23
-#define MOB_HUD_HUNTER_CLAN 24
-#define MOB_HUD_EXECUTE 25
-#define MOB_HUD_NEW_PLAYER 26
-#define MOB_HUD_SPYCAMS 27
-#define MOB_HUD_XENO_HIVE_NORMAL 28
-#define MOB_HUD_XENO_HIVE_CORRUPTED 29
-#define MOB_HUD_XENO_HIVE_ALPHA 30
-#define MOB_HUD_XENO_HIVE_BRAVO 31
-#define MOB_HUD_XENO_HIVE_CHARLIE 32
-#define MOB_HUD_XENO_HIVE_DELTA 33
-#define MOB_HUD_XENO_HIVE_FERAL 34
-#define MOB_HUD_XENO_HIVE_TAMED 35
-#define MOB_HUD_XENO_HIVE_MUTATED 36
-#define MOB_HUD_XENO_HIVE_FORSAKEN 37
-#define MOB_HUD_XENO_HIVE_YAUTJA 38
-#define MOB_HUD_XENO_HIVE_HUNTED 39
-#define MOB_HUD_XENO_HIVE_RENEGADE 40
-#define MOB_HUD_XENO_HIVE_TUTORIAL 41
-#define MOB_HUD_XENO_HIVE_K_SERIES 42
+#define MOB_HUD_HUNTER 22
+#define MOB_HUD_HUNTER_CLAN 23
+#define MOB_HUD_EXECUTE 24
+#define MOB_HUD_NEW_PLAYER 25
+#define MOB_HUD_SPYCAMS 26
+#define MOB_HUD_XENO_HIVE_NORMAL 27
+#define MOB_HUD_XENO_HIVE_CORRUPTED 28
+#define MOB_HUD_XENO_HIVE_ALPHA 29
+#define MOB_HUD_XENO_HIVE_BRAVO 30
+#define MOB_HUD_XENO_HIVE_CHARLIE 31
+#define MOB_HUD_XENO_HIVE_DELTA 32
+#define MOB_HUD_XENO_HIVE_FERAL 33
+#define MOB_HUD_XENO_HIVE_TAMED 34
+#define MOB_HUD_XENO_HIVE_MUTATED 35
+#define MOB_HUD_XENO_HIVE_FORSAKEN 36
+#define MOB_HUD_XENO_HIVE_YAUTJA 37
+#define MOB_HUD_XENO_HIVE_HUNTED 38
+#define MOB_HUD_XENO_HIVE_RENEGADE 39
+#define MOB_HUD_XENO_HIVE_TUTORIAL 40
+#define MOB_HUD_XENO_HIVE_K_SERIES 41
+#define MOB_HUD_DROPSHIP 42
+#define MOB_HUD_FACTION_VAI 43
 
 //for SL/FTL/LZ targeting on locator huds
 #define TRACKER_SL "track_sl"
@@ -102,3 +104,12 @@
 
 //These are used to manage the same HUD having multiple sources
 #define HUD_SOURCE_ADMIN "admin"
+
+
+//cas hud overlays
+#define DROPSHIP_OVERLAY_FRIENDLY "friendly" // marine
+#define DROPSHIP_OVERLAY_FRIENDLY_DEAD "friendly_dead" // dead marine
+#define DROPSHIP_OVERLAY_ENEMY_LIGHT "enemy_light" // t1 xenos
+#define DROPSHIP_OVERLAY_ENEMY_MEDIUM "enemy_medium" // t2 xenos
+#define DROPSHIP_OVERLAY_ENEMY_HEAVY "enemy_heavy" // t3 and above xenos
+#define DROPSHIP_OVERLAY_ENEMY_DEAD "enemy_dead" // dead xeno

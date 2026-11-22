@@ -350,6 +350,21 @@ GLOBAL_LIST_INIT(daniel_emotes, setup_daniel_emotes())
 GLOBAL_LIST_EMPTY(wy_droid_categories)
 /// dict ("category" : (emotes)) of every wy droid emote typepath
 GLOBAL_LIST_INIT(wy_droid_emotes, setup_wy_droid_emotes())
+///Dropship CAS overlays
+GLOBAL_LIST_EMPTY(dropship_reticles)
+
+// magazine lists for storage items that needs it (DO NOT DEFINE HANDFULS HERE)
+/// list for longarm ammunition
+GLOBAL_LIST_INIT(longarm_ammo, list(
+	/obj/item/ammo_magazine/rifle,
+	/obj/item/ammo_magazine/smg,
+	/obj/item/ammo_magazine/sniper,
+))
+/// list for sidearm ammunition
+GLOBAL_LIST_INIT(sidearm_ammo, list(
+	/obj/item/ammo_magazine/pistol,
+	/obj/item/ammo_magazine/revolver,
+))
 
 // magazine lists for storage items that needs it (DO NOT DEFINE HANDFULS HERE)
 /// list for longarm ammunition
