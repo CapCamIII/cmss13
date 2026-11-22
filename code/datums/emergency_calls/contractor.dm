@@ -30,29 +30,36 @@
 	if(!leader && HAS_FLAG(mob.client.prefs.toggles_ert, PLAY_LEADER) && check_timelock(mob.client, JOB_SQUAD_LEADER, time_required_for_job))
 		leader = mob
 		to_chat(mob, SPAN_ROLE_HEADER("You are a Contractor Team Leader of Vanguard's Arrow International!"))
+		to_chat(mob, SPAN_ROLE_BODY("You are the ultimate authority on what your team does, attempt to achieve your designated orders, but make sure your team makes out out alive as your highest priority."))
 		arm_equipment(mob, /datum/equipment_preset/contractor/duty/leader, TRUE, TRUE)
 	else if(synths < max_synths && HAS_FLAG(mob.client.prefs.toggles_ert, PLAY_SYNTH) && mob.client.check_whitelist_status(WHITELIST_SYNTHETIC))
 		synths++
 		to_chat(mob, SPAN_ROLE_HEADER("You are a Contractor Support Synthetic of Vanguard's Arrow International!"))
+		to_chat(mob, SPAN_ROLE_BODY("Stick with the team leader and act as advisory, engineering, and medical support."))
 		arm_equipment(mob, /datum/equipment_preset/synth/contractor/duty, TRUE, TRUE)
 	else if(seconds < max_seconds && HAS_FLAG(mob.client.prefs.toggles_ert, PLAY_LEADER) && check_timelock(mob.client, JOB_SQUAD_TEAM_LEADER, time_required_for_job))
 		seconds++
 		to_chat(mob, SPAN_ROLE_HEADER("You are a Contractor Adjutant of Vanguard's Arrow International!"))
+		to_chat(mob, SPAN_ROLE_BODY("You are the second in command of your team, stick close to the team leader and advise them. If they die, take control of the team yourself."))
 		arm_equipment(mob, /datum/equipment_preset/contractor/duty/adjutant, TRUE, TRUE)
 	else if(medics < max_medics && HAS_FLAG(mob.client.prefs.toggles_ert, PLAY_MEDIC) && check_timelock(mob.client, JOB_SQUAD_MEDIC, time_required_for_job))
 		medics++
 		to_chat(mob, SPAN_ROLE_HEADER("You are a Contractor Medical Specialist of Vanguard's Arrow International!"))
+		to_chat(mob, SPAN_ROLE_BODY("You are the team's sole medical specialist, focus on keeping your team up and fighting over doing it yourself."))
 		arm_equipment(mob, /datum/equipment_preset/contractor/duty/medic, TRUE, TRUE)
-	else if(heavies < max_heavies && HAS_FLAG(mob.client.prefs.toggles_ert, PLAY_HEAVY) && check_timelock(mob.client, JOB_SQUAD_SPECIALIST))
+	else if(heavies < max_heavies && HAS_FLAG(mob.client.prefs.toggles_ert, PLAY_HEAVY) && check_timelock(mob.client, JOB_SQUAD_SMARTGUN))
 		heavies++
 		to_chat(mob, SPAN_ROLE_HEADER("You are a Contractor Machinegunner of Vanguard's Arrow International!"))
+		to_chat(mob, SPAN_ROLE_BODY("You are the team's base of fire, stay at the front and keep pressure on whatever you're engaging. If you've lucked out and are equipped with a smartgun, keep in mind that it is locked to frontline mode, though it has better damage in exchange."))
 		arm_equipment(mob, /datum/equipment_preset/contractor/duty/heavy, TRUE, TRUE)
 	else if(engineers < max_engineers && HAS_FLAG(mob.client.prefs.toggles_ert, PLAY_ENGINEER) && check_timelock(mob.client, JOB_SQUAD_ENGI))
 		engineers++
 		to_chat(mob, SPAN_ROLE_HEADER("You are a Contractor Engineering Specialist of Vanguard's Arrow International!"))
+		to_chat(mob, SPAN_ROLE_BODY("You are the team's sole engineering specialist, try to stay in a supporting role and provide defenses for your team to fall back to in emergencies. Be careful, you do not start with marine IFF and your sentry guns will engage any marines that walk in front."))
 		arm_equipment(mob, /datum/equipment_preset/contractor/duty/engi, TRUE, TRUE)
 	else
 		to_chat(mob, SPAN_ROLE_HEADER("You are a Contractor of Vanguard's Arrow International!"))
+		to_chat(mob, SPAN_ROLE_BODY("You are the rank and file of the team, equipped for a particular job depending on your loadout, though still capable of everything in most situations."))
 		arm_equipment(mob, /datum/equipment_preset/contractor/duty/standard, TRUE, TRUE)
 
 	print_backstory(mob)
@@ -63,7 +70,7 @@
 /datum/emergency_call/contractors/print_backstory(mob/living/carbon/human/M)
 	if(ishuman_strict(M))
 		to_chat(M, SPAN_BOLD("You were born a citizen of the United Americas, raised in [pick(50;"one of the various member states on Earth", 25;"a well-to-do colony in or close to Sol", 25;"a shitty colony out in the frontier")] to a [pick(25;"average", 70;"poor", 5;"well-established")] family."))
-		to_chat(M, SPAN_BOLD("Once you reached adulthood, you ended up serving in the [pick(60;"United States Colonial Marine Corps", 10;"United States Army", 10;"United States Aerospace Force", 10;"Latin America Colonial Navy", 10;"Canadian Colonial Armed Forces")], as a result of [pick(25;"your patriotism", 25;"a desire to better yourself", 25;"a sense of adventure", 25;"a judicial order as an alternative to prison")]."))
+		to_chat(M, SPAN_BOLD("Once you reached adulthood, you ended up serving in the [pick(60;"United States Colonial Marine Corps", 10;"United States Army", 10;"United States AeroSpace Force", 10;"Latin America Colonial Navy", 10;"Canadian Colonial Armed Forces")], as a result of [pick(25;"your patriotism", 25;"a desire to better yourself", 25;"a sense of adventure", 25;"a judicial order as an alternative to prison")]."))
 		to_chat(M, SPAN_BOLD("Military service gave you combat experience and many useful skills but changed you."))
 		to_chat(M, SPAN_BOLD("After getting out, you decided to make the most of your new skillset, enlisting in a new career as a gun for hire."))
 		to_chat(M, SPAN_BOLD("You are a skilled mercenary, making better pay than you ever did back in the military."))
@@ -133,7 +140,7 @@
 /datum/emergency_call/contractors_covert/print_backstory(mob/living/carbon/human/M)
 	if(ishuman_strict(M))
 		to_chat(M, SPAN_BOLD("You were born a citizen of the United Americas, raised in [pick(50;"one of the various member states on Earth", 25;"a well-to-do colony in or close to Sol", 25;"a shitty colony out in the frontier")] to a [pick(25;"average", 70;"poor", 5;"well-established")] family."))
-		to_chat(M, SPAN_BOLD("Once you reached adulthood, you ended up serving in the [pick(60;"United States Colonial Marine Corps", 10;"United States Army", 10;"United States Aerospace Force", 10;"Latin America Colonial Navy", 10;"Canadian Colonial Armed Forces")], as a result of [pick(25;"your patriotism", 25;"a desire to better yourself", 25;"a sense of adventure", 25;"a judicial order as an alternative to prison")]."))
+		to_chat(M, SPAN_BOLD("Once you reached adulthood, you ended up serving in the [pick(60;"United States Colonial Marine Corps", 10;"United States Army", 10;"United States AeroSpace Force", 10;"Latin America Colonial Navy", 10;"Canadian Colonial Armed Forces")], as a result of [pick(25;"your patriotism", 25;"a desire to better yourself", 25;"a sense of adventure", 25;"a judicial order as an alternative to prison")]."))
 		to_chat(M, SPAN_BOLD("Military service gave you combat experience and many useful skills but changed you."))
 		to_chat(M, SPAN_BOLD("After getting out, you decided to make the most of your new skillset, enlisting in a new career as a gun for hire."))
 		to_chat(M, SPAN_BOLD("You are a skilled mercenary, making better pay than you ever did back in the military."))
@@ -167,29 +174,36 @@
 	if(!leader && HAS_FLAG(H.client.prefs.toggles_ert, PLAY_LEADER) && check_timelock(H.client, JOB_SQUAD_LEADER, time_required_for_job))    //First one spawned is always the leader.
 		leader = H
 		to_chat(H, SPAN_ROLE_HEADER("You are a Covert Contractor Team Leader of Vanguard's Arrow International!"))
+		to_chat(H, SPAN_ROLE_BODY("You are the ultimate authority on what your team does, attempt to achieve your designated orders, but make sure your team makes out out alive as your highest priority."))
 		arm_equipment(H, /datum/equipment_preset/contractor/covert/leader, TRUE, TRUE)
 	else if(synths < max_synths && HAS_FLAG(H.client.prefs.toggles_ert, PLAY_SYNTH) && H.client.check_whitelist_status(WHITELIST_SYNTHETIC))
 		synths++
 		to_chat(H, SPAN_ROLE_HEADER("You are a Covert Contractor Support Synthetic of Vanguard's Arrow International!"))
+		to_chat(H, SPAN_ROLE_BODY("Stick with the team leader and act as advisory, engineering, and medical support."))
 		arm_equipment(H, /datum/equipment_preset/synth/contractor/covert, TRUE, TRUE)
 	else if(seconds < max_seconds && HAS_FLAG(H.client.prefs.toggles_ert, PLAY_LEADER) && check_timelock(H.client, JOB_SQUAD_TEAM_LEADER, time_required_for_job))
 		seconds++
 		to_chat(H, SPAN_ROLE_HEADER("You are a Covert Contractor Adjutant of Vanguard's Arrow International!"))
+		to_chat(H, SPAN_ROLE_BODY("You are the second in command of your team, stick close to the team leader and advise them. If they die, take control of the team yourself."))
 		arm_equipment(H, /datum/equipment_preset/contractor/duty/adjutant, TRUE, TRUE)
 	else if(medics < max_medics && HAS_FLAG(H.client.prefs.toggles_ert, PLAY_MEDIC) && check_timelock(H.client, JOB_SQUAD_MEDIC, time_required_for_job))
 		medics++
 		to_chat(H, SPAN_ROLE_HEADER("You are a Covert Contractor Medical Specialist of Vanguard's Arrow International!"))
+		to_chat(H, SPAN_ROLE_BODY("You are the team's sole medical specialist, focus on keeping your team up and fighting over doing it yourself."))
 		arm_equipment(H, /datum/equipment_preset/contractor/covert/medic, TRUE, TRUE)
 	else if(heavies < max_heavies && HAS_FLAG(H.client.prefs.toggles_ert, PLAY_SMARTGUNNER) && check_timelock(H.client, JOB_SQUAD_SMARTGUN, time_required_for_job))
 		heavies++
 		to_chat(H, SPAN_ROLE_HEADER("You are a Covert Contractor Machinegunner of Vanguard's Arrow International!"))
+		to_chat(H, SPAN_ROLE_BODY("You are the team's base of fire, stay at the front and keep pressure on whatever you're engaging. If you've lucked out and are equipped with a smartgun, keep in mind that it is locked to frontline mode, though it has better damage in exchange."))
 		arm_equipment(H, /datum/equipment_preset/contractor/covert/heavy, TRUE, TRUE)
 	else if(engineers < max_engineers && HAS_FLAG(H.client.prefs.toggles_ert, PLAY_ENGINEER) && check_timelock(H.client, JOB_SQUAD_ENGI))
 		engineers++
 		to_chat(H, SPAN_ROLE_HEADER("You are a Covert Contractor Engineering Specialist of Vanguard's Arrow International!"))
+		to_chat(H, SPAN_ROLE_BODY("You are the team's sole engineering specialist, try to stay in a supporting role and provide defenses for your team to fall back to in emergencies. Be careful, you do not start with marine IFF and your sentry guns will engage any marines that walk in front."))
 		arm_equipment(H, /datum/equipment_preset/contractor/covert/engi, TRUE, TRUE)
 	else
 		to_chat(H, SPAN_ROLE_HEADER("You are a Covert Contractor of Vanguard's Arrow International!"))
+		to_chat(H, SPAN_ROLE_BODY("You are the rank and file of the team, equipped for a particular job depending on your loadout, though still capable of everything in most situations."))
 		arm_equipment(H, /datum/equipment_preset/contractor/covert/standard, TRUE, TRUE)
 
 	print_backstory(H)
