@@ -1441,3 +1441,32 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 		if(61 to 100) // 40% beret
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/contractor(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new random_leadheadwear, WEAR_HEAD)
+
+/datum/equipment_preset/proc/spawn_contractor_sidearm_shoulder(mob/living/carbon/human/new_human)
+	var/random_shoulderholstergun = rand(1,6)
+	switch(random_shoulderholstergun)
+		if(1 to 4) // 66% normal m1911 socom
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/holster, WEAR_ACCESSORY)
+			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/pistol/m1911/socom/equipped, WEAR_IN_ACCESSORY)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/m1911, WEAR_IN_ACCESSORY)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/m1911, WEAR_IN_ACCESSORY)
+		if(5) // 17% m1911 socom burst-fire
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/holster, WEAR_ACCESSORY)
+			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/pistol/m1911/socom/burst/equipped, WEAR_IN_ACCESSORY)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/m1911/extended, WEAR_IN_ACCESSORY)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/m1911/extended, WEAR_IN_ACCESSORY)
+		if(6) // 17% highpower .45
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/holster, WEAR_ACCESSORY)
+			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/pistol/highpower/tactical/attached, WEAR_IN_ACCESSORY)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/highpower/black, WEAR_IN_ACCESSORY)
+			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/highpower/black, WEAR_IN_ACCESSORY)
+
+/datum/equipment_preset/proc/spawn_contractor_sidearm_belt(mob/living/carbon/human/new_human)
+	var/random_beltgun = rand(1,6)
+	switch(random_beltgun)
+		if(1 to 4) // 50% normal m1911 socom
+			new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/m1911/socom, WEAR_WAIST)
+		if(5) // 20% m1911 socom burst-fire
+			new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/m1911/socom_burst, WEAR_WAIST)
+		if(6) // 20% highpower .45
+			new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m4a3/highpower/tactical, WEAR_WAIST)

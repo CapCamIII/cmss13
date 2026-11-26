@@ -182,8 +182,6 @@
 	name = "\improper M48A5 service pistol"
 	desc = "A timeless classic since the first World War, the M1911A1 has limited use with the USCM, and is often used as a sidearm by non-governmental bodies due to its reliability. This is an experimental version, equipped with burst-fire capability. Chambered in .45 ACP."
 	desc_lore = "The M48A5 is one of Armat's offerings for the current Experimental Trooper trials alongside the SU-6 smartpistol. Whilst the M48A5 is favored by Recon and Raider units, ease of logistics and production have made Weyland-Yutani's offering to the competition, the VP78, the likely winner."
-	starting_attachment_types = list(/obj/item/attachable/suppressor/sleek, /obj/item/attachable/reflex)
-	current_mag = /obj/item/ammo_magazine/pistol/m1911/extended
 
 /obj/item/weapon/gun/pistol/m1911/socom/burst/set_gun_config_values() //rounds out to normal m1911 stats, this just counteracts the integrated BFA
 	..()
@@ -197,6 +195,10 @@
 	BREACHER.hidden = FALSE
 	BREACHER.Attach(src)
 	update_attachable(BREACHER.slot)
+
+/obj/item/weapon/gun/pistol/m1911/socom/burst/equipped
+	starting_attachment_types = list(/obj/item/attachable/suppressor/sleek, /obj/item/attachable/reflex)
+	current_mag = /obj/item/ammo_magazine/pistol/m1911/extended
 
 /obj/item/weapon/gun/pistol/m1911/fluff
 	name = "\improper M48A4 service pistol"
@@ -769,10 +771,10 @@
 	current_mag = /obj/item/ammo_magazine/pistol/highpower/black
 	icon_state = "highpower_tac"
 	item_state = "highpower_tac"
-	starting_attachment_types = list(/obj/item/attachable/suppressor, /obj/item/attachable/lasersight, /obj/item/attachable/reflex)
 	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK|GUN_ONE_HAND_WIELDED|GUN_AMMO_COUNTER|GUN_AUTO_EJECT_CASINGS
 
-
+/obj/item/weapon/gun/pistol/highpower/tactical/attached
+	starting_attachment_types = list(/obj/item/attachable/suppressor/sleek, /obj/item/attachable/lasersight, /obj/item/attachable/reflex)
 
 //-------------------------------------------------------
 //mod88 based off VP70 - Counterpart to M1911, offers burst and capacity ine exchange of low accuracy and damage.

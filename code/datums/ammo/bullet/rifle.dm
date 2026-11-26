@@ -98,10 +98,10 @@
 	))
 
 /datum/ammo/bullet/rifle/le
-	name = "armor-shredding rifle bullet"
+	name = "impact-detonating rifle bullet"
 
-	damage = 20
-	penetration = ARMOR_PENETRATION_TIER_4
+	damage = 48
+	penetration = -10
 	pen_armor_punch = 5
 
 /datum/ammo/bullet/rifle/heap

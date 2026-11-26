@@ -1194,6 +1194,7 @@
 	name = "\improper modified M3 pattern contractor armor"
 	desc = "A set of well-worn M3 pattern armor, much of the armor besides the main cuirass has been stripped off, it's more nimble and easier to move around in at the cost of protectiveness. There's a multitude of pouches strapped on."
 	icon_state = "vaipo_3"
+	storage_slots = 4
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
 	armor_bullet = CLOTHING_ARMOR_MEDIUM
@@ -1203,5 +1204,5 @@
 	name = "\improper modified M3 pattern contractor armor"
 	desc = "A set of well-worn M3 pattern armor, much of the armor besides the main cuirass has been stripped off, it's more nimble and easier to move around in at the cost of protectiveness. Someone's replaced the standard TNR shoulder lamp with something higher powered."
 	icon_state = "vaipo_commander"
-	storage_slots = 2
 	light_range = 6
+	storage_slots = 3

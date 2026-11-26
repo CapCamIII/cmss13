@@ -137,6 +137,10 @@
 	name = "HMS Patna Hangerbay"
 	icon_state = "yellow"
 
+/area/adminlevel/ert_station/vai_station
+	name = "USCSS Samburan Hangerbay"
+	icon_state = "green"
+
 /area/adminlevel/ert_station/yautja_station
 	name = "Yautja Prime High Orbit"
 	icon_state = "red"

@@ -1,0 +1,6954 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ae" = (
+/turf/open/floor/almayer/sterile_green_side/north,
+/area/adminlevel/ert_station/vai_station)
+"at" = (
+/obj/structure/machinery/bioprinter{
+	stored_metal = 125
+	},
+/turf/open/floor/almayer/sterile_green_side/north,
+/area/adminlevel/ert_station/vai_station)
+"aE" = (
+/obj/structure/filingcabinet{
+	pixel_x = -9;
+	density = 0
+	},
+/turf/open/floor/almayer/sterile_green_corner/west,
+/area/adminlevel/ert_station/vai_station)
+"aF" = (
+/obj/structure/largecrate/supply/floodlights,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"aK" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/weapon/gun/rifle/m41a/contractor{
+	current_mag = null
+	},
+/obj/item/weapon/gun/rifle/m41a/contractor{
+	pixel_y = 9;
+	current_mag = null
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"aS" = (
+/obj/structure/bed/chair{
+	dir = 1;
+	pixel_x = 10
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"aT" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	layer = 3.3;
+	pixel_y = 4
+	},
+/obj/structure/bed{
+	can_buckle = 0
+	},
+/obj/structure/bed{
+	buckling_y = 13;
+	layer = 3.5;
+	pixel_y = 13
+	},
+/obj/item/bedsheet/blue{
+	layer = 3.2
+	},
+/obj/item/bedsheet/ce{
+	pixel_y = 12
+	},
+/obj/item/bedsheet/rd{
+	pixel_y = 12
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"aU" = (
+/obj/structure/shuttle/part/dropship3/transparent/middle_right_wing,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"aZ" = (
+/obj/structure/machinery/door/poddoor/almayer/open{
+	id = "VAIhanger"
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"bn" = (
+/obj/structure/filingcabinet{
+	pixel_y = 11;
+	pixel_x = 8;
+	density = 0
+	},
+/obj/structure/filingcabinet{
+	pixel_x = -8;
+	pixel_y = 11
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"br" = (
+/obj/structure/shuttle/part/dropship3/left_outer_wing_connector,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"bs" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/structure/platform/metal/almayer,
+/obj/structure/platform/metal/almayer/east,
+/obj/structure/platform_decoration/metal/almayer/southeast,
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"bt" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/machinery/hybrisa/coffee_machine{
+	pixel_x = 4;
+	pixel_y = 10
+	},
+/obj/item/reagent_container/food/drinks/coffeecup{
+	pixel_y = -2;
+	pixel_x = 6
+	},
+/obj/item/reagent_container/food/drinks/coffeecup{
+	pixel_x = -4
+	},
+/obj/item/reagent_container/food/drinks/coffeecup/wy{
+	pixel_x = -8;
+	pixel_y = 9
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"bN" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	icon_state = "intact";
+	color = "#a6aeab";
+	pixel_x = 4
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"bV" = (
+/obj/structure/machinery/door/airlock/multi_tile/almayer{
+	name = "\improper Common Room";
+	dir = 2
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"cj" = (
+/obj/structure/shuttle/part/dropship3/transparent/middle_left_wing,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"ck" = (
+/obj/structure/machinery/door/airlock/almayer{
+	dir = 1;
+	name = "\improper Pilot's Quarters"
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"co" = (
+/turf/open/floor/almayer/research/containment/corner/north,
+/area/adminlevel/ert_station/vai_station)
+"cu" = (
+/obj/structure/machinery/door/airlock/multi_tile/almayer/glass{
+	name = "\improper Medical Post";
+	dir = 2
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"cw" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "94"
+	},
+/area/adminlevel/ert_station/vai_station)
+"cx" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/platform/metal/almayer/east,
+/obj/structure/platform/metal/almayer,
+/obj/structure/platform_decoration/metal/almayer/southeast,
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"cz" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E"
+	},
+/obj/structure/platform/metal/almayer/west,
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"cC" = (
+/obj/structure/closet/crate,
+/obj/item/clothing/head/helmet/marine/contractor,
+/obj/item/clothing/head/helmet/marine/contractor,
+/obj/item/clothing/head/helmet/marine/contractor,
+/obj/structure/machinery/light/red,
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"cM" = (
+/turf/closed/wall/almayer/research/containment/wall/south,
+/area/adminlevel/ert_station/vai_station)
+"cT" = (
+/obj/structure/machinery/door/airlock/multi_tile/almayer{
+	name = "\improper Canteen";
+	dir = 1
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"cU" = (
+/turf/closed/wall/almayer/research/containment/wall/corner,
+/area/adminlevel/ert_station/vai_station)
+"cZ" = (
+/turf/open/floor/almayer/sterile_green_side/east,
+/area/adminlevel/ert_station/vai_station)
+"di" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/prop/almayer/CICmap/computer{
+	dir = 4;
+	pixel_y = 12;
+	pixel_x = -8
+	},
+/obj/item/lore_book/punch_out{
+	pixel_y = 4;
+	pixel_x = 6
+	},
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"dv" = (
+/obj/structure/machinery/door/airlock/almayer{
+	name = "\improper Commander's Office";
+	dir = 2
+	},
+/obj/structure/machinery/door/poddoor/almayer/closed{
+	id = "VAICommander";
+	name = "Commander's Quarters"
+	},
+/turf/closed/wall/almayer/outer,
+/area/adminlevel/ert_station/vai_station)
+"dx" = (
+/obj/structure/machinery/crema_switch{
+	pixel_x = -23;
+	pixel_y = 25;
+	id = "VAIStation_Crem";
+	req_access = null
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"dz" = (
+/obj/structure/platform/metal/almayer/west,
+/obj/effect/decal/warning_stripes{
+	icon_state = "E"
+	},
+/obj/structure/platform/metal/almayer,
+/obj/structure/platform_decoration/metal/almayer/southwest,
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"dF" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	color = "#a6aeab";
+	dir = 4
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"dJ" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/attachable/suppressor,
+/obj/item/attachable/suppressor,
+/obj/item/attachable/suppressor,
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"dK" = (
+/obj/structure/stairs/perspective,
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"dL" = (
+/obj/structure/machinery/vending/coffee/simple,
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"dQ" = (
+/obj/item/stool{
+	pixel_x = -10;
+	pixel_y = 3
+	},
+/obj/item/stool{
+	pixel_x = -16;
+	pixel_y = 22
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"dS" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 4;
+	pixel_x = 8
+	},
+/turf/open/floor/almayer/sterile_green_side/east,
+/area/adminlevel/ert_station/vai_station)
+"dY" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	layer = 3.3;
+	pixel_y = 4
+	},
+/obj/structure/bed{
+	can_buckle = 0
+	},
+/obj/structure/bed{
+	buckling_y = 13;
+	layer = 3.5;
+	pixel_y = 13
+	},
+/obj/item/bedsheet/rd{
+	pixel_y = 12
+	},
+/obj/item/prop/magazine/dirty/torn/alt,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"eb" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/device/chameleon,
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"ec" = (
+/turf/open/floor/almayer/sterile_green_side,
+/area/adminlevel/ert_station/vai_station)
+"ee" = (
+/obj/structure/machinery/vending/cigarette/koorlander/free,
+/obj/structure/machinery/light/blue,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"ek" = (
+/obj/structure/pipes/standard/simple/hidden{
+	dir = 9
+	},
+/turf/open/floor/almayer/dark_sterile,
+/area/adminlevel/ert_station/vai_station)
+"el" = (
+/obj/structure/surface/table/almayer,
+/obj/item/weapon/dart{
+	pixel_x = -6;
+	pixel_y = 6
+	},
+/obj/item/weapon/dart{
+	pixel_x = -6
+	},
+/obj/item/weapon/dart{
+	pixel_x = -6;
+	pixel_y = -6
+	},
+/obj/item/weapon/dart{
+	pixel_x = -6;
+	pixel_y = -3
+	},
+/obj/item/weapon/dart{
+	pixel_x = -6;
+	pixel_y = 3
+	},
+/obj/item/weapon/dart/green{
+	pixel_x = 9;
+	pixel_y = 6
+	},
+/obj/item/weapon/dart/green{
+	pixel_x = 9
+	},
+/obj/item/weapon/dart/green{
+	pixel_x = 9;
+	pixel_y = -6
+	},
+/obj/item/weapon/dart/green{
+	pixel_x = 9;
+	pixel_y = -3
+	},
+/obj/item/weapon/dart/green{
+	pixel_x = 9;
+	pixel_y = 3
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"ew" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/ammo_box/magazine/mk1/ap{
+	pixel_y = 12;
+	pixel_x = -4
+	},
+/obj/item/ammo_box/magazine/mk1/ap{
+	pixel_y = 3;
+	pixel_x = -4
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"ez" = (
+/obj/structure/ship_ammo/minirocket,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"eI" = (
+/obj/structure/morgue/crematorium{
+	id = "VAIStation_Crem"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"eZ" = (
+/obj/structure/machinery/door/airlock/almayer{
+	name = "\improper Pilot's Quarters"
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"fg" = (
+/obj/structure/closet/l3closet/scientist,
+/turf/open/floor/almayer/sterile_green_corner/west,
+/area/adminlevel/ert_station/vai_station)
+"fr" = (
+/obj/structure/machinery/light/red,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"fx" = (
+/obj/structure/shuttle/part/dropship3/nose_front_left,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"fA" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "25"
+	},
+/area/adminlevel/ert_station/vai_station)
+"fC" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/ammo_box/magazine/shotgun/buckshot{
+	pixel_y = 9
+	},
+/obj/item/ammo_box/magazine/shotgun/buckshot,
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"fE" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/paper_bin{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/obj/item/tool/pen{
+	pixel_x = 5;
+	pixel_y = 2
+	},
+/turf/open/floor/almayer/sterile_green_corner/north,
+/area/adminlevel/ert_station/vai_station)
+"fI" = (
+/obj/structure/bed/chair/vehicle/white{
+	dir = 1;
+	pixel_x = -8
+	},
+/obj/structure/bed/chair/vehicle/white{
+	dir = 1;
+	pixel_x = 8
+	},
+/obj/structure/machinery/light/red{
+	dir = 8
+	},
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"fU" = (
+/obj/structure/surface/table/almayer,
+/obj/item/paper_bin{
+	pixel_y = 8;
+	pixel_x = 8
+	},
+/obj/item/tool/pen{
+	pixel_x = 8;
+	pixel_y = 5
+	},
+/obj/structure/sign/poster{
+	desc = "It says DRUG.";
+	icon_state = "poster2";
+	pixel_y = 30
+	},
+/obj/item/tool/lighter/zippo/executive{
+	pixel_y = 11;
+	pixel_x = -7
+	},
+/obj/item/storage/fancy/cigarettes/blackpack{
+	pixel_x = -4;
+	pixel_y = -1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"fV" = (
+/obj/structure/shuttle/part/dropship3/nose_front_right,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"fX" = (
+/obj/item/weapon/twohanded/folded_metal_chair{
+	pixel_y = 7
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"gb" = (
+/obj/structure/ship_ammo/heavygun{
+	pixel_x = -19
+	},
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"gf" = (
+/obj/structure/window/framed/almayer,
+/turf/open/floor/almayer/dark_sterile,
+/area/adminlevel/ert_station/vai_station)
+"gh" = (
+/obj/structure/bed/chair/office/light{
+	dir = 4
+	},
+/turf/open/floor/almayer/sterile_green_side,
+/area/adminlevel/ert_station/vai_station)
+"gi" = (
+/obj/structure/machinery/light/red{
+	dir = 1
+	},
+/obj/structure/prop{
+	icon = 'icons/obj/structures/ladders.dmi';
+	icon_state = "ladder11";
+	name = "ladder";
+	desc = "A sturdy metal ladder."
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"gl" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "97"
+	},
+/area/adminlevel/ert_station/vai_station)
+"gC" = (
+/obj/structure/surface/table/almayer,
+/obj/item/clothing/head/beret/contractor{
+	pixel_y = 11;
+	pixel_x = 8
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"gH" = (
+/obj/structure/machinery/light/small/blue{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"gR" = (
+/obj/structure/pipes/unary/freezer{
+	throwpass = 1
+	},
+/obj/structure/barricade/handrail/medical{
+	dir = 8;
+	pixel_x = -2
+	},
+/obj/item/reagent_container/spray/cleaner{
+	pixel_y = 11;
+	pixel_x = 2
+	},
+/obj/item/reagent_container/spray/cleaner{
+	pixel_y = 9;
+	pixel_x = -7
+	},
+/obj/structure/barricade/handrail/medical{
+	dir = 1;
+	pixel_y = 4;
+	layer = 2.3
+	},
+/turf/open/floor/almayer/sterile_green_side/north,
+/area/adminlevel/ert_station/vai_station)
+"hd" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out";
+	pixel_y = -1
+	},
+/turf/open/floor/almayer/sterile_green_side/southwest,
+/area/adminlevel/ert_station/vai_station)
+"hg" = (
+/obj/structure/shuttle/part/dropship3/transparent/upper_right_wing,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"hz" = (
+/obj/docking_port/stationary/emergency_response/idle_port6,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"hM" = (
+/turf/open/floor/almayer/sterile_green_corner/north,
+/area/adminlevel/ert_station/vai_station)
+"hU" = (
+/obj/item/stool{
+	pixel_x = -7
+	},
+/obj/item/stool{
+	pixel_x = -9;
+	pixel_y = 16
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"hX" = (
+/obj/structure/machinery/cm_vending/sorted/medical/no_access,
+/turf/open/floor/almayer/sterile_green_corner,
+/area/adminlevel/ert_station/vai_station)
+"ie" = (
+/obj/structure/shuttle/part/dropship3/transparent/outer_right_weapons,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"ij" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/storage/box/nade_box{
+	pixel_x = 10;
+	pixel_y = 8
+	},
+/obj/item/storage/box/nade_box/phophorus{
+	pixel_x = -4;
+	pixel_y = 4
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"il" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/curtain/medical{
+	pixel_x = 32
+	},
+/obj/item/book/manual/surgery{
+	pixel_x = 5;
+	pixel_y = 3
+	},
+/obj/item/reagent_container/spray/cleaner{
+	desc = "Someone has crossed out the Space from Space Cleaner and written in Surgery. 'Do not remove under punishment of death!!!' is scrawled on the back.";
+	name = "Surgery Cleaner";
+	pixel_x = -9;
+	pixel_y = 3
+	},
+/turf/open/floor/almayer/sterile_green_side/east,
+/area/adminlevel/ert_station/vai_station)
+"ix" = (
+/obj/structure/machinery/light/red{
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"iz" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/ashtray/plastic{
+	icon_state = "ashtray_full_bl";
+	pixel_x = -7;
+	pixel_y = 7
+	},
+/obj/item/paper_bin{
+	pixel_y = 8;
+	pixel_x = 8
+	},
+/obj/item/tool/pen{
+	pixel_x = 8;
+	pixel_y = 5
+	},
+/obj/structure/machinery/light/blue{
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"iG" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/platform/metal/almayer/east,
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"iN" = (
+/turf/closed/wall/almayer/research/containment/wall/purple{
+	dir = 8
+	},
+/area/adminlevel/ert_station/vai_station)
+"iP" = (
+/obj/item/bedsheet/blue{
+	pixel_y = 13
+	},
+/obj/structure/sign/poster{
+	desc = "This poster features Audrey Rainwater standing in a jacuzzi. She was the July 2182 centerfold in House Bunny Gentleman's Magazine. Don't ask how you know that.";
+	icon_state = "poster16";
+	layer = 3.3;
+	name = "'Miss July' Pinup";
+	pixel_y = 29;
+	serial_number = 16
+	},
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	layer = 3.3;
+	pixel_y = 4
+	},
+/obj/structure/bed{
+	can_buckle = 0
+	},
+/obj/structure/bed{
+	buckling_y = 13;
+	layer = 3.5;
+	pixel_y = 13
+	},
+/obj/item/bedsheet/green{
+	layer = 3.2
+	},
+/obj/item/prop/magazine/book/bladerunner,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"iS" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "23"
+	},
+/area/adminlevel/ert_station/vai_station)
+"iU" = (
+/obj/structure/filingcabinet{
+	pixel_x = -9;
+	density = 0
+	},
+/turf/open/floor/almayer/sterile_green_side/west,
+/area/adminlevel/ert_station/vai_station)
+"iZ" = (
+/obj/structure/shuttle/part/dropship3/transparent/engine_left_exhaust,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"jb" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/door_control/brbutton/alt{
+	pixel_y = 8;
+	pixel_x = -6;
+	id = "VAIResearch2";
+	name = "Outer Containment Controls"
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	pixel_y = 8;
+	pixel_x = 6;
+	name = "Inner Containment Controls";
+	id = "VAIResearch1"
+	},
+/obj/structure/machinery/light/blue{
+	dir = 1
+	},
+/turf/open/floor/almayer/sterile_green_side/north,
+/area/adminlevel/ert_station/vai_station)
+"jp" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E"
+	},
+/obj/structure/platform/metal/almayer/west,
+/obj/structure/platform/metal/almayer,
+/obj/structure/platform_decoration/metal/almayer/southwest,
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"jx" = (
+/obj/structure/prop/hybrisa/misc/firehydrant{
+	pixel_x = 10;
+	pixel_y = -8;
+	desc = "A fire hydrant public water outlet, designed for quick access to water. Stolen from some colony somewhere."
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"jE" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/microwave{
+	pixel_y = 3
+	},
+/obj/item/storage/box/donkpockets{
+	pixel_y = 15;
+	pixel_x = 6
+	},
+/obj/structure/sign/poster/pimp{
+	pixel_x = -6;
+	pixel_y = -25
+	},
+/obj/item/ashtray/bronze{
+	icon_state = "ashtray_full_bl";
+	pixel_x = -6;
+	pixel_y = 10
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"jG" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/weapon/gun/rifle/mar40/tactical{
+	pixel_y = -4
+	},
+/obj/item/weapon/gun/rifle/mar40/tactical{
+	pixel_y = 14
+	},
+/obj/item/weapon/gun/rifle/mar40/tactical{
+	pixel_y = 5
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"jQ" = (
+/obj/structure/machinery/door/airlock/hatch/cockpit/three{
+	dir = 1;
+	req_access = null;
+	req_one_access = null
+	},
+/turf/open/space/basic,
+/area/adminlevel/ert_station/vai_station)
+"jU" = (
+/obj/structure/machinery/light/blue{
+	dir = 1
+	},
+/turf/open/floor/almayer/sterile_green_side/north,
+/area/adminlevel/ert_station/vai_station)
+"jW" = (
+/turf/closed/shuttle/dropship3/typhoon{
+	icon_state = "77"
+	},
+/area/adminlevel/ert_station/vai_station)
+"kc" = (
+/obj/structure/machinery/door/poddoor/hybrisa{
+	id = "vai_cell3"
+	},
+/obj/structure/machinery/door/airlock/almayer/glass{
+	name = "\improper Cell"
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"kd" = (
+/turf/closed/wall/almayer/research/containment/wall/corner{
+	dir = 4
+	},
+/area/adminlevel/ert_station/vai_station)
+"kj" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	color = "#a6aeab";
+	dir = 4;
+	pixel_y = -10
+	},
+/obj/structure/prop/invuln/pipe_water{
+	pixel_y = -23
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"kl" = (
+/obj/structure/dartboard{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"kr" = (
+/obj/structure/machinery/light/red{
+	dir = 8
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"ks" = (
+/obj/structure/machinery/door/poddoor/almayer/biohazard/white{
+	id = "VAIResearch2";
+	dir = 4
+	},
+/turf/open/floor/almayer/dark_sterile,
+/area/adminlevel/ert_station/vai_station)
+"ku" = (
+/obj/structure/shuttle/part/dropship3/transparent/engine_right_exhaust,
+/obj/structure/prop/hybrisa/misc/fake/heavydutywire/heavy2,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"kF" = (
+/turf/open/floor/almayer/research/containment/corner/west,
+/area/adminlevel/ert_station/vai_station)
+"kI" = (
+/obj/structure/dropship_equipment/weapon/minirocket_pod{
+	pixel_x = -6;
+	pixel_y = -10
+	},
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"kK" = (
+/obj/structure/platform/metal/almayer/north,
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"kO" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "67"
+	},
+/area/adminlevel/ert_station/vai_station)
+"kP" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 8;
+	pixel_y = 7
+	},
+/obj/structure/prop/invuln/pipe_water{
+	color = "#7ccc5f";
+	pixel_y = -7
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"kQ" = (
+/obj/structure/machinery/vending/cola,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"kT" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/paper_bin{
+	pixel_y = 8;
+	pixel_x = 8
+	},
+/obj/item/tool/pen{
+	pixel_x = 8;
+	pixel_y = 5
+	},
+/obj/item/ashtray/bronze{
+	icon_state = "ashtray_full_bl";
+	pixel_x = -6;
+	pixel_y = -3
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"kZ" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	layer = 3.3;
+	pixel_y = 4
+	},
+/obj/structure/bed{
+	can_buckle = 0
+	},
+/obj/structure/bed{
+	buckling_y = 13;
+	layer = 3.5;
+	pixel_y = 13
+	},
+/obj/item/bedsheet/rd{
+	pixel_y = 12
+	},
+/obj/item/bedsheet/hos{
+	layer = 3.2
+	},
+/obj/item/book/manual/upphistory,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"ld" = (
+/obj/structure/prop/hybrisa/furniture/tables/tablegambling{
+	dir = 4;
+	pixel_x = -1;
+	pixel_y = 2
+	},
+/obj/item/toy/deck{
+	pixel_y = 16;
+	pixel_x = 6
+	},
+/obj/item/toy/deck/uno{
+	pixel_x = -6;
+	pixel_y = 13
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"le" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "35"
+	},
+/area/adminlevel/ert_station/vai_station)
+"lh" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	layer = 3.3;
+	pixel_y = 4
+	},
+/obj/structure/bed{
+	can_buckle = 0
+	},
+/obj/structure/bed{
+	buckling_y = 13;
+	layer = 3.5;
+	pixel_y = 13
+	},
+/obj/item/bedsheet/blue{
+	layer = 3.2
+	},
+/obj/item/prop/magazine/dirty,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"lp" = (
+/turf/closed/wall/almayer/research/containment/wall/east,
+/area/adminlevel/ert_station/vai_station)
+"ls" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	layer = 3.3;
+	pixel_y = 4
+	},
+/obj/structure/bed{
+	can_buckle = 0
+	},
+/obj/structure/bed{
+	buckling_y = 13;
+	layer = 3.5;
+	pixel_y = 13
+	},
+/obj/item/bedsheet/green{
+	layer = 3.2
+	},
+/obj/item/bedsheet/ce{
+	pixel_y = 12
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"lu" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "83"
+	},
+/area/adminlevel/ert_station/vai_station)
+"lE" = (
+/obj/structure/machinery/door/airlock/almayer{
+	dir = 1;
+	name = "\improper Research"
+	},
+/turf/open/floor/almayer/dark_sterile,
+/area/adminlevel/ert_station/vai_station)
+"lI" = (
+/obj/structure/machinery/door/airlock/almayer/glass{
+	name = "\improper VAIRS Station";
+	dir = 2
+	},
+/turf/open/floor/almayer/dark_sterile,
+/area/adminlevel/ert_station/vai_station)
+"lK" = (
+/obj/structure/machinery/door/airlock/almayer/maint{
+	access_modified = 1;
+	req_access = null;
+	req_one_access = null
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"mf" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "73"
+	},
+/area/adminlevel/ert_station/vai_station)
+"mh" = (
+/turf/open/floor/almayer/sterile_green_corner/east,
+/area/adminlevel/ert_station/vai_station)
+"mk" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/computer/emails{
+	dir = 4;
+	pixel_y = 1
+	},
+/turf/open/floor/almayer/sterile_green_side/west,
+/area/adminlevel/ert_station/vai_station)
+"mo" = (
+/obj/structure/bed/roller/hospital_empty,
+/turf/open/floor/almayer/dark_sterile,
+/area/adminlevel/ert_station/vai_station)
+"mz" = (
+/obj/structure/machinery/door/airlock/almayer/glass{
+	name = "\improper Cell";
+	dir = 2
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"mA" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/weapon/gun/rifle/mar40/carbine/tactical{
+	pixel_y = -3
+	},
+/obj/item/weapon/gun/rifle/mar40/carbine/tactical{
+	pixel_y = 7
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"mD" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/weapon/gun/smg/m39/contractor{
+	current_mag = null;
+	pixel_y = 12;
+	pixel_x = 3
+	},
+/obj/item/ammo_magazine/smg/m39/le{
+	pixel_x = 8;
+	pixel_y = 4
+	},
+/obj/item/ammo_magazine/smg/m39/le{
+	pixel_x = 2;
+	pixel_y = -1
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"mH" = (
+/obj/structure/platform/metal/almayer/west,
+/obj/effect/decal/warning_stripes{
+	icon_state = "E"
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"mJ" = (
+/obj/structure/shuttle/part/dropship3/transparent/nose_center,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"nf" = (
+/obj/item/paper_bin/uscm{
+	pixel_y = 8;
+	pixel_x = 7;
+	layer = 2.97
+	},
+/obj/item/tool/pen{
+	pixel_x = 5;
+	pixel_y = 2
+	},
+/obj/item/clipboard{
+	pixel_x = -6;
+	pixel_y = 1
+	},
+/obj/item/tool/hand_labeler{
+	pixel_x = -6
+	},
+/obj/item/tool/stamp{
+	pixel_x = -5;
+	pixel_y = 12;
+	name = "Medical Examiner's rubber stamp"
+	},
+/obj/structure/surface/table/reinforced/prison,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"ni" = (
+/obj/structure/machinery/medical_pod/sleeper{
+	pixel_y = 2
+	},
+/turf/open/floor/almayer/sterile_green_side,
+/area/adminlevel/ert_station/vai_station)
+"no" = (
+/obj/structure/machinery/door/poddoor/almayer/closed{
+	unacidable = 1;
+	needs_power = 0;
+	emp_proof = 1;
+	explo_proof = 1
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"np" = (
+/obj/structure/sign/catclock{
+	pixel_y = 31
+	},
+/obj/structure/bookcase{
+	density = 0;
+	icon_state = "book-5"
+	},
+/obj/structure/machinery/light/blue{
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"ny" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/light/blue{
+	dir = 1
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"nH" = (
+/obj/structure/shuttle/part/dropship3/bottom_left_wall,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"nQ" = (
+/obj/structure/platform/metal/almayer/north,
+/obj/structure/platform/metal/almayer/east,
+/obj/structure/platform_decoration/metal/almayer/northwest,
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out";
+	layer = 2.5
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"nY" = (
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"oa" = (
+/obj/structure/machinery/door_control/brbutton{
+	pixel_y = 25;
+	pixel_x = 5;
+	name = "Hanger Controls";
+	id = "VAIhanger"
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"oA" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/sign/poster/music{
+	pixel_x = 25
+	},
+/obj/item/ashtray/glass{
+	icon_state = "ashtray_half_gl";
+	pixel_x = -5;
+	pixel_y = -6
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"oF" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/weapon/gun/rifle/lmg/tactical{
+	current_mag = null;
+	pixel_y = 9;
+	pixel_x = 2
+	},
+/obj/item/ammo_magazine/rifle/lmg/ap{
+	pixel_x = -7
+	},
+/obj/item/attachable/suppressor{
+	pixel_x = 9;
+	pixel_y = -3
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"oN" = (
+/obj/structure/dropship_equipment/weapon/minirocket_pod{
+	pixel_y = 5;
+	pixel_x = 5
+	},
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"oT" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/computer/emails{
+	dir = 8;
+	pixel_y = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"oV" = (
+/obj/structure/shuttle/part/dropship3/transparent/engine_right_exhaust,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"pu" = (
+/obj/item/stool{
+	pixel_x = -10;
+	pixel_y = 13
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"pH" = (
+/obj/structure/bed/chair{
+	dir = 1;
+	pixel_x = -4;
+	pixel_y = 9
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"pP" = (
+/obj/structure/machinery/medical_pod/bodyscanner{
+	pixel_y = 2
+	},
+/turf/open/floor/almayer/sterile_green_side,
+/area/adminlevel/ert_station/vai_station)
+"pU" = (
+/obj/structure/machinery/cm_vending/sorted/medical/blood,
+/turf/open/floor/almayer/sterile_green,
+/area/adminlevel/ert_station/vai_station)
+"qh" = (
+/obj/structure/shuttle/part/dropship3/transparent/outer_left_weapons,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"qn" = (
+/obj/item/weapon/twohanded/folded_metal_chair,
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"qo" = (
+/obj/structure/surface/table/almayer,
+/obj/item/prop/magazine/book/bladerunner{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"qp" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"qu" = (
+/obj/structure/pipes/standard/cap/hidden,
+/obj/structure/barricade/handrail/medical{
+	dir = 1;
+	pixel_y = 4;
+	layer = 2.3
+	},
+/obj/structure/machinery/cryo_cell{
+	layer = 4;
+	density = 1;
+	pixel_y = 4;
+	pixel_x = 1
+	},
+/turf/open/floor/almayer/sterile_green_side/north,
+/area/adminlevel/ert_station/vai_station)
+"qx" = (
+/obj/structure/platform/metal/almayer/north,
+/obj/structure/platform_decoration/metal/almayer/northwest,
+/obj/structure/platform/metal/almayer/east,
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out";
+	layer = 2.5
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"qD" = (
+/obj/structure/closet/secure_closet/surgical{
+	pixel_x = -30
+	},
+/turf/open/floor/almayer/sterile_green_side/west,
+/area/adminlevel/ert_station/vai_station)
+"qE" = (
+/obj/structure/largecrate/supply/generator,
+/obj/structure/machinery/light/red,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"qF" = (
+/obj/structure/stairs{
+	dir = 8;
+	icon_state = "ramptop"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"qV" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "27"
+	},
+/area/adminlevel/ert_station/vai_station)
+"qW" = (
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"qX" = (
+/turf/open/floor/almayer/sterile_green_corner,
+/area/adminlevel/ert_station/vai_station)
+"rd" = (
+/obj/structure/machinery/door/airlock/almayer/maint{
+	access_modified = 1;
+	dir = 1;
+	req_access = null;
+	req_one_access = null
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"rp" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/storage/donut_box{
+	pixel_y = 10
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	color = "#a6aeab";
+	dir = 4;
+	pixel_y = -10
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"rq" = (
+/obj/structure/sign/poster/art2{
+	pixel_y = 6;
+	pixel_x = -28
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 8;
+	pixel_y = 7
+	},
+/obj/structure/machinery/weather_siren{
+	name = "Alert Siren";
+	desc = "A siren used to play a loud siren to signal go-time.";
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"rr" = (
+/obj/structure/machinery/door/airlock/almayer/maint{
+	access_modified = 1;
+	req_access = null;
+	req_one_access = null;
+	dir = 2
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"rt" = (
+/obj/structure/machinery/optable,
+/obj/structure/machinery/cm_vending/sorted/medical/wall_med{
+	pixel_y = 26
+	},
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"rv" = (
+/obj/structure/shuttle/part/dropship3/transparent/nose_top_left,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"rz" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/computer/overwatch/almayer/broken{
+	dir = 8;
+	pixel_y = -4;
+	pixel_x = -8
+	},
+/obj/item/prop{
+	icon = 'icons/obj/structures/phone.dmi';
+	icon_state = "wall_phone";
+	pixel_y = 30;
+	pixel_x = -8;
+	name = "telephone receiver";
+	desc = "It is a wall mounted telephone. The fine text reads: To log your details with the mainframe please insert your keycard into the slot below. Unfortunately the slot is jammed. You can still use the phone, however."
+	},
+/obj/structure/extinguisher_cabinet/alt{
+	pixel_x = 5;
+	pixel_y = 27
+	},
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"rG" = (
+/obj/structure/stairs{
+	dir = 4;
+	icon_state = "ramptop"
+	},
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"rJ" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/computer/cameras/wooden_tv/broadcast{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"rL" = (
+/obj/structure/closet/secure_closet/brig,
+/obj/structure/machinery/door_control{
+	pixel_y = -9;
+	pixel_x = -23;
+	id = "vai_cell1"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"rV" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/ammo_magazine/rifle/mar40/lmg{
+	pixel_y = 7;
+	pixel_x = 5
+	},
+/obj/item/ammo_magazine/rifle/mar40/lmg{
+	pixel_y = 7;
+	pixel_x = -9
+	},
+/obj/item/weapon/gun/rifle/mar40/lmg/tactical,
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"rW" = (
+/turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"se" = (
+/obj/structure/machinery/light/blue,
+/turf/open/floor/almayer/sterile_green_side,
+/area/adminlevel/ert_station/vai_station)
+"sr" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	layer = 3.3;
+	pixel_y = 4
+	},
+/obj/structure/bed{
+	can_buckle = 0
+	},
+/obj/structure/bed{
+	buckling_y = 13;
+	layer = 3.5;
+	pixel_y = 13
+	},
+/obj/item/bedsheet/ce{
+	pixel_y = 12
+	},
+/obj/item/bedsheet/rd{
+	pixel_y = 12
+	},
+/obj/item/bedsheet/hos{
+	layer = 3.2
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"st" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 8;
+	pixel_x = -7
+	},
+/turf/open/floor/almayer/sterile_green_corner/west,
+/area/adminlevel/ert_station/vai_station)
+"su" = (
+/obj/structure/morgue{
+	dir = 2
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"sR" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/item/storage/fancy/cigar{
+	pixel_y = 1
+	},
+/obj/item/storage/box/matches{
+	pixel_x = -2;
+	pixel_y = 16
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"sZ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/structure/platform/metal/almayer,
+/obj/structure/platform/metal/almayer/west,
+/obj/structure/platform_decoration/metal/almayer/southwest,
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"tc" = (
+/obj/structure/bed/chair{
+	dir = 4
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"tm" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "80"
+	},
+/area/adminlevel/ert_station/vai_station)
+"tC" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "62"
+	},
+/area/adminlevel/ert_station/vai_station)
+"tI" = (
+/obj/structure/pipes/standard/simple/hidden{
+	dir = 5
+	},
+/turf/open/floor/almayer/dark_sterile,
+/area/adminlevel/ert_station/vai_station)
+"tT" = (
+/obj/structure/bed{
+	pixel_x = 3;
+	pixel_y = 38
+	},
+/obj/structure/surface/table/woodentable/fancy{
+	pixel_x = 5;
+	pixel_y = -4
+	},
+/obj/item/reagent_container/food/drinks/flask/detflask{
+	pixel_x = 10
+	},
+/obj/item/ashtray/plastic{
+	icon_state = "ashtray_full_bl";
+	pixel_y = 1
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"tU" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "32"
+	},
+/area/adminlevel/ert_station/vai_station)
+"tX" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/reagent_container/food/snacks/grown/poppy{
+	pixel_x = -2;
+	pixel_y = 10
+	},
+/obj/item/weapon/gun/pistol/highpower/tactical{
+	pixel_x = -19
+	},
+/obj/item/clothing/accessory/rosary{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"uf" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/computer/emails{
+	dir = 8;
+	pixel_y = 8
+	},
+/obj/structure/machinery/light/blue{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"ug" = (
+/turf/open/floor/almayer/sterile_green_side/west,
+/area/adminlevel/ert_station/vai_station)
+"uk" = (
+/obj/structure/machinery/door/airlock/almayer/glass{
+	name = "\improper Medical Post";
+	dir = 2
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"ut" = (
+/obj/structure/prop/hybrisa/misc/commandosuitemptyprop{
+	pixel_y = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"uz" = (
+/obj/structure/shuttle/part/dropship3/transparent/engine_right_cap,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"uC" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/item/paper_bin{
+	pixel_y = 8;
+	pixel_x = 4
+	},
+/obj/item/tool/pen{
+	pixel_x = 3;
+	pixel_y = 5
+	},
+/obj/item/storage/fancy/cigarettes/lady_finger{
+	pixel_x = -18
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"uD" = (
+/obj/structure/machinery/vending/cola{
+	pixel_y = 20;
+	density = 0
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"uH" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	layer = 3.3;
+	pixel_y = 4
+	},
+/obj/structure/bed{
+	can_buckle = 0
+	},
+/obj/structure/bed{
+	buckling_y = 13;
+	layer = 3.5;
+	pixel_y = 13
+	},
+/obj/item/bedsheet/hos{
+	layer = 3.2
+	},
+/obj/item/bedsheet/ce{
+	pixel_y = 12
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"uK" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	color = "#a6aeab";
+	dir = 4
+	},
+/obj/structure/machinery/weather_siren{
+	name = "Alert Siren";
+	desc = "A siren used to play a loud siren to signal go-time.";
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"uS" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/door_control/brbutton/alt{
+	pixel_y = 5;
+	id = "VAIhanger"
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"uZ" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/prop/magazine/boots/n054{
+	pixel_y = 8
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"vd" = (
+/obj/structure/machinery/weather_siren{
+	name = "Alert Siren";
+	desc = "A siren used to play a loud siren to signal go-time.";
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"vh" = (
+/obj/structure/dropship_equipment/weapon/heavygun,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"vB" = (
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_full"
+	},
+/turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"vJ" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "48"
+	},
+/area/adminlevel/ert_station/vai_station)
+"vV" = (
+/obj/structure/bed{
+	pixel_x = 3;
+	pixel_y = -7
+	},
+/obj/item/bedsheet/hop{
+	pixel_y = 7;
+	pixel_x = 3
+	},
+/obj/item/bedsheet/hop{
+	pixel_y = -7;
+	pixel_x = 3
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"vX" = (
+/obj/effect/attach_point/weapon/dropship3/right_wing,
+/obj/structure/shuttle/part/dropship3/transparent/lower_right_wing,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"wa" = (
+/turf/closed/wall/almayer/research/containment/wall/purple{
+	icon_state = "containment_window_center";
+	dir = 4
+	},
+/area/adminlevel/ert_station/vai_station)
+"wc" = (
+/obj/structure/machinery/door/poddoor/almayer/closed{
+	unacidable = 1;
+	needs_power = 0;
+	emp_proof = 1;
+	explo_proof = 1
+	},
+/turf/closed/wall/almayer/outer,
+/area/adminlevel/ert_station/vai_station)
+"wd" = (
+/obj/structure/bed/chair{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"wm" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "22"
+	},
+/area/adminlevel/ert_station/vai_station)
+"wp" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/weapon/gun/rifle/m41aMK1/contractor{
+	current_mag = null
+	},
+/obj/item/weapon/gun/rifle/m41aMK1/contractor{
+	current_mag = null;
+	pixel_y = 8
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"wA" = (
+/obj/structure/shuttle/part/dropship3/left_inner_wing_connector,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"wN" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/clothing/mask/gas/contractor{
+	pixel_y = 8;
+	pixel_x = 16
+	},
+/obj/item/clothing/mask/gas/contractor{
+	pixel_y = 8;
+	pixel_x = 3
+	},
+/obj/item/clothing/mask/gas/contractor{
+	pixel_x = 8
+	},
+/obj/item/clothing/mask/gas/contractor{
+	pixel_y = 8;
+	pixel_x = -7
+	},
+/obj/item/clothing/mask/gas/contractor{
+	pixel_y = 1;
+	pixel_x = -4
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"wO" = (
+/obj/structure/surface/table/almayer,
+/obj/item/weapon/gun/pistol/skorpion{
+	pixel_y = 9
+	},
+/obj/item/tool/screwdriver/tactical{
+	pixel_y = 1;
+	pixel_x = 5
+	},
+/obj/item/prop/helmetgarb/gunoil{
+	pixel_x = 12
+	},
+/obj/structure/machinery/light/blue{
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"wR" = (
+/obj/structure/closet/cabinet{
+	pixel_x = 1
+	},
+/obj/item/device/camera_film,
+/obj/item/device/camera,
+/obj/item/device/taperecorder,
+/obj/item/clothing/suit/storage/jacket/marine/dress/officer/bomber,
+/obj/item/clothing/suit/storage/jacket/marine/corporate/black,
+/obj/item/clothing/suit/storage/jacket/marine/dress/bridge_coat_grey,
+/obj/item/clothing/head/beret/contractor,
+/obj/item/clothing/under/liaison_suit/black,
+/obj/item/clothing/accessory/tie/red,
+/obj/item/clothing/accessory/tie,
+/obj/item/clothing/accessory/tie/purple,
+/obj/item/storage/box/stompers,
+/obj/item/clothing/glasses/sunglasses/big,
+/obj/item/clothing/glasses/sunglasses/big/new_bimex,
+/obj/item/clothing/glasses/sunglasses/big/new_bimex/black,
+/obj/item/clothing/glasses/sunglasses/big/new_bimex/bronze,
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"xc" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/ammo_box/magazine/l42a/ap{
+	pixel_y = 17
+	},
+/obj/item/ammo_box/magazine/l42a/ext{
+	pixel_y = 7
+	},
+/obj/structure/machinery/light/red{
+	dir = 1
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"xg" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/clothing/suit/storage/marine/light/vest{
+	pixel_x = -7;
+	pixel_y = -4
+	},
+/obj/item/clothing/under/tshirt/gray_blu{
+	pixel_y = -1;
+	pixel_x = 3
+	},
+/obj/item/clothing/glasses/sunglasses/big{
+	pixel_x = 6;
+	pixel_y = 12
+	},
+/obj/item/clothing/head/helmet/marine/jungle{
+	pixel_y = 10;
+	pixel_x = -8
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"xm" = (
+/obj/structure/machinery/door/airlock/multi_tile/almayer/glass{
+	name = "\improper Armory";
+	dir = 2
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"xn" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/device/broadcasting,
+/obj/item/storage/box/monkeycubes{
+	pixel_y = 15;
+	pixel_x = -9
+	},
+/obj/item/storage/box/monkeycubes{
+	pixel_y = 15;
+	pixel_x = 6
+	},
+/turf/open/floor/almayer/sterile_green_side/west,
+/area/adminlevel/ert_station/vai_station)
+"xv" = (
+/obj/structure/machinery/photocopier,
+/obj/item/device/toner{
+	pixel_y = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"xz" = (
+/obj/structure/shuttle/part/dropship3/bottom_right_wall,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"xB" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	color = "#a6aeab"
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	color = "#a6aeab";
+	pixel_y = -12
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"xI" = (
+/obj/structure/sign/safety/high_voltage{
+	pixel_y = 25
+	},
+/obj/structure/sign/safety/fire_haz{
+	pixel_x = 15;
+	pixel_y = 25
+	},
+/obj/structure/largecrate,
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"xN" = (
+/obj/structure/bed/chair{
+	dir = 1;
+	pixel_x = -5;
+	pixel_y = 6
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	icon_state = "intact";
+	color = "#a6aeab";
+	pixel_x = 4
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"xR" = (
+/obj/structure/machinery/door/airlock/almayer{
+	dir = 1;
+	name = "\improper Officer's Quarters"
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"xX" = (
+/obj/structure/bookcase{
+	icon_state = "book-5";
+	pixel_y = 1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"yj" = (
+/obj/structure/machinery/door/airlock/almayer{
+	name = "\improper Commander's Office"
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"yk" = (
+/obj/structure/machinery/door/airlock/hatch/cockpit/three{
+	dir = 1;
+	req_access = null;
+	req_one_access = null
+	},
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"yq" = (
+/obj/structure/surface/table/almayer,
+/obj/item/device/megaphone{
+	pixel_y = 9;
+	pixel_x = 12
+	},
+/obj/item/map/galaxy{
+	pixel_x = -15;
+	pixel_y = 6
+	},
+/obj/item/map/current_map{
+	pixel_x = 5
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"yC" = (
+/obj/structure/machinery/door/poddoor/hybrisa{
+	id = "vai_cell1"
+	},
+/obj/structure/machinery/door/airlock/almayer/glass{
+	name = "\improper Cell"
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"ze" = (
+/obj/structure/bed/chair{
+	dir = 1;
+	pixel_x = 10;
+	pixel_y = 13
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"zg" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/platform/metal/almayer/north,
+/obj/structure/platform/metal/almayer/east,
+/obj/structure/platform_decoration/metal/almayer/northwest,
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"zj" = (
+/obj/structure/bed{
+	can_buckle = 0
+	},
+/obj/item/bedsheet/hop,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"zk" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "24"
+	},
+/area/adminlevel/ert_station/vai_station)
+"zn" = (
+/obj/structure/bed/chair/office/light{
+	dir = 8
+	},
+/turf/open/floor/almayer/dark_sterile,
+/area/adminlevel/ert_station/vai_station)
+"zw" = (
+/obj/structure/machinery/weather_siren{
+	name = "Alert Siren";
+	desc = "A siren used to play a loud siren to signal go-time.";
+	dir = 1
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"zx" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.7
+	},
+/obj/item/clothing/mask/gas/yautja/damaged,
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"zy" = (
+/obj/structure/platform/metal/almayer,
+/obj/structure/platform/metal/almayer/west,
+/obj/structure/platform_decoration/metal/almayer/southwest,
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_y = 1
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"zD" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	layer = 3.3;
+	pixel_y = 4
+	},
+/obj/structure/bed{
+	can_buckle = 0
+	},
+/obj/structure/bed{
+	buckling_y = 13;
+	layer = 3.5;
+	pixel_y = 13
+	},
+/obj/item/bedsheet/rd{
+	pixel_y = 12
+	},
+/obj/item/bedsheet/blue{
+	layer = 3.2
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"zH" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/device/taperecorder{
+	pixel_y = 11;
+	pixel_x = -6
+	},
+/obj/item/device/taperecorder,
+/obj/item/storage/box/tapes{
+	pixel_x = 6;
+	pixel_y = 11
+	},
+/turf/open/floor/almayer/sterile_green_side/west,
+/area/adminlevel/ert_station/vai_station)
+"zI" = (
+/obj/structure/bed/chair{
+	dir = 1;
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"zJ" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "31"
+	},
+/area/adminlevel/ert_station/vai_station)
+"zN" = (
+/obj/structure/surface/table/reinforced/prison,
+/turf/open/floor/almayer/sterile_green_corner,
+/area/adminlevel/ert_station/vai_station)
+"zP" = (
+/obj/structure/extinguisher_cabinet/alt{
+	pixel_x = -24;
+	pixel_y = -1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"zR" = (
+/obj/structure/machinery/light/blue{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Af" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/storage/box/nade_box/gas{
+	pixel_x = 4;
+	pixel_y = 9
+	},
+/obj/item/storage/box/nade_box/gas{
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"An" = (
+/obj/structure/machinery/light/blue{
+	dir = 1
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Ao" = (
+/obj/structure/machinery/cm_vending/sorted/medical/no_access,
+/turf/open/floor/almayer/sterile_green_corner/east,
+/area/adminlevel/ert_station/vai_station)
+"Aq" = (
+/obj/structure/largecrate,
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"At" = (
+/obj/structure/bed/chair{
+	dir = 1;
+	pixel_y = 20;
+	pixel_x = -10
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"Au" = (
+/turf/open/floor/almayer/sterile_green_side/southeast,
+/area/adminlevel/ert_station/vai_station)
+"Ay" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	color = "#a6aeab";
+	dir = 4;
+	pixel_y = -10
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"AE" = (
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"AJ" = (
+/obj/structure/machinery/light/red{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"AY" = (
+/turf/closed/wall/almayer/research/containment/wall/north,
+/area/adminlevel/ert_station/vai_station)
+"Bg" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "89"
+	},
+/area/adminlevel/ert_station/vai_station)
+"Bm" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/machinery/computer/emails{
+	pixel_y = 5;
+	dir = 8
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"Bv" = (
+/obj/structure/bed/chair{
+	dir = 1;
+	pixel_x = -2;
+	pixel_y = 7
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	icon_state = "intact";
+	color = "#a6aeab";
+	pixel_x = 4
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"Bw" = (
+/obj/structure/machinery/recharge_station/alt{
+	layer = 2.9;
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"BC" = (
+/obj/structure/surface/table/almayer,
+/obj/item/paper_bin{
+	pixel_y = 8;
+	pixel_x = 8
+	},
+/obj/item/tool/pen{
+	pixel_x = 8;
+	pixel_y = 5
+	},
+/obj/item/clothing/head/helmet/marine/pilot/contractor{
+	pixel_y = 7;
+	pixel_x = -5
+	},
+/obj/structure/sign/poster/music{
+	pixel_y = 31
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"BF" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "18"
+	},
+/area/adminlevel/ert_station/vai_station)
+"BI" = (
+/turf/open/floor/almayer/research/containment/floor2,
+/area/adminlevel/ert_station/vai_station)
+"BM" = (
+/obj/structure/shuttle/part/dropship3/transparent/upper_left_wing,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"BO" = (
+/obj/item/storage/toolbox/electrical{
+	pixel_x = 7;
+	pixel_y = 9
+	},
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"BS" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	layer = 3.3;
+	pixel_y = 4
+	},
+/obj/structure/bed{
+	can_buckle = 0
+	},
+/obj/structure/bed{
+	buckling_y = 13;
+	layer = 3.5;
+	pixel_y = 13
+	},
+/obj/item/bedsheet/hos{
+	layer = 3.2
+	},
+/obj/item/bedsheet/ce{
+	pixel_y = 12
+	},
+/obj/item/bedsheet/green{
+	pixel_y = 12
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Cd" = (
+/obj/structure/extinguisher_cabinet/alt{
+	pixel_y = 32
+	},
+/turf/open/floor/almayer/sterile_green_corner/north,
+/area/adminlevel/ert_station/vai_station)
+"Cg" = (
+/obj/structure/machinery/vending/snack_generic,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Ci" = (
+/obj/structure/platform/metal/almayer/north,
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/machinery/light/blue{
+	dir = 1
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"Cl" = (
+/obj/structure/shuttle/part/dropship3/right_outer_wing_connector,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"Cp" = (
+/obj/structure/sign/safety/hazard{
+	pixel_y = 25
+	},
+/obj/structure/sign/safety/restrictedarea{
+	pixel_x = 15;
+	pixel_y = 25
+	},
+/obj/structure/largecrate,
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Cq" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "33"
+	},
+/area/adminlevel/ert_station/vai_station)
+"CD" = (
+/obj/structure/shuttle/part/dropship3/lower_left_wall,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"CF" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/computer/emails{
+	pixel_y = 8
+	},
+/obj/item/weapon/gun/rifle/m41a/elite{
+	random_spawn_chance = 0;
+	current_mag = null;
+	anchored = 1;
+	pixel_y = 31;
+	desc = "A modified version M41A Pulse Rifle MK2, re-engineered for better weight, handling and accuracy. Fires precise two-round bursts. Given only to elite units. Clearly works well as a wall-mount too."
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"CL" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 8;
+	pixel_y = 7
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"CM" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "14"
+	},
+/area/adminlevel/ert_station/vai_station)
+"CN" = (
+/obj/structure/shuttle/part/dropship3/transparent/nose_top_right,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"CV" = (
+/obj/structure/machinery/computer/shuttle/ert/alamo,
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"Dh" = (
+/turf/open/floor/almayer/sterile_green,
+/area/adminlevel/ert_station/vai_station)
+"Dk" = (
+/turf/closed/wall/almayer/outer,
+/area/adminlevel/ert_station/vai_station)
+"Dm" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	layer = 3.3;
+	pixel_y = 4
+	},
+/obj/structure/bed{
+	can_buckle = 0
+	},
+/obj/structure/bed{
+	buckling_y = 13;
+	layer = 3.5;
+	pixel_y = 13
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Dr" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "34"
+	},
+/area/adminlevel/ert_station/vai_station)
+"Ds" = (
+/obj/structure/prop/hybrisa/airport/dropshipenginedamagenofire,
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "22"
+	},
+/area/adminlevel/ert_station/vai_station)
+"Du" = (
+/obj/structure/platform/metal/almayer/north,
+/obj/structure/platform/metal/almayer/west,
+/obj/structure/platform_decoration/metal/almayer/northeast,
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out"
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"DH" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/ammo_box/magazine/ap{
+	pixel_x = -7;
+	pixel_y = -1
+	},
+/obj/item/ammo_box/magazine/ext{
+	pixel_y = 17;
+	pixel_x = -3
+	},
+/obj/item/ammo_box/magazine/m39/le{
+	pixel_x = 12;
+	pixel_y = 11
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"DM" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/prop/rock/brown{
+	pixel_y = 7;
+	dir = 9
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"DQ" = (
+/turf/open/floor/almayer/sterile_green_side/northeast,
+/area/adminlevel/ert_station/vai_station)
+"DX" = (
+/obj/structure/machinery/weather_siren{
+	name = "Alert Siren";
+	desc = "A siren used to play a loud siren to signal go-time.";
+	dir = 8
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"Eh" = (
+/obj/structure/machinery/door/airlock/multi_tile/almayer{
+	name = "\improper Bunks"
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Ej" = (
+/obj/structure/machinery/door_control{
+	id = "VAIResearch2";
+	name = "Outer Containment Lock";
+	pixel_x = -8;
+	pixel_y = 22
+	},
+/turf/open/floor/almayer/sterile_green,
+/area/adminlevel/ert_station/vai_station)
+"Ep" = (
+/turf/open/space/basic,
+/area/space)
+"Er" = (
+/obj/structure/shuttle/part/dropship3/right_inner_wing_connector,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"Eu" = (
+/obj/structure/machinery/vending/walkman,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"EA" = (
+/turf/open/floor/almayer/research/containment/floor2/west,
+/area/adminlevel/ert_station/vai_station)
+"EE" = (
+/obj/structure/largecrate/empty/secure,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"EG" = (
+/obj/structure/machinery/door_control/brbutton/alt{
+	pixel_y = -19;
+	pixel_x = 5;
+	id = "VAIhanger"
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"EL" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "19"
+	},
+/area/adminlevel/ert_station/vai_station)
+"EM" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/item/reagent_container/food/drinks/bottle/wine{
+	pixel_x = -7;
+	pixel_y = 9
+	},
+/obj/item/storage/box/drinkingglasses{
+	pixel_x = 4;
+	pixel_y = -2
+	},
+/obj/item/storage/box/drinkingglasses{
+	pixel_x = 4;
+	pixel_y = 10
+	},
+/obj/structure/prop/hybrisa/misc/machinery/screens/wood_clock{
+	pixel_y = -18
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"EN" = (
+/turf/open/floor/almayer/research/containment/floor1,
+/area/adminlevel/ert_station/vai_station)
+"ER" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/prop/almayer/computer/PC{
+	pixel_y = 3
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"EU" = (
+/obj/structure/machinery/vending/security,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Fa" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "10"
+	},
+/area/adminlevel/ert_station/vai_station)
+"Fc" = (
+/obj/structure/machinery/door_control{
+	id = "VAIResearch1";
+	name = "Inner Containment Lock";
+	pixel_x = -6;
+	pixel_y = -22
+	},
+/turf/open/floor/almayer/sterile_green,
+/area/adminlevel/ert_station/vai_station)
+"Fz" = (
+/obj/structure/filingcabinet{
+	pixel_x = -8;
+	pixel_y = 17
+	},
+/obj/structure/filingcabinet{
+	pixel_x = 8;
+	pixel_y = 17
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"FE" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/device/walkman/white_band{
+	pixel_x = 6
+	},
+/obj/item/device/cassette_tape/hiphop{
+	pixel_x = 6;
+	pixel_y = 13
+	},
+/obj/item/device/camera{
+	pixel_y = 9;
+	pixel_x = -8
+	},
+/obj/item/device/camera_film{
+	pixel_x = -7
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"FG" = (
+/turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"FH" = (
+/obj/structure/machinery/shower{
+	pixel_y = 16
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"FX" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "86"
+	},
+/area/adminlevel/ert_station/vai_station)
+"FY" = (
+/obj/structure/machinery/door/poddoor/almayer/biohazard/white{
+	id = "VAIResearch1"
+	},
+/turf/open/floor/almayer/dark_sterile,
+/area/adminlevel/ert_station/vai_station)
+"Ga" = (
+/obj/structure/bed/chair{
+	dir = 1;
+	pixel_x = -6;
+	pixel_y = 24
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"Gh" = (
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Gm" = (
+/obj/structure/machinery/light/small/blue{
+	dir = 8
+	},
+/obj/structure/machinery/light/red{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Gp" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/curtain/medical{
+	pixel_x = 32
+	},
+/turf/open/floor/almayer/sterile_green_corner/east,
+/area/adminlevel/ert_station/vai_station)
+"Gt" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/device/camera{
+	pixel_x = 4;
+	pixel_y = 9
+	},
+/obj/item/device/camera_film,
+/obj/item/device/camera_film,
+/obj/item/device/camera{
+	pixel_x = 4;
+	pixel_y = 9
+	},
+/obj/item/device/camera_film,
+/obj/item/device/camera_film,
+/turf/open/floor/almayer/sterile_green_side/west,
+/area/adminlevel/ert_station/vai_station)
+"GA" = (
+/obj/structure/machinery/body_scanconsole,
+/turf/open/floor/almayer/sterile_green_side,
+/area/adminlevel/ert_station/vai_station)
+"GB" = (
+/obj/structure/platform_decoration/metal/almayer/east,
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"GD" = (
+/obj/structure/machinery/weather_siren{
+	name = "Alert Siren";
+	desc = "A siren used to play a loud siren to signal go-time.";
+	dir = 4
+	},
+/turf/open/floor/almayer/test_floor4,
+/area/adminlevel/ert_station/vai_station)
+"GQ" = (
+/obj/structure/machinery/autodoc_console,
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/turf/open/floor/almayer/sterile_green_side/west,
+/area/adminlevel/ert_station/vai_station)
+"GX" = (
+/obj/structure/sign/calendar/ua{
+	pixel_x = -29
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Hc" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/paper_bin{
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/obj/item/tool/pen{
+	pixel_x = 5;
+	pixel_y = 2
+	},
+/turf/open/floor/almayer/dark_sterile,
+/area/adminlevel/ert_station/vai_station)
+"Ht" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/cell_charger,
+/obj/item/book/manual/ripley_build_and_repair{
+	pixel_y = 4;
+	pixel_x = 5
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"HB" = (
+/obj/structure/machinery/weather_siren{
+	name = "Alert Siren";
+	desc = "A siren used to play a loud siren to signal go-time.";
+	dir = 4
+	},
+/turf/open/floor/almayer/sterile_green_side/west,
+/area/adminlevel/ert_station/vai_station)
+"HL" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	layer = 3.3;
+	pixel_y = 4
+	},
+/obj/structure/bed{
+	can_buckle = 0
+	},
+/obj/structure/bed{
+	buckling_y = 13;
+	layer = 3.5;
+	pixel_y = 13
+	},
+/obj/item/bedsheet/ce{
+	pixel_y = 12
+	},
+/obj/item/bedsheet/green{
+	layer = 3.2
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"HN" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/weapon/gun/smartgun/pve{
+	pixel_x = -15;
+	pixel_y = -2
+	},
+/obj/item/clothing/suit/storage/marine/veteran/contractor/smartgunner{
+	pixel_x = 9;
+	pixel_y = 7
+	},
+/obj/item/clothing/head/cmcap/urban{
+	pixel_y = 8;
+	pixel_x = -4
+	},
+/obj/structure/sign/poster{
+	desc = "One of those hot, tanned babes back the beaches of good ol' Earth.";
+	icon_state = "poster12";
+	name = "Beach Babe Pinup";
+	pixel_y = 30;
+	serial_number = 12
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"HX" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "72"
+	},
+/area/adminlevel/ert_station/vai_station)
+"HY" = (
+/obj/item/weapon/twohanded/folded_metal_chair,
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Ig" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/prop/ice_colony/ice_crystal{
+	dir = 8;
+	pixel_y = 4
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"Ip" = (
+/obj/item/reagent_container/glass/bucket/mopbucket{
+	pixel_y = 14;
+	pixel_x = -2
+	},
+/obj/item/tool/wet_sign{
+	pixel_x = -15;
+	pixel_y = -4
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"Iz" = (
+/obj/structure/machinery/light/small/blue{
+	dir = 8
+	},
+/turf/open/floor/almayer/dark_sterile,
+/area/adminlevel/ert_station/vai_station)
+"IB" = (
+/obj/structure/stairs{
+	dir = 4;
+	icon_state = "ramptop"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"IN" = (
+/obj/structure/filingcabinet{
+	pixel_x = 8;
+	pixel_y = 17
+	},
+/obj/structure/filingcabinet{
+	pixel_x = -8;
+	pixel_y = 17
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"IR" = (
+/obj/structure/machinery/door/airlock/almayer{
+	name = "\improper Officer's Quarters"
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Ja" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "78"
+	},
+/area/adminlevel/ert_station/vai_station)
+"Jb" = (
+/obj/structure/machinery/optable,
+/turf/open/floor/almayer/sterile_green_side/west,
+/area/adminlevel/ert_station/vai_station)
+"Jc" = (
+/obj/structure/ship_ammo/minirocket/incendiary,
+/turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"Jd" = (
+/obj/structure/prop/hybrisa/misc/machinery/screens/multimonitormedium_on{
+	pixel_y = 29
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"Jl" = (
+/obj/structure/bed/chair/vehicle/white{
+	dir = 1;
+	pixel_x = -8
+	},
+/obj/structure/bed/chair/vehicle/white{
+	dir = 1;
+	pixel_x = 8
+	},
+/turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"Jo" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "92"
+	},
+/area/adminlevel/ert_station/vai_station)
+"Jr" = (
+/obj/structure/machinery/door/airlock/almayer/glass{
+	name = "\improper Morgue";
+	dir = 2
+	},
+/turf/open/floor/almayer/dark_sterile,
+/area/adminlevel/ert_station/vai_station)
+"Jz" = (
+/obj/structure/shuttle/part/dropship3/transparent/engine_left_cap,
+/obj/structure/prop/hybrisa/misc/fake/heavydutywire/heavy2,
+/obj/item/tool/wirecutters{
+	pixel_x = -16
+	},
+/obj/effect/decal/cleanable/liquid_fuel,
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"JB" = (
+/turf/closed/wall/almayer/research/containment/wall/corner{
+	dir = 1
+	},
+/area/adminlevel/ert_station/vai_station)
+"JD" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "28"
+	},
+/area/adminlevel/ert_station/vai_station)
+"JE" = (
+/obj/structure/filingcabinet{
+	pixel_x = -8;
+	pixel_y = 17
+	},
+/obj/structure/filingcabinet{
+	pixel_x = 8;
+	pixel_y = 17
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"JH" = (
+/obj/structure/surface/table/woodentable/fancy,
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"JI" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "64"
+	},
+/area/adminlevel/ert_station/vai_station)
+"JK" = (
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"JL" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/computer/emails{
+	dir = 8;
+	pixel_y = 8
+	},
+/turf/open/floor/almayer/sterile_green_side,
+/area/adminlevel/ert_station/vai_station)
+"JN" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/safe/floor{
+	pixel_y = -8
+	},
+/obj/item/stack/sheet/mineral/gold/small_stack,
+/obj/item/stack/sheet/mineral/gold/small_stack,
+/obj/item/stack/sheet/mineral/gold/small_stack,
+/obj/item/stack/sheet/mineral/gold/small_stack,
+/obj/item/stack/sheet/mineral/gold/small_stack,
+/obj/item/stack/sheet/mineral/gold/small_stack,
+/obj/item/coin/silver/cia,
+/obj/item/weapon/gun/revolver/m44/custom/pkd_special,
+/obj/item/ammo_magazine/revolver/pkd,
+/obj/item/ammo_magazine/revolver/pkd,
+/obj/item/ammo_magazine/revolver/pkd,
+/obj/item/ammo_magazine/revolver/pkd,
+/obj/item/ammo_magazine/revolver/pkd,
+/obj/item/ammo_magazine/revolver/pkd,
+/obj/item/spacecash/c1000{
+	worth = 10000;
+	name = "10000 dollars"
+	},
+/obj/item/moneybag,
+/obj/item/moneybag,
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"JQ" = (
+/obj/structure/ship_ammo/heavygun/antitank{
+	pixel_y = 14
+	},
+/obj/structure/ship_ammo/heavygun/antitank{
+	pixel_y = -1
+	},
+/turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"JS" = (
+/obj/structure/platform/metal/almayer/east,
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/machinery/light/blue{
+	dir = 4
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"JV" = (
+/obj/structure/shuttle/part/dropship3/transparent/engine_left_cap,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"JZ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/structure/platform/metal/almayer,
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"Ka" = (
+/obj/structure/machinery/light/red{
+	dir = 4
+	},
+/obj/structure/prop{
+	icon = 'icons/obj/structures/ladders.dmi';
+	icon_state = "ladder11";
+	name = "ladder";
+	desc = "A sturdy metal ladder."
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Kj" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "39"
+	},
+/area/adminlevel/ert_station/vai_station)
+"Km" = (
+/turf/closed/wall/almayer,
+/area/adminlevel/ert_station/vai_station)
+"Ko" = (
+/obj/item/weapon/twohanded/folded_metal_chair,
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"KI" = (
+/obj/effect/attach_point/weapon/dropship3/left_wing,
+/obj/structure/shuttle/part/dropship3/transparent/lower_left_wing,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"KJ" = (
+/turf/open/floor/almayer/dark_sterile,
+/area/adminlevel/ert_station/vai_station)
+"KN" = (
+/obj/vehicle/powerloader,
+/turf/open/floor/almayer/cargo,
+/area/adminlevel/ert_station/vai_station)
+"KX" = (
+/obj/structure/machinery/weather_siren{
+	name = "Alert Siren";
+	desc = "A siren used to play a loud siren to signal go-time.";
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Lk" = (
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"Lo" = (
+/obj/structure/machinery/power/smes,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Lp" = (
+/obj/structure/extinguisher_cabinet/alt{
+	pixel_x = 25
+	},
+/turf/open/floor/almayer/sterile_green_corner/east,
+/area/adminlevel/ert_station/vai_station)
+"Lw" = (
+/obj/structure/shuttle/part/dropship3/transparent/right_outer_bottom_wing,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"Lx" = (
+/obj/structure/platform_decoration/metal/almayer/west,
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"Ly" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/item/tool/lighter/zippo/gold{
+	pixel_x = 24;
+	pixel_y = 7
+	},
+/obj/item/ashtray/glass{
+	icon_state = "ashtray_half_gl";
+	pixel_x = 15;
+	pixel_y = 10
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	pixel_y = 4;
+	id = "VAIhanger";
+	name = "Door Lock"
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"LG" = (
+/obj/structure/prop/hybrisa/misc/machinery/screens/multimonitorsmall_on{
+	pixel_y = 29
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"LM" = (
+/obj/structure/barricade/handrail/medical{
+	dir = 4;
+	pixel_x = 2
+	},
+/obj/structure/barricade/handrail/medical{
+	dir = 1;
+	pixel_y = 4;
+	layer = 2.3
+	},
+/obj/structure/dispenser/oxygen{
+	throwpass = 1
+	},
+/obj/structure/pipes/standard/cap/hidden,
+/turf/open/floor/almayer/sterile_green_side/north,
+/area/adminlevel/ert_station/vai_station)
+"LY" = (
+/obj/structure/machinery/light/red{
+	dir = 1
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Mb" = (
+/turf/open/floor/almayer/research/containment/corner/east,
+/area/adminlevel/ert_station/vai_station)
+"Mg" = (
+/obj/structure/machinery/cm_vending/sorted/boozeomat,
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"Mo" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 8
+	},
+/obj/structure/machinery/light/blue{
+	dir = 1
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"Ms" = (
+/obj/structure/machinery/shower{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Mu" = (
+/obj/structure/shuttle/part/dropship3/transparent/left_outer_inner_wing,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"MK" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 8;
+	pixel_y = 7
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"MO" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/ammo_box/magazine/mk1{
+	pixel_x = -14;
+	pixel_y = 12
+	},
+/obj/item/ammo_box/magazine/mk1{
+	pixel_x = -14;
+	pixel_y = 2
+	},
+/obj/item/ammo_box/magazine/ext{
+	pixel_y = 17;
+	pixel_x = 7
+	},
+/obj/item/ammo_box/magazine/ap{
+	pixel_x = 9;
+	pixel_y = 5
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"MR" = (
+/obj/structure/ship_ammo/heavygun{
+	pixel_y = 19
+	},
+/obj/structure/ship_ammo/heavygun{
+	pixel_y = 10
+	},
+/obj/structure/ship_ammo/heavygun,
+/turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"MZ" = (
+/turf/open/floor/almayer/research/containment/corner,
+/area/adminlevel/ert_station/vai_station)
+"Nc" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/storage/box/packet/m15{
+	pixel_y = 7
+	},
+/obj/item/storage/box/packet/m15{
+	pixel_x = 11;
+	pixel_y = 2
+	},
+/obj/item/storage/box/packet/m15{
+	pixel_y = 13;
+	pixel_x = 6
+	},
+/obj/item/storage/box/packet/m15{
+	pixel_y = 13;
+	pixel_x = 6
+	},
+/obj/item/storage/box/packet/m15{
+	pixel_x = -4
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"Nj" = (
+/obj/structure/sign/calendar{
+	pixel_y = 29
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Nk" = (
+/obj/structure/machinery/power/apc/antag{
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Nm" = (
+/obj/structure/machinery/prop/almayer/CICmap/computer{
+	pixel_y = 20;
+	pixel_x = 9
+	},
+/obj/structure/machinery/computer/cameras{
+	pixel_x = -11;
+	pixel_y = 20
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"Np" = (
+/obj/structure/morgue{
+	dir = 2
+	},
+/obj/structure/machinery/light/red{
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Nv" = (
+/obj/structure/machinery/part_fabricator/dropship,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"NA" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 4;
+	pixel_x = 10
+	},
+/turf/open/floor/almayer/research/containment/floor2/west,
+/area/adminlevel/ert_station/vai_station)
+"ND" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E"
+	},
+/obj/structure/platform/metal/almayer/north,
+/obj/structure/platform/metal/almayer/west,
+/obj/structure/platform_decoration/metal/almayer/northeast,
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"NN" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"NS" = (
+/obj/structure/bed/chair{
+	dir = 1;
+	pixel_y = -9;
+	pixel_x = 12
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"NY" = (
+/obj/structure/surface/table/almayer,
+/obj/item/prop/magazine/book/spacebeast{
+	pixel_x = -6;
+	pixel_y = 2;
+	layer = 3.01
+	},
+/obj/item/prop/magazine/book/borntokill{
+	pixel_y = 5;
+	pixel_x = 4
+	},
+/obj/item/prop/magazine/book/theartofwar{
+	pixel_y = 3;
+	pixel_x = -4
+	},
+/obj/structure/sign/goldenplaque{
+	desc = "An employee of the month plaque stolen from some Weyland-Yutani building a year or two back. Someone's scratched the name out.";
+	name = "Employee of the Month Award";
+	pixel_y = 28
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	icon_state = "intact";
+	color = "#a6aeab";
+	pixel_x = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Oc" = (
+/obj/structure/shuttle/part/dropship3/lower_right_wall,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"Ok" = (
+/obj/structure/bed/chair/dropship/pilot{
+	dir = 1;
+	pixel_y = 16
+	},
+/obj/item/reagent_container/food/drinks/bottle/whiskey{
+	pixel_x = 13;
+	pixel_y = 7
+	},
+/obj/item/reagent_container/food/drinks/bottle/whiskey{
+	pixel_x = 10;
+	pixel_y = -3
+	},
+/obj/item/reagent_container/food/drinks/bottle/tequila{
+	pixel_x = -10
+	},
+/obj/item/reagent_container/food/drinks/bottle/vodka{
+	pixel_x = -8;
+	pixel_y = 13;
+	layer = 2.99
+	},
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"Os" = (
+/obj/structure/machinery/autodoc_console,
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/turf/open/floor/almayer/sterile_green_corner/west,
+/area/adminlevel/ert_station/vai_station)
+"Ot" = (
+/obj/structure/largecrate/empty/case/double,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"OC" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"OJ" = (
+/turf/open/floor/almayer/cargo,
+/area/adminlevel/ert_station/vai_station)
+"OP" = (
+/obj/structure/machinery/vending/snack_generic,
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"OU" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "75"
+	},
+/area/adminlevel/ert_station/vai_station)
+"OV" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "38"
+	},
+/area/adminlevel/ert_station/vai_station)
+"Ph" = (
+/obj/structure/bed/chair/vehicle/white{
+	pixel_x = -8
+	},
+/obj/structure/bed/chair/vehicle/white{
+	pixel_x = 8
+	},
+/turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"Pj" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Pn" = (
+/obj/structure/filingcabinet{
+	pixel_x = -9
+	},
+/obj/structure/filingcabinet{
+	pixel_x = 8
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Pt" = (
+/obj/structure/closet/secure_closet/medical2,
+/turf/open/floor/almayer/sterile_green_corner/west,
+/area/adminlevel/ert_station/vai_station)
+"Py" = (
+/obj/structure/machinery/door/poddoor/almayer/closed{
+	unacidable = 1;
+	needs_power = 0;
+	emp_proof = 1;
+	explo_proof = 1
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"PJ" = (
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_full"
+	},
+/obj/structure/platform/metal/almayer/west,
+/obj/structure/machinery/light/red{
+	dir = 8
+	},
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"PY" = (
+/obj/structure/closet/wardrobe/morgue,
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Qp" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "30"
+	},
+/area/adminlevel/ert_station/vai_station)
+"QA" = (
+/obj/structure/machinery/cm_vending/sorted/tech/electronics_storage{
+	req_access = null;
+	req_one_access_txt = "7;23;27"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"QP" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "69"
+	},
+/area/adminlevel/ert_station/vai_station)
+"Rb" = (
+/obj/structure/machinery/weather_siren{
+	name = "Alert Siren";
+	desc = "A siren used to play a loud siren to signal go-time.";
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Rd" = (
+/obj/structure/noticeboard{
+	pixel_y = 28;
+	pixel_x = 17;
+	desc_lore = "There's a sheet of paper pinned to the notice board, with names and dates written down on it."
+	},
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/clothing/head/beret/cm/red{
+	pixel_y = 13;
+	pixel_x = 5
+	},
+/obj/item/prop/tableflag{
+	pixel_y = 5;
+	pixel_x = -11
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Rg" = (
+/obj/structure/machinery/iv_drip,
+/turf/open/floor/almayer/dark_sterile,
+/area/adminlevel/ert_station/vai_station)
+"Rw" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/ammo_box/magazine/m1911{
+	pixel_y = 16;
+	pixel_x = 2
+	},
+/obj/item/ammo_box/magazine/m1911{
+	pixel_y = 4;
+	pixel_x = -11
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Rx" = (
+/obj/structure/machinery/computer/arcade{
+	layer = 3.3
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"RA" = (
+/obj/structure/bed/chair/vehicle/white{
+	dir = 8;
+	pixel_x = 9;
+	pixel_y = 5
+	},
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"RH" = (
+/obj/structure/platform/metal/almayer,
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"RO" = (
+/obj/structure/machinery/door/poddoor/hybrisa{
+	id = "vai_cell2"
+	},
+/obj/structure/machinery/door/airlock/almayer/glass{
+	name = "\improper Cell"
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"RX" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/platform/metal/almayer/east,
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"Sa" = (
+/obj/structure/closet/crate,
+/obj/item/clothing/under/marine/veteran/contractor,
+/obj/item/clothing/under/marine/veteran/contractor/blue,
+/obj/item/clothing/under/marine/veteran/contractor/grey,
+/obj/item/clothing/under/marine/veteran/contractor/grey,
+/obj/item/clothing/under/marine/veteran/contractor/grey,
+/obj/item/clothing/under/marine/veteran/contractor/blue,
+/obj/item/clothing/under/marine/veteran/contractor/blue,
+/obj/item/clothing/under/marine/veteran/contractor,
+/obj/item/clothing/under/marine/veteran/contractor,
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Sp" = (
+/obj/structure/ship_ammo/heavygun{
+	pixel_y = 11
+	},
+/obj/structure/ship_ammo/heavygun/antitank{
+	pixel_y = -3;
+	pixel_x = -8
+	},
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"Sq" = (
+/obj/structure/machinery/light/blue{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Ss" = (
+/obj/structure/platform/metal/almayer/east,
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"Sx" = (
+/obj/structure/machinery/medical_pod/autodoc/unskilled,
+/turf/open/floor/almayer/test_floor4,
+/area/adminlevel/ert_station/vai_station)
+"SA" = (
+/obj/structure/sign/banners/colonial_marines_flag_worn{
+	pixel_y = 29
+	},
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/machinery/computer/cameras/wooden_tv/broadcast{
+	pixel_y = 8;
+	pixel_x = 6
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"SJ" = (
+/obj/structure/shuttle/part/dropship3/transparent/left_outer_bottom_wing,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"SN" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/prop/server_equipment/laptop/on,
+/turf/open/floor/almayer/sterile_green_corner/north,
+/area/adminlevel/ert_station/vai_station)
+"Tc" = (
+/obj/vehicle/powerloader{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"Tp" = (
+/obj/structure/ship_ammo/minirocket/incendiary,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"Tq" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/device/taperecorder{
+	pixel_x = 6
+	},
+/obj/item/storage/box/tapes{
+	pixel_x = 6;
+	pixel_y = 11
+	},
+/obj/item/folder/red{
+	pixel_x = -9;
+	pixel_y = 9
+	},
+/obj/item/folder/blue{
+	pixel_x = -9
+	},
+/obj/item/folder/black{
+	pixel_x = -9;
+	pixel_y = -8
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Tx" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 8;
+	pixel_y = 7
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"TL" = (
+/obj/structure/sign/safety/medical{
+	pixel_x = -21;
+	pixel_y = 7
+	},
+/obj/structure/sign/safety/outpatient{
+	pixel_y = -7;
+	pixel_x = -21
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"TN" = (
+/obj/structure/bookcase{
+	icon_state = "book-5";
+	pixel_y = 1
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"TS" = (
+/obj/item/clothing/head/helmet/marine/veteran/pmc/fieldleader{
+	layer = 3.21;
+	pixel_y = 12;
+	anchored = 1;
+	pixel_x = 2
+	},
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/computer/cameras/wooden_tv/broadcast,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"TX" = (
+/obj/structure/machinery/door/poddoor/almayer/closed{
+	unacidable = 1;
+	needs_power = 0;
+	emp_proof = 1;
+	explo_proof = 1;
+	dir = 4
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"TZ" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 8;
+	pixel_y = 7
+	},
+/obj/structure/machinery/weather_siren{
+	name = "Alert Siren";
+	desc = "A siren used to play a loud siren to signal go-time.";
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Ua" = (
+/obj/structure/surface/table/almayer,
+/obj/item/clock{
+	pixel_y = 10
+	},
+/obj/structure/sign/banners/twe_flag{
+	pixel_y = 32
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Ub" = (
+/obj/structure/machinery/photocopier,
+/obj/item/device/toner{
+	pixel_y = 4
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 8;
+	pixel_y = 7
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Ug" = (
+/obj/structure/shuttle/part/dropship3/transparent/right_inner_bottom_wing,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"Uk" = (
+/obj/structure/morgue{
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Un" = (
+/obj/structure/bed/chair/office/light{
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"Uo" = (
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"Uv" = (
+/obj/item/weapon/twohanded/folded_metal_chair{
+	pixel_y = 11
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"UE" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/storage/box/zipcuffs,
+/obj/structure/machinery/light/red{
+	dir = 4
+	},
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"UJ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_y = -1
+	},
+/turf/open/floor/almayer/sterile_green_side,
+/area/adminlevel/ert_station/vai_station)
+"UL" = (
+/turf/open/floor/almayer/cargo_arrow,
+/area/adminlevel/ert_station/vai_station)
+"UM" = (
+/obj/structure/machinery/light/red,
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Vf" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/attachable/suppressor,
+/obj/item/attachable/suppressor,
+/obj/item/attachable/suppressor,
+/obj/item/attachable/suppressor,
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"Vr" = (
+/turf/closed/wall/almayer/research/containment/wall/purple{
+	dir = 4
+	},
+/area/adminlevel/ert_station/vai_station)
+"Vw" = (
+/obj/structure/machinery/cm_vending/sorted/tech/comp_storage{
+	req_one_access_txt = "7;23;27"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Vx" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 8
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"Vy" = (
+/obj/structure/sink{
+	dir = 1;
+	pixel_y = -11
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"VA" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/ammo_box/magazine/misc/mre/fsr,
+/obj/item/ammo_box/magazine/misc/mre/fsr{
+	pixel_y = 12;
+	pixel_x = 5
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"VG" = (
+/obj/structure/closet/secure_closet/brig,
+/obj/structure/machinery/door_control{
+	pixel_y = -9;
+	pixel_x = -23;
+	id = "vai_cell3"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"VI" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "47"
+	},
+/area/adminlevel/ert_station/vai_station)
+"VL" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "26"
+	},
+/area/adminlevel/ert_station/vai_station)
+"VT" = (
+/obj/structure/sign/safety/restrictedarea{
+	pixel_y = 27
+	},
+/obj/structure/sign/safety/autodoc{
+	pixel_y = 27;
+	pixel_x = 14;
+	name = "operating room semiotic"
+	},
+/turf/open/floor/almayer/sterile_green_side/north,
+/area/adminlevel/ert_station/vai_station)
+"VU" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	color = "#a6aeab";
+	dir = 5
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"VY" = (
+/obj/structure/flora/pottedplant{
+	icon_state = "pottedplant_18";
+	pixel_y = 21;
+	pixel_x = 10
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"Wj" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/hybrisa/coffee_machine{
+	pixel_y = -1;
+	pixel_x = -6
+	},
+/obj/item/reagent_container/food/drinks/coffeecup{
+	pixel_y = 1;
+	pixel_x = 7
+	},
+/obj/item/reagent_container/food/drinks/coffeecup{
+	pixel_y = -3;
+	pixel_x = 19
+	},
+/obj/item/reagent_container/food/drinks/coffeecup/uscm{
+	pixel_y = 12;
+	pixel_x = 14
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Wl" = (
+/obj/structure/morgue{
+	dir = 1
+	},
+/obj/structure/machinery/light/red,
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Wn" = (
+/obj/structure/surface/table/reinforced/prison,
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Wp" = (
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_full"
+	},
+/obj/structure/platform/metal/almayer/east,
+/obj/structure/machinery/light/red{
+	dir = 4
+	},
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"WA" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 8;
+	pixel_y = 7
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"WL" = (
+/obj/structure/prop/ice_colony/tiger_rug,
+/obj/structure/prop/invuln/overhead_pipe{
+	color = "#a6aeab";
+	dir = 4
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"Xa" = (
+/obj/structure/machinery/sleep_console,
+/turf/open/floor/almayer/sterile_green_corner/east,
+/area/adminlevel/ert_station/vai_station)
+"Xc" = (
+/obj/structure/machinery/door/airlock/almayer/glass{
+	name = "\improper Holding Cells"
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Xl" = (
+/obj/structure/machinery/light/blue,
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"Xm" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	color = "#a6aeab";
+	dir = 5;
+	layer = 5.12;
+	pixel_y = -10
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"Xo" = (
+/obj/effect/decal/cleanable/liquid_fuel,
+/turf/open/floor/plating,
+/area/adminlevel/ert_station/vai_station)
+"Xp" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/turf/open/floor/almayer/sterile_green_side/west,
+/area/adminlevel/ert_station/vai_station)
+"Xy" = (
+/obj/structure/pipes/standard/manifold/hidden,
+/turf/open/floor/almayer/dark_sterile,
+/area/adminlevel/ert_station/vai_station)
+"Xz" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.7
+	},
+/obj/item/skull/ravager,
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"XB" = (
+/obj/structure/machinery/door/airlock/hatch/cockpit/three{
+	dir = 1;
+	req_access = null;
+	req_one_access = null
+	},
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"XE" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/device/autopsy_scanner{
+	pixel_y = 13;
+	pixel_x = 4
+	},
+/obj/item/tool/surgery/circular_saw,
+/obj/item/tool/surgery/cautery,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/tool/surgery/hemostat{
+	pixel_x = -8;
+	pixel_y = 3
+	},
+/obj/item/tool/surgery/retractor,
+/obj/item/tool/surgery/scalpel,
+/turf/open/floor/almayer/flooredge/southeast,
+/area/adminlevel/ert_station/vai_station)
+"XF" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/ammo_box/magazine/m1911{
+	pixel_y = 13;
+	pixel_x = -4
+	},
+/obj/item/ammo_box/magazine/m1911{
+	pixel_y = 13;
+	pixel_x = 19
+	},
+/obj/item/ammo_box/magazine/m1911{
+	pixel_y = 4;
+	pixel_x = -1
+	},
+/obj/item/ammo_box/magazine/m1911{
+	pixel_y = 4;
+	pixel_x = -1
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"XH" = (
+/obj/structure/bed/chair{
+	dir = 1;
+	pixel_y = 9;
+	pixel_x = 6
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"XL" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	color = "#a6aeab"
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"XQ" = (
+/obj/item/bedsheet/blue{
+	pixel_y = 13
+	},
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	layer = 3.3;
+	pixel_y = 4
+	},
+/obj/structure/bed{
+	can_buckle = 0
+	},
+/obj/structure/bed{
+	buckling_y = 13;
+	layer = 3.5;
+	pixel_y = 13
+	},
+/obj/item/bedsheet/green{
+	layer = 3.2
+	},
+/obj/item/prop/magazine/book/starshiptroopers,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"XT" = (
+/obj/structure/machinery/light/blue{
+	dir = 4
+	},
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"XX" = (
+/obj/structure/machinery/vending/security,
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"Ya" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	color = "#a6aeab";
+	dir = 4;
+	pixel_y = -10
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"Yc" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/ammo_box/magazine/mar30/ext{
+	pixel_y = 9
+	},
+/obj/item/ammo_box/magazine/mar30/ext,
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"Ye" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "81"
+	},
+/area/adminlevel/ert_station/vai_station)
+"Yo" = (
+/obj/structure/bed/chair{
+	dir = 1;
+	pixel_y = 9;
+	pixel_x = 11
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"Yv" = (
+/obj/structure/platform/metal/almayer,
+/obj/structure/platform/metal/almayer/east,
+/obj/structure/platform_decoration/metal/almayer/southeast,
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	pixel_y = 1
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/adminlevel/ert_station/vai_station)
+"YA" = (
+/obj/structure/pipes/standard/cap/hidden,
+/obj/structure/machinery/cryo_cell{
+	layer = 4;
+	density = 1;
+	pixel_y = 4;
+	pixel_x = 1
+	},
+/obj/structure/barricade/handrail/medical{
+	dir = 1;
+	pixel_y = 4;
+	layer = 2.3
+	},
+/turf/open/floor/almayer/sterile_green_side/north,
+/area/adminlevel/ert_station/vai_station)
+"YD" = (
+/turf/closed/shuttle/dropship3{
+	icon_state = "77"
+	},
+/area/adminlevel/ert_station/vai_station)
+"YN" = (
+/turf/open/floor/almayer/sterile_green_side/northwest,
+/area/adminlevel/ert_station/vai_station)
+"YO" = (
+/obj/structure/machinery/cm_vending/sorted/tech/tool_storage,
+/turf/open/floor/almayer/plate,
+/area/adminlevel/ert_station/vai_station)
+"YT" = (
+/obj/structure/machinery/vending/cigarette/wy/free{
+	pixel_y = 20;
+	pixel_x = -7;
+	density = 0;
+	desc = "A Weyland Yutani Brand cigarette vending machine, looks like a Wey-Yu Gold pack. Comes with Emerald Greens, Wey-Yu Golds of course, Arcturian Aces, and some Three World Empire brand you've barely heard of. The pricing system has been stripped out, and the cigarettes are free of charge. The spoils of war."
+	},
+/obj/structure/extinguisher_cabinet/alt{
+	pixel_x = 10;
+	pixel_y = 27
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Zg" = (
+/turf/closed/shuttle/dropship3/transparent{
+	icon_state = "29"
+	},
+/area/adminlevel/ert_station/vai_station)
+"Zi" = (
+/obj/structure/bed/chair{
+	dir = 1;
+	pixel_y = 14;
+	pixel_x = 10
+	},
+/obj/item/weapon/twohanded/folded_metal_chair{
+	pixel_x = -12;
+	pixel_y = 15
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"Zm" = (
+/turf/closed/wall/almayer/research/containment/wall/corner{
+	dir = 8
+	},
+/area/adminlevel/ert_station/vai_station)
+"Zu" = (
+/obj/structure/machinery/autolathe,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Zv" = (
+/obj/structure/closet/secure_closet/brig,
+/obj/structure/machinery/door_control{
+	pixel_y = -9;
+	pixel_x = -23;
+	id = "vai_cell2"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"Zy" = (
+/obj/structure/bed/chair/office/light{
+	dir = 1
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"ZF" = (
+/obj/structure/bed/chair/office/light{
+	dir = 4
+	},
+/turf/open/floor/wood/ship,
+/area/adminlevel/ert_station/vai_station)
+"ZJ" = (
+/obj/structure/machinery/light/blue,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"ZK" = (
+/obj/structure/machinery/light/blue{
+	dir = 1
+	},
+/turf/open/floor/almayer,
+/area/adminlevel/ert_station/vai_station)
+"ZN" = (
+/obj/structure/ship_ammo/minirocket,
+/turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/area/adminlevel/ert_station/vai_station)
+"ZW" = (
+/obj/structure/surface/table/almayer,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+"ZX" = (
+/obj/structure/machinery/optable,
+/turf/open/floor/plating/plating_catwalk,
+/area/adminlevel/ert_station/vai_station)
+
+(1,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+"}
+(2,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+fE
+mk
+iU
+zH
+xn
+Gt
+fg
+Dk
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+"}
+(3,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+Dk
+Dk
+jb
+zn
+KJ
+KJ
+KJ
+KJ
+se
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Gm
+Dm
+Km
+gH
+Dm
+Km
+gH
+Dm
+Dk
+"}
+(4,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+FH
+nY
+ae
+KJ
+KJ
+KJ
+KJ
+KJ
+ec
+Km
+hM
+HB
+aE
+Km
+Iz
+Km
+eI
+dx
+Uk
+su
+nY
+Uk
+Km
+nY
+nY
+Km
+nY
+nY
+Km
+nY
+nY
+Dk
+"}
+(5,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+FH
+nY
+qX
+cZ
+cZ
+cZ
+cZ
+cZ
+Lp
+lE
+ae
+KJ
+gh
+Km
+KJ
+Km
+su
+nY
+Uk
+su
+nY
+Uk
+Km
+Km
+yC
+Km
+Km
+RO
+Km
+Km
+kc
+Dk
+"}
+(6,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+Dk
+Dk
+ks
+JB
+iN
+wa
+Vr
+Zm
+Km
+Km
+jU
+Hc
+JL
+Km
+KJ
+Km
+Np
+nY
+Uk
+su
+nY
+Wl
+Km
+rL
+nY
+nY
+Zv
+nY
+nY
+VG
+nY
+Dk
+"}
+(7,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+Ej
+FY
+MZ
+EA
+Mb
+cM
+Km
+Km
+ae
+KJ
+ec
+lI
+KJ
+Jr
+Gh
+Gh
+Gh
+Gh
+Gh
+XE
+Km
+XX
+Gh
+Gh
+Gh
+Gh
+Gh
+Gh
+Gh
+Dk
+"}
+(8,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+Dk
+Dk
+Dk
+Dk
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+Fc
+AY
+BI
+EN
+BI
+cM
+Km
+Km
+qX
+cZ
+mh
+Km
+KJ
+Km
+PY
+nY
+qp
+nY
+nY
+ZX
+Km
+EU
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+Dk
+"}
+(9,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+Dk
+Lo
+YO
+Vw
+Km
+Dk
+Ep
+Ep
+Dk
+Dk
+Dk
+Ep
+Ep
+Dk
+Dh
+AY
+kF
+NA
+co
+cM
+Km
+Km
+Km
+Km
+Km
+Km
+KJ
+Km
+Km
+nf
+oT
+bn
+Vy
+Km
+Km
+Km
+Xc
+Km
+Km
+Dk
+IN
+Gh
+Gh
+Dk
+"}
+(10,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+OJ
+UL
+nY
+nY
+QA
+Dk
+Ep
+Ep
+Dk
+TX
+Dk
+Ep
+Ep
+Dk
+Ms
+kd
+lp
+lp
+lp
+cU
+Km
+SN
+qD
+Jb
+Pt
+Km
+hM
+st
+Km
+Km
+Km
+Km
+Km
+Km
+XF
+kr
+Uo
+vd
+xg
+Dk
+iz
+Pj
+nY
+Dk
+"}
+(11,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+LY
+nY
+Gh
+nY
+Ht
+Dk
+Ep
+Dk
+Dk
+lK
+Dk
+Dk
+Dk
+Dk
+Km
+Km
+Km
+Km
+Km
+Km
+Km
+at
+KJ
+KJ
+se
+Km
+ae
+UJ
+Sx
+GD
+Sx
+Km
+ew
+fC
+Rw
+Gh
+Gh
+Gh
+wN
+Dk
+Dk
+Tq
+FE
+Dk
+"}
+(12,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+KN
+UL
+nY
+nY
+qE
+Dk
+Dk
+Dk
+nY
+nY
+nY
+AJ
+nY
+nY
+nY
+nY
+nY
+AJ
+nY
+nY
+rd
+ae
+KJ
+Au
+mh
+uk
+ae
+hd
+GQ
+Xp
+Os
+Km
+MO
+Uo
+Uo
+Uo
+Uo
+Uo
+VA
+Nc
+Dk
+Dk
+Dk
+Dk
+"}
+(13,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+Dk
+Nk
+Gh
+nY
+Gh
+nY
+rd
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+Km
+zN
+il
+Gp
+Km
+Km
+VT
+KJ
+KJ
+KJ
+ec
+Km
+DH
+Gh
+aK
+Gh
+aK
+Gh
+Gh
+ij
+Dk
+Ep
+Ep
+Ep
+"}
+(14,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+Nv
+nY
+nY
+nY
+Zu
+Km
+Km
+Km
+Km
+Km
+Km
+Km
+Km
+Km
+Km
+Km
+Km
+Km
+lK
+Km
+Km
+gf
+gf
+Km
+Cd
+YN
+KJ
+KJ
+KJ
+ec
+Km
+xc
+Uo
+Vf
+Uo
+Vf
+Uo
+Uo
+Af
+Dk
+Ep
+Ep
+Ep
+"}
+(15,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+nY
+Gh
+nY
+Gh
+Bw
+Km
+nY
+zR
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+zR
+nY
+nY
+Uo
+Km
+Km
+hM
+ug
+ug
+YN
+KJ
+KJ
+KJ
+KJ
+pP
+Km
+HN
+Gh
+wp
+Gh
+wp
+Gh
+Gh
+Sa
+Dk
+Ep
+Ep
+Ep
+"}
+(16,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Dk
+Dk
+Dk
+Km
+lK
+Km
+Km
+Km
+Km
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+Uo
+Km
+Km
+gR
+tI
+KJ
+KJ
+mo
+KJ
+mo
+KJ
+GA
+Km
+oF
+Uo
+Uo
+Uo
+Uo
+Uo
+Uo
+cC
+Dk
+Ep
+Ep
+Ep
+"}
+(17,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Dk
+ny
+Gh
+nY
+nY
+Du
+mH
+mH
+mH
+cz
+jp
+IB
+ND
+mH
+cz
+cz
+cz
+cz
+mH
+zy
+nY
+Uo
+Km
+Km
+YA
+Xy
+KJ
+KJ
+Rg
+KJ
+Rg
+KJ
+ec
+Km
+mD
+Gh
+aK
+Gh
+aK
+Gh
+Gh
+eb
+Dk
+Ep
+Ep
+Ep
+"}
+(18,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Dk
+Wn
+Gh
+nY
+nY
+kK
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+JZ
+nY
+Uo
+Uo
+Km
+qu
+Xy
+KJ
+KJ
+Rg
+KJ
+Rg
+KJ
+ni
+Km
+Uo
+Uo
+Vf
+Uo
+dJ
+Uo
+Uo
+Yc
+Dk
+Ep
+Ep
+Ep
+"}
+(19,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+wc
+Gh
+Gh
+nY
+nY
+kK
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+Lk
+qW
+qW
+JZ
+nY
+Uo
+Uo
+Km
+qu
+Xy
+KJ
+KJ
+mo
+KJ
+mo
+Au
+Xa
+Km
+Gh
+Gh
+wp
+Gh
+wp
+Gh
+mA
+jG
+Dk
+Ep
+Ep
+Ep
+"}
+(20,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+wc
+Gh
+Gh
+nY
+nY
+kK
+qW
+Lk
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+hz
+JZ
+nY
+Uo
+Uo
+Km
+LM
+ek
+KJ
+KJ
+KJ
+KJ
+KJ
+ec
+Km
+Km
+XL
+XL
+XL
+xB
+Xm
+Uo
+rV
+Dk
+Dk
+Ep
+Ep
+Ep
+"}
+(21,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+wc
+nY
+NN
+nY
+nY
+kK
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+JZ
+nY
+Uo
+Uo
+mz
+qX
+cZ
+cZ
+cZ
+cZ
+dS
+DQ
+ec
+pU
+Km
+LY
+Gh
+Pn
+Gh
+Ay
+zw
+Dk
+Dk
+Ep
+Ep
+Ep
+Ep
+"}
+(22,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+wc
+nY
+NN
+nY
+nY
+kK
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+bs
+nY
+Uo
+Uo
+Km
+Km
+Km
+Gh
+xm
+Km
+Km
+hX
+Ao
+Km
+Km
+Uo
+Uo
+ER
+Un
+Ya
+Uo
+Dk
+Ep
+Ep
+Ep
+Ep
+Ep
+"}
+(23,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+wc
+Gh
+OC
+nY
+nY
+kK
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+dK
+nY
+Uo
+Uo
+Km
+Km
+Gh
+Gh
+Gh
+TL
+Km
+Km
+Km
+Km
+Rd
+Gh
+Gh
+kT
+uZ
+rp
+UM
+Dk
+Ep
+Ep
+Ep
+Ep
+Ep
+"}
+(24,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+wc
+Gh
+OC
+nY
+nY
+kK
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+sZ
+nY
+Uo
+Uo
+Km
+Km
+Uo
+Uo
+Uo
+Uo
+Uo
+Km
+Km
+Km
+tX
+VY
+Uo
+Uo
+Uo
+Ya
+Uo
+Dk
+Ep
+Ep
+Ep
+Ep
+Ep
+"}
+(25,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Dk
+xI
+Gh
+nY
+nY
+kK
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+JZ
+nY
+Uo
+Xl
+Km
+Km
+Gh
+Gh
+Gh
+Gh
+Gh
+Gh
+Gh
+Km
+Km
+Km
+Gh
+Gh
+Gh
+kj
+Gh
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+"}
+(26,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Dk
+Cp
+Gh
+nY
+nY
+kK
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+JZ
+nY
+Uo
+Uo
+Km
+Uo
+Uo
+Uo
+DX
+Uo
+Uo
+Uo
+Uo
+OP
+dL
+Km
+Uo
+Uo
+Uo
+Ya
+Uo
+Dk
+wR
+JK
+TN
+TN
+Dk
+"}
+(27,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Dk
+Aq
+Gh
+nY
+nY
+kK
+Lk
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+Lk
+qW
+JZ
+nY
+Uo
+Uo
+Km
+Gh
+Gh
+Gh
+Km
+Gh
+Gh
+Gh
+Gh
+Gh
+Gh
+Km
+Gh
+Gh
+Gh
+Ay
+Gh
+Dk
+Mg
+JK
+JK
+JK
+Dk
+"}
+(28,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Dk
+An
+Gh
+nY
+nY
+kK
+qW
+qW
+Lk
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+JZ
+nY
+Uo
+EG
+Km
+oa
+Uo
+Xl
+Km
+ZK
+Uo
+NS
+Uo
+Yo
+Uo
+Km
+Km
+Gh
+cu
+Km
+Km
+Dk
+SA
+JK
+JK
+JK
+Dk
+"}
+(29,1,1) = {"
+Dk
+Dk
+Dk
+Dk
+Dk
+Gh
+Gh
+nY
+nY
+nQ
+Ss
+RX
+RX
+RX
+cx
+qF
+zg
+RX
+RX
+RX
+RX
+RX
+Ss
+Yv
+nY
+nY
+nY
+aZ
+Gh
+Gh
+Gh
+Km
+Gh
+uS
+Gh
+XH
+HY
+Gh
+Gh
+Gh
+Gh
+Gh
+Gh
+Py
+Dk
+JN
+JK
+vV
+tT
+Dk
+"}
+(30,1,1) = {"
+Dk
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+aZ
+Uo
+Uo
+Uo
+Km
+Nm
+yq
+zI
+Uv
+ze
+Uo
+Uo
+Uo
+Uo
+Uo
+Uo
+Py
+Dk
+Dk
+yj
+Dk
+Dk
+Dk
+"}
+(31,1,1) = {"
+Dk
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+aZ
+Gh
+Gh
+Gh
+Km
+Gh
+gC
+Gh
+fX
+Gh
+Gh
+Gh
+Gh
+XT
+Gh
+Gh
+Py
+Dk
+Fz
+JK
+EM
+Dk
+Dk
+"}
+(32,1,1) = {"
+Dk
+Du
+dz
+rG
+ND
+mH
+mH
+mH
+mH
+mH
+mH
+mH
+mH
+cz
+jp
+rG
+ND
+mH
+cz
+cz
+cz
+cz
+mH
+zy
+nY
+Uo
+Uo
+Km
+Uo
+Uo
+Xl
+Km
+ZK
+Uo
+Ko
+Uo
+At
+Uo
+Km
+Km
+Km
+Km
+Km
+Km
+Dk
+LG
+JK
+JK
+JK
+Dk
+"}
+(33,1,1) = {"
+Dk
+Ci
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+Lk
+qW
+ez
+JV
+Dr
+JD
+wm
+iZ
+qW
+BO
+Xo
+Xo
+Xo
+qW
+RH
+nY
+Uo
+Uo
+Km
+Gh
+Gh
+Gh
+Km
+Gh
+Gh
+Gh
+Gh
+Gh
+Gh
+Km
+sr
+nY
+TZ
+nY
+HL
+Dk
+Jd
+ZF
+Ly
+JK
+Dk
+"}
+(34,1,1) = {"
+Dk
+kK
+qW
+qW
+qW
+vh
+Sp
+qW
+Tc
+qW
+oN
+ez
+uz
+le
+Zg
+iS
+ku
+Jz
+JD
+Ds
+iZ
+Xo
+Xo
+RH
+nY
+Uo
+Uo
+Km
+Uo
+Uo
+Uo
+rq
+Uo
+Uo
+Uo
+Uo
+Uo
+Uo
+xR
+nY
+JK
+Tx
+JK
+nY
+Dk
+Bm
+JH
+uC
+JK
+Dk
+"}
+(35,1,1) = {"
+Dk
+kK
+qW
+qW
+qW
+qW
+gb
+qW
+BM
+cj
+KI
+OU
+BF
+BF
+Qp
+zk
+CD
+uz
+Zg
+iS
+oV
+Xo
+SJ
+RH
+nY
+Uo
+Uo
+Km
+Km
+Gh
+Gh
+WA
+Gh
+Gh
+Gh
+Gh
+Km
+Km
+Km
+Nj
+JK
+Tx
+JK
+ZJ
+Dk
+Mo
+JK
+Vx
+JK
+Dk
+"}
+(36,1,1) = {"
+Dk
+kK
+qW
+qW
+qW
+qW
+qh
+OU
+HX
+kO
+tC
+jW
+MR
+JQ
+Jc
+ZN
+VI
+BF
+Qp
+zk
+nH
+qW
+Mu
+RH
+nY
+Uo
+Xl
+Km
+Km
+Km
+Uo
+kP
+Ip
+Uo
+Uo
+Uo
+Km
+wO
+nY
+nY
+JK
+Tx
+JK
+nY
+dv
+JK
+JK
+JK
+JK
+Dk
+"}
+(37,1,1) = {"
+Dk
+kK
+qW
+rv
+fx
+Jo
+FX
+YD
+rz
+di
+fI
+Ja
+AE
+AE
+AE
+AE
+PJ
+GB
+AE
+AE
+Fa
+wA
+br
+bs
+nY
+Uo
+Uo
+Km
+gi
+rr
+Gh
+WA
+Gh
+Gh
+Gh
+Gh
+Km
+JE
+JK
+JK
+JK
+Tx
+JK
+nY
+Dk
+sR
+JK
+JK
+zx
+Dk
+"}
+(38,1,1) = {"
+Dk
+kK
+qW
+mJ
+gl
+CV
+Ok
+jQ
+FG
+FG
+FG
+yk
+FG
+FG
+FG
+FG
+vB
+rW
+rW
+rW
+XB
+Xo
+qW
+dK
+nY
+Uo
+Uo
+Km
+Km
+Km
+Uo
+MK
+Uo
+Uo
+Uo
+Uo
+Km
+CF
+ZF
+JK
+JK
+CL
+nY
+zj
+Dk
+bt
+JK
+JK
+Xz
+Dk
+"}
+(39,1,1) = {"
+Dk
+kK
+qW
+CN
+fV
+cw
+Bg
+Ye
+rt
+RA
+UE
+tm
+AE
+AE
+AE
+AE
+Wp
+Lx
+AE
+AE
+CM
+Er
+Cl
+sZ
+nY
+Uo
+Uo
+Km
+Km
+Km
+eZ
+Km
+Km
+XT
+Gh
+Gh
+Km
+fU
+qo
+nY
+nY
+Ub
+Km
+Km
+Dk
+Dk
+ut
+DM
+Ig
+Dk
+"}
+(40,1,1) = {"
+Dk
+kK
+qW
+qW
+qW
+qW
+ie
+lu
+mf
+QP
+JI
+Ye
+Ph
+Jl
+Ph
+Jl
+vJ
+EL
+zJ
+fA
+xz
+qW
+Ug
+RH
+nY
+Uo
+Uo
+Km
+YT
+Rb
+nY
+zR
+Km
+Km
+Gh
+bV
+Km
+Km
+Km
+IR
+Km
+Km
+Km
+XQ
+Rb
+Dk
+Dk
+Dk
+Dk
+Dk
+"}
+(41,1,1) = {"
+Dk
+kK
+qW
+qW
+qW
+qW
+Lk
+Lk
+hg
+aU
+vX
+lu
+EL
+EL
+zJ
+fA
+Oc
+JV
+tU
+VL
+iZ
+qW
+Lw
+RH
+nY
+Uo
+Uo
+ck
+nY
+JK
+JK
+nY
+xv
+Km
+nY
+nY
+nY
+GX
+zP
+nY
+kQ
+Km
+nY
+JK
+JK
+ls
+Dk
+Ep
+Ep
+Ep
+"}
+(42,1,1) = {"
+Dk
+kK
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+qW
+kI
+JV
+OV
+tU
+VL
+iZ
+uz
+Cq
+qV
+oV
+Xo
+qW
+RH
+nY
+Uo
+Km
+Km
+uD
+JK
+JK
+JK
+nY
+ck
+nY
+JK
+JK
+ld
+JK
+JK
+Cg
+Km
+dY
+JK
+JK
+nY
+Dk
+Ep
+Ep
+Ep
+"}
+(43,1,1) = {"
+Dk
+Ci
+qW
+qW
+qW
+qW
+qW
+qW
+Lk
+qW
+Tp
+ez
+uz
+Kj
+Cq
+qV
+oV
+qW
+qW
+qW
+qW
+qW
+qW
+RH
+nY
+Uo
+Km
+JE
+nY
+JK
+tc
+qn
+wd
+Km
+xX
+JK
+dQ
+hU
+pu
+JK
+nY
+Eh
+nY
+JK
+JK
+nY
+Dk
+Ep
+Ep
+Ep
+"}
+(44,1,1) = {"
+Dk
+qx
+Ss
+RX
+RX
+Ss
+Ss
+Ss
+Ss
+JS
+Ss
+RX
+RX
+RX
+cx
+qF
+zg
+RX
+RX
+iG
+RX
+RX
+Ss
+Yv
+nY
+Xl
+Km
+Ua
+JK
+JK
+qn
+JK
+nY
+Km
+np
+JK
+aS
+pH
+JK
+JK
+nY
+Gh
+nY
+JK
+JK
+aT
+Dk
+Ep
+Ep
+Ep
+"}
+(45,1,1) = {"
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+nY
+Uo
+Km
+ZW
+Zy
+JK
+JK
+JK
+Wj
+Km
+TS
+JK
+pH
+Zi
+Ga
+jx
+ee
+Km
+uH
+JK
+JK
+fr
+Dk
+Ep
+Ep
+Ep
+"}
+(46,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+nY
+nY
+nY
+nY
+nY
+nY
+Sq
+nY
+nY
+nY
+nY
+nY
+Uo
+Km
+BC
+uf
+nY
+oA
+rJ
+ZW
+Km
+NY
+bN
+Bv
+xN
+VU
+jE
+Km
+Km
+ix
+JK
+JK
+BS
+Dk
+Ep
+Ep
+Ep
+"}
+(47,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+Dk
+lK
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Km
+Km
+lK
+Km
+Km
+Km
+Dk
+Rx
+nY
+JK
+JK
+WL
+el
+Km
+kZ
+nY
+JK
+JK
+nY
+Dk
+Ep
+Ep
+Ep
+"}
+(48,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+TX
+Dk
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+Km
+EE
+nY
+nY
+Km
+Dk
+Dk
+Dk
+kl
+JK
+JK
+dF
+nY
+Eh
+nY
+JK
+JK
+JK
+zD
+Dk
+Ep
+Ep
+Ep
+"}
+(49,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+Dk
+Dk
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+no
+Ot
+Ka
+aF
+no
+Dk
+Ep
+Dk
+Eu
+nY
+nY
+uK
+nY
+Gh
+nY
+JK
+JK
+nY
+Dk
+Dk
+Ep
+Ep
+Ep
+"}
+(50,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Ep
+Dk
+Dk
+Gh
+cT
+Km
+Km
+Km
+iP
+KX
+nY
+lh
+Dk
+Ep
+Ep
+Ep
+Ep
+"}
+(51,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+TX
+TX
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Dk
+Ep
+Ep
+Ep
+Ep
+"}
+(52,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Dk
+Dk
+Dk
+Dk
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+"}
+(53,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+"}
+(54,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+"}
+(55,1,1) = {"
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+Ep
+"}

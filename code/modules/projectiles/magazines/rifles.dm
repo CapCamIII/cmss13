@@ -59,8 +59,8 @@
 	ammo_band_color = AMMO_BAND_COLOR_AP
 
 /obj/item/ammo_magazine/rifle/le
-	name = "\improper M41A LE magazine (10x24mm)"
-	desc = "An armor-shredding 10x24mm assault rifle magazine."
+	name = "\improper M41A impact-detonating magazine (10x24mm)"
+	desc = "A 10x24mm assault rifle magazine containing special explosive rounds, designed to cause massive tissue damage to unarmored targets."
 	default_ammo = /datum/ammo/bullet/rifle/le
 	ammo_band_color = AMMO_BAND_COLOR_LIGHT_EXPLOSIVE
 
@@ -125,6 +125,12 @@
 	desc = "A long rectangular box of rounds that is only compatible with the older M41A MK1. Holds up to 95 rounds. This one contains wall-penetrating bullets."
 	default_ammo = /datum/ammo/bullet/rifle/ap/penetrating
 	ammo_band_color = AMMO_BAND_COLOR_PENETRATING
+
+/obj/item/ammo_magazine/rifle/m41aMK1/le
+	name = "\improper M41A MK1 impact-detonating magazine (10x24mm)"
+	desc = "A long rectangular box of rounds that is only compatible with the older M41A MK1. Holds up to 95 rounds. This one contains special explosive rounds, designed to cause massive tissue damage to unarmored targets."
+	default_ammo = /datum/ammo/bullet/rifle/le
+	ammo_band_color = AMMO_BAND_COLOR_LIGHT_EXPLOSIVE
 
 //-------------------------------------------------------
 //M4RA, l42 reskin, same stats as before but different, lore friendly, shell.
@@ -334,6 +340,13 @@
 	gun_type = /obj/item/weapon/gun/rifle/lmg
 	ammo_band_color = AMMO_BAND_COLOR_HEAP
 
+/obj/item/ammo_magazine/rifle/lmg/le
+	name = "\improper M41AE2 ammo box (10x24mm impact-detonating)"
+	desc = "A semi-rectangular box magazine for the M41AE2 Heavy Pulse Rifle. This one contains special impact-detonating explosive rounds, designed to cause massive tissue damage to unarmored targets."
+	default_ammo = /datum/ammo/bullet/rifle/le
+	gun_type = /obj/item/weapon/gun/rifle/lmg
+	ammo_band_color = AMMO_BAND_COLOR_LIGHT_EXPLOSIVE
+
 //-------------------------------------------------------
 //UPP TYPE 71 RIFLE
 
@@ -425,7 +438,7 @@
 	ammo_band_color = AMMO_BAND_COLOR_AP
 
 /obj/item/ammo_magazine/rifle/l42a/le
-	name = "\improper L42A LE magazine (10x24mm)"
+	name = "\improper L42A impact-detonating magazine (10x24mm)"
 	desc = "An armor-shredding 10x24mm battle rifle magazine."
 	default_ammo = /datum/ammo/bullet/rifle/le
 	ammo_band_color = AMMO_BAND_COLOR_LIGHT_EXPLOSIVE

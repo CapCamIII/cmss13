@@ -33,8 +33,8 @@
 	ammo_band_color = AMMO_BAND_COLOR_AP
 
 /obj/item/ammo_magazine/smg/m39/le
-	name = "\improper M39 LE magazine (10x20mm)"
-	desc = "A 10x20mm caseless light-explosive submachinegun magazine containing special light explosive rounds, designed to cause massive tissue damage to unarmored targets."
+	name = "\improper M39 impact-detonating magazine (10x20mm)"
+	desc = "A 10x20mm caseless submachinegun magazine containing special impact-detonating explosive rounds, designed to cause massive tissue damage to unarmored targets."
 	default_ammo = /datum/ammo/bullet/smg/le
 	ammo_band_color = AMMO_BAND_COLOR_LIGHT_EXPLOSIVE
 

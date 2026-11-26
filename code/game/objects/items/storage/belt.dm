@@ -1791,7 +1791,7 @@
 		new /obj/item/ammo_magazine/pistol/highpower/black(src)
 
 /obj/item/storage/belt/gun/m4a3/highpower/tactical/fill_preset_inventory()
-	handle_item_insertion(new /obj/item/weapon/gun/pistol/highpower/tactical())
+	handle_item_insertion(new /obj/item/weapon/gun/pistol/highpower/tactical/attached())
 	for(var/i = 1 to storage_slots - 1)
 		new /obj/item/ammo_magazine/pistol/highpower/black(src)
 
@@ -2739,14 +2739,14 @@
 	flags_atom = FPRINT|NO_GAMEMODE_SKIN // same sprite for all gamemodes
 
 /obj/item/storage/belt/gun/smartgunner/marsoc/full/fill_preset_inventory()
-	handle_item_insertion(new /obj/item/weapon/gun/pistol/m1911/socom/burst())
+	handle_item_insertion(new /obj/item/weapon/gun/pistol/m1911/socom/burst/equipped())
 	new /obj/item/ammo_magazine/pistol/m1911/extended(src)
 	new /obj/item/ammo_magazine/smartgun/heap(src)
 	new /obj/item/ammo_magazine/smartgun/heap(src)
 	new /obj/item/ammo_magazine/smartgun/heap(src)
 
 /obj/item/storage/belt/gun/smartgunner/marsoc/full_low_threat/fill_preset_inventory()
-	handle_item_insertion(new /obj/item/weapon/gun/pistol/m1911/socom/burst())
+	handle_item_insertion(new /obj/item/weapon/gun/pistol/m1911/socom/burst/equipped())
 	new /obj/item/ammo_magazine/pistol/m1911/extended(src)
 	new /obj/item/ammo_magazine/smartgun(src)
 	new /obj/item/ammo_magazine/smartgun(src)

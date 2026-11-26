@@ -102,7 +102,7 @@
 	name = "impact-detonating submachinegun bullet"
 
 	damage = 38
-	penetration = ARMOR_PENETRATION_TIER_3
+	penetration = -10
 	pen_armor_punch = 4
 
 /datum/ammo/bullet/smg/rubber

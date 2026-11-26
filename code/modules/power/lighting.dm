@@ -183,6 +183,7 @@
 	base_state = "rtube"
 	desc = "A lighting fixture. Its glass covering is a bright, fluorescent red."
 	brightness = 4
+	light_color = LIGHT_COLOR_RED
 
 // the smaller bulb light fixture
 

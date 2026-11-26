@@ -360,7 +360,7 @@
 /obj/item/ammo_magazine/pistol/highpower
 	name = "\improper MK-45 Automagnum magazine (.45)"
 	desc = "A .45 pistol magazine."
-	default_ammo = /datum/ammo/bullet/pistol/highpower
+	default_ammo = /datum/ammo/bullet/pistol/heavy
 	caliber = ".45"
 	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/colony/pistols.dmi'
 	icon_state = "highpower"

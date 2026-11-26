@@ -2,6 +2,8 @@
 	name = "VAIPO Contractors (Squad) (Friendly)"
 	mob_max = 8
 	probability = 15
+	home_base = /datum/lazy_template/ert/vai_station
+	shuttle_id = MOBILE_SHUTTLE_ID_ERT6
 
 	max_engineers =  1
 	max_medics = 1
@@ -14,7 +16,7 @@
 
 /datum/emergency_call/contractors/New()
 	..()
-	arrival_message = "[MAIN_SHIP_NAME], this is USCSS Inheritor with Vanguard's Arrow International, Primary Operations; we are responding to your distress call and boarding in accordance with the Military Aid Act of 2162, authentication code Lima-18153."
+	arrival_message = "[MAIN_SHIP_NAME], this is USCSS Samburan with Vanguard's Arrow International, Primary Operations; we are responding to your distress call and boarding in accordance with the Military Aid Act of 2162, authentication code Lima-18153."
 	objectives = "Ensure the survival of the [MAIN_SHIP_NAME], eliminate any hostiles, and assist the crew in any way possible."
 
 
@@ -78,12 +80,12 @@
 		to_chat(M, SPAN_BOLD("You were brought online in a civilian factory."))
 		to_chat(M, SPAN_BOLD("You were programmed with all of the medical and engineering knowledge a military fighting force support asset required."))
 		to_chat(M, SPAN_BOLD("You were soon after bought by Vanguard's Arrow International(VAI) to act as support personnel."))
-		to_chat(M, SPAN_BOLD("Some months after your purchase, you were assigned to the USCSS Inheritor, a VAI transport vessel."))
+		to_chat(M, SPAN_BOLD("Some months after your purchase, you were assigned to the USCSS Samburan, a VAI transport vessel."))
 	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("You are [pick(90;"unaware", 10;"faintly aware")] of the existance of xenomorphs.")))
 	to_chat(M, SPAN_BOLD("You are employed by Vanguard's Arrow International(VAI), as a member of VAI Primary Operations(VAIPO)"))
-	to_chat(M, SPAN_BOLD("You are stationed on-board the USCSS Inheritor, a de-milled Conestoga class purchased second-hand off the Colonial Marshals, who themselves bought it off the USASF following a tragic accident. The Inheritor is considered by those who crew it as an unlucky 'ghost' ship."))
+	to_chat(M, SPAN_BOLD("You are stationed on-board the USCSS Samburan, a de-milled Conestoga class purchased second-hand off the Colonial Marshals, who themselves bought it off the USASF following a tragic accident. The Samburan is considered by those who crew it as an unlucky 'ghost' ship."))
 	to_chat(M, SPAN_BOLD("Under the directive of the VAI executive board, you have been assist in riot control, corporate security for contracted companies, "))
-	to_chat(M, SPAN_BOLD("The USCSS Inheritor is staffed with crew of roughly sixty military contractors, and ten support personnel."))
+	to_chat(M, SPAN_BOLD("The USCSS Samburan is staffed with crew of roughly sixty military contractors, and ten support personnel, and a small contingent from VAIRS."))
 	to_chat(M, SPAN_BOLD("As a side-objective, VAI has been hired by an unknown benefactor to engage in corporate espionage and sabotage against Weyland-Yutani, do not get into a fight, but attempt to recover Wey-Yu secrets and plans if possible."))
 	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Your primary objective is to assist the USCMC Force of the [MAIN_SHIP_NAME] however you can.")))
 	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Your secondary objective is to retrieve any research samples you find.")))
@@ -106,9 +108,6 @@
 
 
 /datum/emergency_call/contractors_covert
-
-
-
 	name = "VAIRS Contractors (Friendly)"
 	mob_max = 8
 
@@ -148,12 +147,12 @@
 		to_chat(M, SPAN_BOLD("You were brought online in a civilian factory."))
 		to_chat(M, SPAN_BOLD("You were programmed with all of the medical and engineering knowledge a military fighting force support asset required."))
 		to_chat(M, SPAN_BOLD("You were soon after bought by Vanguard's Arrow International(VAI) to act as support personnel."))
-		to_chat(M, SPAN_BOLD("Some months after your purchase, you were assigned to the USCSS Samburan, a refitted cargo-hauler serving as an infiltration ship."))
+		to_chat(M, SPAN_BOLD("Some months after your purchase, you were assigned to the USCSS Samburan, a VAI transport vessel."))
 	to_chat(M, SPAN_WARNING("You are aware of the existance of xenomorphs, and the threat they pose."))
 	to_chat(M, SPAN_BOLD("You are employed by Vanguard's Arrow International(VAI), as a member of the VAI Research and Studies group(VAIRS)"))
-	to_chat(M, SPAN_BOLD("You are stationed on-board the USCSS Samburan, a converted cargo-hauler officially owned by Francis and Sons Freight, a Weyland-Yutani subcontractor and VAI shell company."))
-	to_chat(M, SPAN_BOLD("The USCSS Samburan is staffed with crew of roughly thirty other contractors, and a support team of four."))
-	to_chat(M, SPAN_BOLD("The Samburan's current mission is to patrol the Neroid sector and strike targets of opportunity, as part of VAIRS' ongoing campaign of sabotage and espionage against Weyland-Yutani, on behalf of the Grant Corporation, Lasalle Bionational, and other smaller companies."))
+	to_chat(M, SPAN_BOLD("You are stationed on-board the USCSS Samburan, a de-milled Conestoga class purchased second-hand off the Colonial Marshals, who themselves bought it off the USASF following a tragic accident. The Samburan is considered by those who crew it as an unlucky 'ghost' ship."))
+	to_chat(M, SPAN_BOLD("The USCSS Samburan is staffed with crew of roughly 60 members of VAIPO, a support team of ten, and twenty others also assigned to VAIRS like yourself."))
+	to_chat(M, SPAN_BOLD("The VAIRS contingent onboard the Samburan's current mission is to patrol the Neroid sector and strike targets of opportunity, as part of VAIRS' ongoing campaign of sabotage and espionage against Weyland-Yutani, on behalf of the Grant Corporation, Lasalle Bionational, and other smaller companies and organisations."))
 	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Your primary objective is to secure any Weyland-Yutani secrets, research, or intelligence, secure xenobiological samples, as well as rescue any research personnel recovered from the surface of the planet below.")))
 	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Your secondary objective is to assist the USCMC Force of the [MAIN_SHIP_NAME] however you can.")))
 	to_chat(M, SPAN_WARNING(FONT_SIZE_BIG("Do not start a firefight with W-Y forces on-board a USCM vessel.")))
